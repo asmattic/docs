@@ -1,6 +1,6 @@
 .. App name and url
-.. |AppName| replace:: transparenC
-.. _AppName: http://analytics.mckayadvertising.com
+.. |AppName| replace:: Programming Docs
+.. _AppName: http://docs.matthewoldfield.com
 
 .. Test site name and URL
 .. |TestAppName| replace:: transparenC test site
