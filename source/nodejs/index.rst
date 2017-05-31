@@ -4,7 +4,7 @@ Node JS Resources
 .. Variables
 .. include:: ../vars.rst
 
-.. _nodejs-section::
+.. _nodejs-section:
 
 Node JS
 --------
@@ -34,6 +34,6 @@ Socket IO
 
 * `Socket IO |docs| <socketIoDocs_>`_ - Official |docs|
 
-.. literalinclude:: example.js
+.. literalinclude:: socket-io.js
 
 .. _socketIoDocs: https://socket.io/docs
