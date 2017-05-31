@@ -1,4 +1,4 @@
-Welcome to |AppName|'s documentation!
+|AppName|'s |docs|
 =====================================
 
 .. Variables
@@ -45,3 +45,18 @@ Information about development is also available:
 	:caption: Node JS
 
 	nodejs/index
+
+.. _rst-sources:
+
+Sources for writing Sphinx and reStructured text |docs|
+========================================================
+
+* `reStructured text for writers <rstForWriters_>`_ - Blog post about |rst|
+* `reStructured text documentation <rstDocs_>`_ - Official |docs|
+* `reStructured text cheat sheet <rstCheatSheet_>`_ - Cheat sheet written by matplotlib creators
+* `Sphinx documentation <sphinx_>`_ - Official |docs|
+
+.. _rstForWriters: http://ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/
+.. _rstDocs: http://docutils.sourceforge.net/rst.html
+.. _rstCheatSheet: https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
+.. _sphinx: http://www.sphinx-doc.org/en/stable/

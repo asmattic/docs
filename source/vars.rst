@@ -26,3 +26,7 @@
 
 .. Database Prefix
 .. |dbPrefix| replace:: d
+
+.. Common vars
+.. |rst| replace:: reStructured Text
+.. |docs| replace:: documentation
