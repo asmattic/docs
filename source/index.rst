@@ -9,6 +9,7 @@ Information about development is also available:
 * :ref:`dev-docs`
 * :ref:`bash`
 * :ref:`pi`
+* :ref:`nodejs`
 
 .. _dev-docs:
 
@@ -36,3 +37,11 @@ Information about development is also available:
 
 	pi/index
 	pi/networks
+
+.. _nodejs:
+
+.. toctree::
+	:maxdepth: 2
+	:caption: Node JS
+
+	nodejs/index
