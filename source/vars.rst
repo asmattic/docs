@@ -1,9 +1,9 @@
 .. App name and url
-.. |AppName| replace:: Programming Docs
+.. |AppName| replace:: Asmattic Docs
 .. _AppName: http://docs.matthewoldfield.com
 
 .. Test site name and URL
-.. |TestAppName| replace:: transparenC test site
+.. |TestAppName| replace:: Asmattic Docs
 .. _TestAppName: http://app.mckayadvertising.com
 
 .. The current build status
@@ -19,10 +19,10 @@
   :target: https://docs.readthedocs.io/en/latest/?badge=latest
 
 .. The current version of the documentation
-.. |AppVersion| replace:: `0.9.0`
+.. |AppVersion| replace:: `0.0.1`
 
 .. Google
 .. |GA| replace:: Google Analytics
 
 .. Database Prefix
-.. |dbPrefix| replace:: maa
+.. |dbPrefix| replace:: d

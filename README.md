@@ -48,3 +48,35 @@ make <target>
 * **[Electron Apps](https://electron.atom.io/)** -
 * **[Atom Web Dev Packages](https://www.dunebook.com/5-best-atom-packages-ease-your-web-development/)** - 5 BEST ATOM PACKAGES TO EASE YOUR WEB DEVELOPMENT
 * **[Awesome Atom](https://github.com/mehcode/awesome-atom)** - A curated list of delightful Atom packages and resources.
+* **[6 Atom Packages](https://blog.axosoft.com/2017/03/01/6-atom-packages/)** - 6 Popular Atom Packages
+* **[MongoDB Github Backups](https://github.com/finom/mongo-git-backup)** - Backup smaller size mongoDB installations
+* **[Express VPN](https://www.expressvpn.com/support/vpn-setup/app-for-linux/#install)** - Best And most common VPN server
+* **[Envato Elements](https://elements.envato.com/)** - Lots of design elements that can be used and downloaded.
+* **[AMP Wordpress](https://wordpress.org/plugins/accelerated-mobile-pages/)** - AMP plugin for Wordpress
+* **[Local Sphinx Build File](file:///home/asmattic/Desktop/dev/docs/build/html/index.html)** - The index.html file that is created on build of the project
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -
+* **[]()** -

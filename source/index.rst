@@ -7,12 +7,32 @@ Welcome to |AppName|'s documentation!
 Information about development is also available:
 
 * :ref:`dev-docs`
-
+* :ref:`bash`
+* :ref:`pi`
 
 .. _dev-docs:
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Developer
+	:maxdepth: 2
+	:caption: Developer
 
-   dev-docs
+	dev-docs
+	pi/networks
+	README.rst
+
+.. _bash:
+
+.. toctree::
+	:maxdepth: 2
+	:caption: Bash
+
+	bash
+
+.. _pi:
+
+.. toctree::
+	:maxdepth: 2
+	:caption: Pi
+
+	pi/index
+	pi/networks

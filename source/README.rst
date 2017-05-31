@@ -1,12 +1,16 @@
-Welcome to the transparenC Documentation
+Welcome to the |AppName| Documentation
 ========================================
+
+.. Variables
+.. include:: vars.rst
+
 
 |build-status| |docs|
 
 Purpose
 -------
 
-To educate about the use and building of transparenC.
+To educate about the use and building of |AppName|.
 
 .. |build-status| image:: https://img.shields.io/travis/rtfd/readthedocs.org.svg?style=flat
     :alt: build status
