@@ -9,6 +9,16 @@ Hardware specs and |docs|
 Lenovo ideapad Y700
 --------------------
 
+Graphics Cards
+---------------
+
+Search
+	* GeForce 900M
+	* GeForce GTX 960M
+	* Linux 64 bit
+
+.. _nvidiaGforceSite: http://www.geforce.com/drivers
+
 .. _docking-station-section:
 
 Anker USB 3.0 docking station
