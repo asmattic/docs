@@ -16,3 +16,21 @@ Some bash commands.
 
 	# Print PCI hardware
 	$ lspci -nn
+
+	# USB hardware
+	$ lsusb
+
+	# Turn off wifi Power management
+	$ sudo iwconfig <interface name (e.g. wlan0)> power off
+
+	# List modules
+	$ lsmod
+
+	# Kill radio signals ( check on this)
+	$ rfkill
+
+	# List channels available for device
+	$ iwlist chan
+
+	# Scan channels
+	$ iwlist scan

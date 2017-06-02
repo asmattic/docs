@@ -29,8 +29,11 @@ Node Version Manager
 
 .. _socket-io-section:
 
-Socket IO
+Socket
 ----------
+
+.. note::
+	Make sure you start the socket on the server and not the app itself with express
 
 * `Socket IO |docs| <socketIoDocs_>`_ - Official |docs|
 

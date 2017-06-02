@@ -6,23 +6,27 @@
 
 Information about development is also available
 
-* :ref:`dev-docs`
-* :ref:`bash`
-* :ref:`pi`
-* :ref:`nodejs`
-* :ref:`hardware`
+* :ref:`dev-docs-sec`
+* :ref:`bash-sec`
+* :ref:`pi-sec`
+* :ref:`nodejs-sec`
+* :ref:`editors-sec`
+* :ref:`hardware-sec`
+* :ref:`hosting-sec`
+* :ref:`python-sec`
+* :ref:`android-sec`
+* :ref:`api-sec`
 
-.. _dev-docs:
+.. _dev-docs-sec:
 
 .. toctree::
 	:maxdepth: 2
 	:caption: Developer
 
 	dev-docs
-	pi/networks
 	README.rst
 
-.. _bash:
+.. _bash-sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -30,7 +34,7 @@ Information about development is also available
 
 	bash
 
-.. _pi:
+.. _pi-sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -39,7 +43,7 @@ Information about development is also available
 	pi/index
 	pi/networks
 
-.. _nodejs:
+.. _nodejs-sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -47,7 +51,15 @@ Information about development is also available
 
 	nodejs/index
 
-.. _hardware:
+.. _editors-sec:
+
+.. toctree::
+	:maxdepth: 2
+	:caption: Editors / IDE's
+
+	editors/index
+
+.. _hardware-sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -55,19 +67,50 @@ Information about development is also available
 
 	hardware/laptop
 
-.. _rst-sources:
+.. _hosting-sec:
 
-Writing Sphinx and reStructured text |docs|
-========================================================
+.. toctree::
+	:maxdepth: 2
+	:glob:
+	:caption: Hosting, Deployment and Security
 
-* `reStructured text for writers <rstForWriters_>`_ - Blog post about |rst|
-* `reStructured text documentation <rstDocs_>`_ - Official |docs|
-* `reStructured text cheat sheet <rstCheatSheet_>`_ - Cheat sheet written by matplotlib creators
-* `Sphinx documentation <sphinx_>`_ - Official |docs|
-* `Read The Docs Sphinx <rtdSphinx_>`_ - RTD styleguide
+	hosting/*
+	hosting/security/*
 
-.. _rstForWriters: http://ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/
-.. _rstDocs: http://docutils.sourceforge.net/rst.html
-.. _rtdSphinx: https://documentation-style-guide-sphinx.readthedocs.io/en/latest/style-guide.html
-.. _rstCheatSheet: https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
-.. _sphinx: http://www.sphinx-doc.org/en/stable/
+.. _python-sec:
+
+.. toctree::
+	:maxdepth: 2
+	:glob:
+	:caption: Python
+
+	python/*
+
+.. _android-sec:
+
+.. toctree::
+	:maxdepth: 2
+	:glob:
+	:caption: Android
+
+	android/*
+
+.. _api-sec:
+
+.. toctree::
+	:maxdepth: 2
+	:glob:
+	:caption: APIs
+
+	api/index
+..	api/create/*
+..	api/list/*
+
+.. _writing-docs-sec:
+
+.. toctree::
+	:maxdepth: 2
+	:glob:
+	:caption: Writing |docs|
+
+	writing-docs/*

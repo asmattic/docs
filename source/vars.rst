@@ -30,3 +30,5 @@
 .. Common vars
 .. |rst| replace:: reStructured Text
 .. |docs| replace:: documentation
+.. |python| replace:: `Python <python_>`_
+.. _python: https://www.python.org/

@@ -25,3 +25,12 @@ Android Studio
 ----------------
 
 Stuff about this
+
+.. _vim-section:
+
+Vim
+----
+
+* `Use Vim as JavaScript IDE <vimAsJsIde_>`_
+
+.. _vimAsJsIde: http://www.dotnetsurfers.com/blog/2016/02/08/using-vim-as-a-javascript-ide
