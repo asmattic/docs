@@ -1,5 +1,5 @@
-`.htaccess`
-============
+``.htaccess``
+==============
 
 .. Variables
 .. include:: ../../vars.rst
@@ -9,7 +9,7 @@ Password Protect Website Sections
 
 `Password protect specific areas of a site <htaccessPasswordProtect_>`_ from a single file to a subdomain to a full domain.
 
-.. code-block:: text
+.. code-block:: bash
 
 	AuthUserFile /.htpasswds/.htpasswd
 	AuthGroupFile /dev/null

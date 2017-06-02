@@ -76,6 +76,7 @@ Information about development is also available
 
 	hosting/*
 	hosting/security/*
+	hosting/optimization/*
 
 .. _python-sec:
 

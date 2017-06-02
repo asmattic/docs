@@ -6,8 +6,8 @@ Writing Sphinx |rst| |docs|
 
 .. _rst-sources:
 
-Writing Sphinx and reStructured text |docs|
-========================================================
+Sources
+---------
 
 * `reStructured text for writers <rstForWriters_>`_ - Blog post about |rst|
 * `reStructured text documentation <rstDocs_>`_ - Official |docs|
