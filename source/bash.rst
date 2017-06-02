@@ -13,3 +13,6 @@ Some bash commands.
 
 	# Printing out computer hardware to .html file
 	$ sudo lshw -html
+
+	# Print PCI hardware
+	$ lspci -nn
