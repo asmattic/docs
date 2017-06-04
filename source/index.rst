@@ -107,6 +107,16 @@ Information about development is also available
 ..	api/create/*
 ..	api/list/*
 
+.. _dke-sec:
+
+.. toctree::
+	:maxdepth: 2
+	:glob:
+	:caption: DKE Projects
+
+	dke/index
+..	dke/*
+
 .. _writing-docs-sec:
 
 .. toctree::
