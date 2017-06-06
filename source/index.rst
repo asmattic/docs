@@ -55,9 +55,11 @@ Information about development is also available
 
 .. toctree::
 	:maxdepth: 2
+	:glob:
 	:caption: Editors / IDE's
 
 	editors/index
+	editors/atom
 
 .. _hardware-sec:
 
