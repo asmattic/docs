@@ -119,6 +119,15 @@ Information about development is also available
 	dke/index
 ..	dke/*
 
+.. _git-sec:
+
+.. toctree::
+	:maxdepth: 2
+	:glob:
+	:caption: Git And Github
+
+	git/index
+
 .. _writing-docs-sec:
 
 .. toctree::

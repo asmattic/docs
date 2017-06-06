@@ -5,7 +5,7 @@ Welcome to the |AppName| Documentation
 .. include:: vars.rst
 
 
-|build-status| |docs|
+|build-status| |doc-status|
 
 Purpose
 -------
@@ -17,7 +17,7 @@ To educate about the use and building of |AppName|.
     :scale: 100%
     :target: https://travis-ci.org/rtfd/readthedocs.org
 
-.. |docs| image:: https://readthedocs.org/projects/docs/badge/?version=latest
+.. |doc-status| image:: https://readthedocs.org/projects/docs/badge/?version=latest
     :alt: Documentation Status
     :scale: 100%
     :target: https://docs.readthedocs.io/en/latest/?badge=latest
