@@ -128,6 +128,24 @@ Information about development is also available
 
 	git/index
 
+.. _reactjs-sec:
+
+.. toctree::
+	:maxdepth: 2
+	:glob:
+	:caption: React JS
+
+	reactjs/index
+
+.. _wordpress-sec:
+
+.. toctree::
+	:maxdepth: 2
+	:glob:
+	:caption: Wordpress
+
+	wordpress/index
+
 .. _writing-docs-sec:
 
 .. toctree::

@@ -13,16 +13,22 @@ Enough to get started with.
 
 .. code-block:: bash
 
+	# Check status of project
+	$ git status
+
+	# Adds all newly added files and directories
 	$ git add --all
 
+	# Adds all individual code changes in existing files and directories
 	$ git add .
 
+	# Commits changes to local .git folder
 	$ git commit -m "Your message"
 
-	# Commit to branch
+	# Commits to remote branch (usually master)
 	$ git push origin <your-branch>
 
-	# Don't do this unless ready to merge
+	# Don't do this on a non-master branch unless ready to merge
 	$ git push origin master
 
 	# Creating a new branch and switching into it

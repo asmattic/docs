@@ -1,5 +1,5 @@
-Node JS Resources
-========================
+Node JS
+=========
 
 .. Variables
 .. include:: ../vars.rst
@@ -35,7 +35,7 @@ Socket
 .. note::
 	Make sure you start the socket on the server and not the app itself with express
 
-* `Socket IO |docs| <socketIoDocs_>`_ - Official |docs|
+* `Socket IO docs <socketIoDocs_>`_ - Official |docs|
 
 .. literalinclude:: socket-io.js
 
