@@ -33,9 +33,19 @@ Java Language Features
 
 A non-comprehensive list of features of Java in no particular order with emphasis on elements supported by Android.
 
-**Interfaces**
+Interfaces
+~~~~~~~~~~~
 
 From `the Oracle Java docs <https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html>`_
 
 In the Java programming language, an interface is a reference type, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types. Method bodies exist only for default methods and static methods. Interfaces cannot be instantiated—they can only be implemented by classes or extended by other interfaces. Extension is discussed later in this lesson.
+
+Map
+~~~~~
+
+HashMap
+~~~~~~~~
+
+ArrayList
+~~~~~~~~~~
 
