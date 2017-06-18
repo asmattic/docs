@@ -9,6 +9,18 @@ Android
 
 Specific to Android.
 
+Naming Conventions
+~~~~~~~~~~~~~~~~~~~~
+
+The Android Open Source Project style guidelines have some common patterns that are in many projects and examples so here are a few to watch out for.
+
+**Field Naming Conventions**
+
+	* Non-public, non-static field names start with m.
+	* Static field names start with s.
+	* Other fields start with a lower case letter.
+	* Public static final fields (constants) are ALL_CAPS_WITH_UNDERSCORES.
+
 Java
 -----
 
