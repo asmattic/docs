@@ -4,6 +4,21 @@ Common Issues
 .. Variables
 .. include:: ../vars.rst
 
+Android
+--------
+
+Specific to Android.
+
+Java
+-----
+
+Specific to Java or Androids supported features of Java.
+
+Android Studio
+----------------
+
+Specific to Android Studio.
+
 File accidently created as text file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
