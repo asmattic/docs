@@ -146,6 +146,15 @@ Information about development is also available
 
 	wordpress/index
 
+.. _web-design-sec:
+
+.. toctree::
+	:maxdepth: 2
+	:glob:
+	:caption: Web Design
+
+	web-design/index
+
 .. _writing-docs-sec:
 
 .. toctree::
