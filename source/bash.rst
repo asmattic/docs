@@ -42,7 +42,7 @@ Permissions for files and folders are grouped in three different sections; `user
 
 .. code-block:: bash
 	
-	# Add -R to modify recursively
+	# add -R to modify recursively
 	$ sudo chmod u=rwx,g=rx,o=r <myfile>
 
 .. csv-table:: Chmod digits
@@ -52,3 +52,30 @@ Permissions for files and folders are grouped in three different sections; `user
 	2, "write"
 	1, "execute"
 	0, "no permission"
+
+.. _bash-compression-sec:
+
+Compression
+-------------
+
+Tar `(Tape Archiver)`
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table:: Compression Options
+	:header: "Option", "Description"
+
+	"``-c``", "Create archive"
+	"``-z``", "Gzip archive"
+	"``-v``", "Display progress (verbose)"
+	"``-f``", "Specify filename"
+	"``--exclude``", "Specify files, folders or patterns to not extract"
+	"``-x``", "Extract archive"
+	"``-C``", "Specify directory to extract to"
+
+.. code-block:: bash
+	
+	# zip 
+	tar -czvf <archive-to-create.tar.gz> <folder-to-compress> --exclude="*.pdf"
+
+	# unzip
+	$ tar -xzvf <file-to-extract.tar.gz> -C <folder-to-extract-to>
