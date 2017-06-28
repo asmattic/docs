@@ -17,6 +17,9 @@ Information about development is also available
 * :ref:`android-sec`
 * :ref:`api-sec`
 
+.. note::
+	Things between carets ``<>`` are meant to be replaced by the user. For example, ``sudo ifdown <interface>`` could be ``sudo ifdown wlan0`` depending on the specific system and device interface.
+
 .. _dev-docs-sec:
 
 .. toctree::

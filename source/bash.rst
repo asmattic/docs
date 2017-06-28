@@ -75,7 +75,63 @@ Tar `(Tape Archiver)`
 .. code-block:: bash
 	
 	# zip 
-	tar -czvf <archive-to-create.tar.gz> <folder-to-compress> --exclude="*.pdf"
+	$ tar -czvf <archive-to-create.tar.gz> <folder-to-compress> --exclude="*.pdf"
 
 	# unzip
 	$ tar -xzvf <file-to-extract.tar.gz> -C <folder-to-extract-to>
+
+Count Output
+--------------
+
+To count various things in a file or output you can use ``wc``.
+
+.. csv-table:: Compression Options
+	:header: "Option", "Thing to count"
+
+	"``-c``", "bytes"
+	"``-m``", "chars"
+	"``-l``", "lines"
+	"``-w``", "words"
+
+.. code-block:: bash
+	
+	# count lines of output
+	$ <command-with-output> | wc -l
+
+Network
+--------
+
+Setting up network ``ssid`` and ``psk`` can be done in the ``/etc/wpa_supplicant/wpa_supplicant.conf`` file.
+
+You can also use ``sudo ifquery <interface>`` to find where the interface is getting it's configuration. Here is an example response.
+
+.. code-block:: bash
+	
+	wpa-conf: /etc/wpa_supplicant/wpa_supplicant.conf
+
+
+There are a lot of other options like setting priority of networks and naming that can be found `on the wiki here <wpaSupplicant_>`_.
+
+.. _wpaSupplicant: https://wiki.archlinux.org/index.php/WPA_supplicant
+
+.. code-block:: bash
+
+	# Mandatory
+	network={
+		ssid="NETWORK_SSID"
+		psk="PASSWORD"
+
+	}
+
+
+Restart Network
+~~~~~~~~~~~~~~~~~
+
+Using wlan0 as an example.
+
+Turn off
+``sudo ifdown wlan0``
+
+Turn on
+``sudo ifup wlan0``
+

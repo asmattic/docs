@@ -519,14 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "docs.sublime-project",
-			"settings":
-			{
-				"buffer_size": 45,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -573,10 +565,13 @@
 	},
 	"expanded_folders":
 	[
-		"/home/athsmatic/Desktop/dev/docs"
+		"/home/athsmatic/Desktop/dev/docs/source"
 	],
 	"file_history":
 	[
+		"/media/athsmatic/boot/cmdline.txt",
+		"/media/athsmatic/boot/config.txt",
+		"/home/athsmatic/Desktop/dev/docs/source/bash.rst",
 		"/home/athsmatic/Desktop/dev/mckay/api-tracking-scripts/facebook/fb-tracking.html",
 		"/home/athsmatic/Desktop/dev/mckay/cb-files/cabanalytics/sass/_variables.scss",
 		"/home/athsmatic/Desktop/dev/mckay/cb-files/cabanalytics/src/containers/users/UserFormPage.js",
@@ -701,10 +696,7 @@
 		"/home/athsmatic/dev/cb-files/cabanalytics/api/google/adwords/adwords.js",
 		"/home/athsmatic/dev/cb-files/cabanalytics/src/components/campaigns/conversions/ConversionDataTable.js",
 		"/home/athsmatic/dev/cb-files/cabanalytics/sass/components/_percent-box.scss",
-		"/home/athsmatic/dev/cb-files/cabanalytics/src/components/PercentBox.js",
-		"/home/athsmatic/dev/cb-files/cabanalytics/src/actions/adwords.js",
-		"/home/athsmatic/dev/api-tracking-scripts/wordpress/custom-tracking.php",
-		"/home/athsmatic/dev/api-tracking-scripts/htaccess"
+		"/home/athsmatic/dev/cb-files/cabanalytics/src/components/PercentBox.js"
 	],
 	"find":
 	{
@@ -966,37 +958,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "docs.sublime-project",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 45,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								45,
-								45
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
