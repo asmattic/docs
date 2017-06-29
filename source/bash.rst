@@ -101,6 +101,10 @@ To count various things in a file or output you can use ``wc``.
 Network
 --------
 
+`nmap cheat sheet <nmapCheatSheet_>`_
+
+.. _nmapCheatSheet: https://highon.coffee/blog/nmap-cheat-sheet/
+
 Setting up network ``ssid`` and ``psk`` can be done in the ``/etc/wpa_supplicant/wpa_supplicant.conf`` file.
 
 You can also use ``sudo ifquery <interface>`` to find where the interface is getting it's configuration. Here is an example response.
@@ -123,6 +127,29 @@ There are a lot of other options like setting priority of networks and naming th
 
 	}
 
+Predictable Network Names
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is the naming system used when you see more complex names for interface devices than ``wlan0``
+
+List ``PCI`` interfaces
+
+``lspci``
+
+Change Mac Address
+~~~~~~~~~~~~~~~~~~~~~~
+
+Bring card down
+
+``ifconfig <interface> down``
+
+Change the address to any octet
+
+``ifconfig <interface> hw ether dd:dd:dd:dd:dd``
+
+Bring it back up
+
+``ifconfig <interface> up``
 
 Restart Network
 ~~~~~~~~~~~~~~~~~
@@ -135,3 +162,32 @@ Turn off
 Turn on
 ``sudo ifup wlan0``
 
+.. _bash-ubuntu-sec:
+
+Ubuntu `(and other distros)`
+-------------------------------
+
+Check the version of distro
+
+``lsb_release -a``
+
+Install Wireshark
+~~~~~~~~~~~~~~~~~~~
+
+#. Update PPA to latest stable version
+
+``sudo add-apt-repository ppa:wireshark-dev/stable``
+
+#. Allow superuser to run Wireshark when it asks during installation.
+
+#. Integrate new changes
+
+``sudo apt-get update``
+
+#. Install
+
+``sudo apt-get install wireshark``
+
+#. If you selected no initially and want to change it later, run
+
+``sudo dpkg-reconfigure wireshark-common``
