@@ -50,6 +50,9 @@ Git is basically doing this
 
 Merging branches
 ------------------
+
+Here is a great `Atlassian article on the multiple types of merging branches <gitBranchMerge_>`_.
+
 .. note::
 	As a general strategy, it is best to merge the more important branches rather than the other way around so that the merge conflicts can be managed with less of a chance of messing up ``master`` or other stable branches.
 
@@ -72,6 +75,8 @@ The ``--no-ff`` creates a commit and timestamp of the merge, as well as who did 
 
 	# delete obsolete branch
 	$ git branch -d <obsolete branch>
+
+.. _gitBranchMerge: https://www.atlassian.com/git/tutorials/git-merge
 
 .. _git-tips-tricks-sec:
 
