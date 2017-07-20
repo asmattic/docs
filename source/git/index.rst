@@ -46,6 +46,32 @@ Git is basically doing this
 
 ``$ git fetch origin other-branch && git merge other-branch``
 
+.. _git-merge-branch-sec:
+
+Merging branches
+------------------
+.. note::
+	As a general strategy, it is best to merge the more important branches rather than the other way around so that the merge conflicts can be managed with less of a chance of messing up ``master`` or other stable branches.
+
+The ``--no-ff`` creates a commit and timestamp of the merge, as well as who did it.
+
+.. code-block:: bash
+	
+	# checkout less important branch
+	$ git checkout <feature branch>
+
+	# merge in the more important branch
+	$ git merge --no-ff <branch>
+
+	# when ready to merge into stable
+	$ git checkout <branch to delete>
+
+	$ git push
+
+	$ git checkout <stable branch>
+
+	# delete obsolete branch
+	$ git branch -d <obsolete branch>
 
 .. _git-tips-tricks-sec:
 
