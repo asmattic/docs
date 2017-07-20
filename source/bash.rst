@@ -98,7 +98,7 @@ To count various things in a file or output you can use ``wc``.
 	# count lines of output
 	$ <command-with-output> | wc -l
 
-.. _bash-network-sec:
+.. _bash-storage-sec:
 
 Storage
 ---------

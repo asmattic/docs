@@ -46,10 +46,21 @@ Git is basically doing this
 
 ``$ git fetch origin other-branch && git merge other-branch``
 
-.. _git-merge-branch-sec:
+.. _git-branch-sec:
 
-Merging branches
+Branches
 ------------------
+
+.. code-block:: bash
+	
+	# To list local branches
+	git branch
+
+	# To list remote and local branches
+	git branch -a
+
+Merging Branches
+~~~~~~~~~~~~~~~~~~
 
 Here is a great `Atlassian article on the multiple types of merging branches <gitBranchMerge_>`_.
 
@@ -77,6 +88,20 @@ The ``--no-ff`` creates a commit and timestamp of the merge, as well as who did 
 	$ git branch -d <obsolete branch>
 
 .. _gitBranchMerge: https://www.atlassian.com/git/tutorials/git-merge
+
+Deleting Branches
+~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+	# delete remote branch
+	$ git push origin --delete <branch_name>
+
+	# delete local branch
+	$ git branch -d <branch_name>
+
+	# more foceful delete
+	$ git branch -D <branch_name>
 
 .. _git-tips-tricks-sec:
 
