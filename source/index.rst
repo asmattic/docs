@@ -63,6 +63,7 @@ Information about development is also available
 
 	editors/index
 	editors/atom
+	editors/vim
 
 .. _hardware-sec:
 
