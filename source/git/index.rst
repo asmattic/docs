@@ -46,6 +46,62 @@ Git is basically doing this
 
 ``$ git fetch origin other-branch && git merge other-branch``
 
+.. _git-branch-sec:
+
+Branches
+------------------
+
+.. code-block:: bash
+	
+	# To list local branches
+	git branch
+
+	# To list remote and local branches
+	git branch -a
+
+Merging Branches
+~~~~~~~~~~~~~~~~~~
+
+Here is a great `Atlassian article on the multiple types of merging branches <gitBranchMerge_>`_.
+
+.. note::
+	As a general strategy, it is best to merge the more important branches rather than the other way around so that the merge conflicts can be managed with less of a chance of messing up ``master`` or other stable branches.
+
+The ``--no-ff`` creates a commit and timestamp of the merge, as well as who did it.
+
+.. code-block:: bash
+	
+	# checkout less important branch
+	$ git checkout <feature branch>
+
+	# merge in the more important branch
+	$ git merge --no-ff <branch>
+
+	# when ready to merge into stable
+	$ git checkout <branch to delete>
+
+	$ git push
+
+	$ git checkout <stable branch>
+
+	# delete obsolete branch
+	$ git branch -d <obsolete branch>
+
+.. _gitBranchMerge: https://www.atlassian.com/git/tutorials/git-merge
+
+Deleting Branches
+~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+	# delete remote branch
+	$ git push origin --delete <branch_name>
+
+	# delete local branch
+	$ git branch -d <branch_name>
+
+	# more foceful delete
+	$ git branch -D <branch_name>
 
 .. _git-tips-tricks-sec:
 

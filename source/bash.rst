@@ -98,6 +98,26 @@ To count various things in a file or output you can use ``wc``.
 	# count lines of output
 	$ <command-with-output> | wc -l
 
+.. _bash-storage-sec:
+
+Storage
+---------
+
+To list memory used by various drives and folders
+
+.. code-block:: bash
+	
+	# list storage
+	$ du -h
+
+Clean up filesystem
+
+.. code-block:: bash
+	
+	$ sudo apt-get clean
+
+.. _bash-network-sec:
+
 Network
 --------
 
@@ -157,10 +177,16 @@ Restart Network
 Using wlan0 as an example.
 
 Turn off
+
 ``sudo ifdown wlan0``
 
 Turn on
+
 ``sudo ifup wlan0``
+
+Restart network manager entirely. Setting an interface to monitor mode will require this to get the wifi back up.
+
+``sudo network-manager restart``
 
 .. _bash-ubuntu-sec:
 
