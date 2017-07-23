@@ -217,3 +217,39 @@ Install Wireshark
 #. If you selected no initially and want to change it later, run
 
 ``sudo dpkg-reconfigure wireshark-common``
+
+Bash Scripting
+===============
+
+Use the backtick `\`` character to output to a variable rather than the console
+
+.. code-block:: bash
+
+	var_one=`cat ls | grep .txt`
+
+Installing an array of packages
+
+.. code-block:: bash
+	
+	package_list=(
+		package1
+		packageN
+	)
+
+	# The @ destructures the array members
+	sudo apt-get -y install ${package_list[@]}
+
+Loops
+~~~~~~~~
+
+.. code-block:: bash
+
+	some_arr=(
+		"thing1"
+		"thingN"
+	)
+
+	for i in "${some_arr[@]}"
+	do
+		echo $i
+	done

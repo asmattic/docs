@@ -64,6 +64,8 @@ Merging Branches
 
 Here is a great `Atlassian article on the multiple types of merging branches <gitBranchMerge_>`_.
 
+Here is the `main article from the GitHub help pages <gitBranchMergeConflicts_>`_
+
 .. note::
 	As a general strategy, it is best to merge the more important branches rather than the other way around so that the merge conflicts can be managed with less of a chance of messing up ``master`` or other stable branches.
 
@@ -77,6 +79,11 @@ The ``--no-ff`` creates a commit and timestamp of the merge, as well as who did 
 	# merge in the more important branch
 	$ git merge --no-ff <branch>
 
+	# if there are conflicts see where they are
+	# see below on how to deal with the conflicts
+	$ git status
+
+	# Go into the files an
 	# when ready to merge into stable
 	$ git checkout <branch to delete>
 
@@ -87,6 +94,9 @@ The ``--no-ff`` creates a commit and timestamp of the merge, as well as who did 
 	# delete obsolete branch
 	$ git branch -d <obsolete branch>
 
+If there are conflicts, you will see ``<<<<<<<<<HEAD`` or ``<<<<<<<<<<<<branch>`` followed by the code in one branch with ``==========`` separating the same code with changes in the other branch with ``>>>>>>>>><other_branch>`` at the end of the changes to look at. Manually edit how you want to merge them, remove the conflict delimiters and commit the completed merge. 
+
+.. _gitBranchMergeConflicts: https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/
 .. _gitBranchMerge: https://www.atlassian.com/git/tutorials/git-merge
 
 Deleting Branches
@@ -109,5 +119,15 @@ Git tips and tricks
 ---------------------
 
 To display the current branch in the terminal follow the steps in `this Howchoo atricle <howchooGitTerminal_>`_.
+
+.. code-block:: bash
+
+	function parse_git_branch () {
+	  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+	}
+	YELLOW="\[\033[0;33m\]"
+	GREEN="\[\033[0;32m\]"
+	NO_COLOR="\[\033[0m\]"
+	PS1="$GREEN\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 
 .. _howchooGitTerminal: https://howchoo.com/g/n2jhnmvjzta/how-to-display-the-current-git-branch-on-the-command-prompt
