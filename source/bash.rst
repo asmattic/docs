@@ -7,6 +7,11 @@ Bash
 Bash Tips
 --------------------------
 
+Close terminal
+~~~~~~~~~~~~~~~~~
+
+``Ctrl`` + ``Shift`` + ``w``
+
 Some bash commands.
 
 .. code-block:: bash
@@ -221,7 +226,7 @@ Install Wireshark
 Bash Scripting
 ===============
 
-Use the backtick `\`` character to output to a variable rather than the console
+Use the backtick ` \` ` character to output to a variable rather than the console
 
 .. code-block:: bash
 
@@ -239,6 +244,32 @@ Installing an array of packages
 	# The @ destructures the array members
 	sudo apt-get -y install ${package_list[@]}
 
+Commands that depend on previous commands completing successfully
+
+.. code-block:: bash
+	
+	# In terminal
+	command1 && command2 && command3
+
+	# In script
+	# Backslash lets bash know these lines are one command
+	command1 \
+	&& command 2 \
+	&& command 3
+
+Run commands regardless of previous commands success or failure
+
+.. code-block:: bash
+
+	# In terminal
+	command1; command2; command3
+
+	# In script
+	# Just put each on it's own line
+	command1
+	command2
+	command3
+
 Loops
 ~~~~~~~~
 
@@ -253,3 +284,4 @@ Loops
 	do
 		echo $i
 	done
+

@@ -4,6 +4,12 @@ Writing Sphinx |rst| |docs|
 .. Variables
 .. include:: ../vars.rst
 
+Basic Structure
+-----------------
+
+.. Basic structure file
+.. literalinclude:: basic-structure.rst
+
 .. _rst-sources:
 
 Sources
