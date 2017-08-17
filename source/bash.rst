@@ -285,3 +285,12 @@ Loops
 		echo $i
 	done
 
+
+Users
+-------
+
+Return user
+
+.. code-block:: bash
+	
+	$ echo $(whoami)

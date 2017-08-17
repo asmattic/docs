@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# agse-docs documentation build configuration file, created by
+# asmattic-docs documentation build configuration file, created by
 # sphinx-quickstart on Mon Mar  7 20:15:52 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -201,7 +201,7 @@ html_last_updated_fmt = '%b %d, %Y'
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'agse-docsdoc'
+htmlhelp_basename = 'asmattic-docsdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -223,7 +223,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'agse-docs.tex', u'agse-docs Documentation',
+    (master_doc, 'asmattic-docs.tex', u'asmattic-docs Documentation',
      u'Matt Oldfield', 'manual'),
 ]
 
@@ -253,7 +253,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'agse-docs', u'agse-docs Documentation',
+    (master_doc, 'asmattic-docs', u'asmattic-docs Documentation',
      [author], 1)
 ]
 
@@ -267,8 +267,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'agse-docs', u'agse-docs Documentation',
-     author, 'agse-docs', 'One line description of project.',
+    (master_doc, 'asmattic-docs', u'asmattic-docs Documentation',
+     author, 'asmattic-docs', 'One line description of project.',
      'Miscellaneous'),
 ]
 

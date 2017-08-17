@@ -4,7 +4,7 @@ Atom Editor by Github
 .. Variables
 .. include:: ../vars.rst
 
-.. _packages-sec:
+.. _atom-packages-sec:
 
 Packages
 ---------

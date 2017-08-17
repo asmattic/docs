@@ -27,6 +27,42 @@ Node Version Manager
 	# List installed node versions
 	$ nvm ls
 
+
+.. _npm-section:
+
+Node Package Manager (``npm``)
+-------------------------------
+
+Update ``npm``
+
+.. code-block:: bash
+
+    $ npm i -g npm
+
+Checking for outdated packages, the latest versions and the minimum required versions.
+
+.. code-block:: bash
+
+    $ npm outdated [-g]
+
+Updating a specific package.
+
+.. code-block:: bash
+
+    $ npm update [-g] <package>
+
+List all installed packages and their dependencies in a tree structure.
+
+.. code-block:: bash
+
+    $ npm ls
+
+Removing a package
+
+.. code-block:: bash
+
+    $ npm remove [-g] <package>   
+
 .. _socket-io-section:
 
 Socket

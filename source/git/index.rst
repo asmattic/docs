@@ -113,6 +113,22 @@ Deleting Branches
 	# more foceful delete
 	$ git branch -D <branch_name>
 
+Resetting Branch to previous commit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+	
+	# Checkout the branch to revert
+	$ git checkout master
+
+	$ git reset --hard <commit>
+
+	$ git push --force origin master
+
+	# Then to prove it (it won't print any diff)
+	$ git diff master ..origin/master
+
+
 .. _git-tips-tricks-sec:
 
 Git tips and tricks

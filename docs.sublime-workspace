@@ -565,6 +565,7 @@
 	},
 	"expanded_folders":
 	[
+		"/home/athsmatic/Desktop/dev/docs",
 		"/home/athsmatic/Desktop/dev/docs/source"
 	],
 	"file_history":
@@ -1020,6 +1021,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"~/Desktop/dev/mckay/cb-files/cabanalytics/cabanalytics.sublime-project"
+			]
 		],
 		"width": 380.0
 	},
