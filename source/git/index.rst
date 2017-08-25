@@ -147,3 +147,21 @@ To display the current branch in the terminal follow the steps in `this Howchoo 
 	PS1="$GREEN\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 
 .. _howchooGitTerminal: https://howchoo.com/g/n2jhnmvjzta/how-to-display-the-current-git-branch-on-the-command-prompt
+
+.. _sec-git-ssh-shell:
+
+Bash scripting with git
+-------------------------
+
+To have the right `ssh` context in `git` you have to feed it the correct place to look for the necessary keys.
+
+Filename: `git-ssh.sh`
+
+.. code-block:: bash
+
+	#!/bin/sh
+	ssh -i "$GIT_SSH_KEY" "$@"
+
+Example using `git-ssh.sh` to use pull and push functions.
+
+.. literalinclude:: git-shell-example.sh

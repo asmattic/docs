@@ -123,6 +123,16 @@ Information about development is also available
 	dke/index
 ..	dke/*
 
+.. _cabanalytics-sec:
+
+.. toctree::
+	:maxdepth: 2
+	:glob:
+	:caption: Cabanalytics
+
+	cabanalytics/index
+	cabanalytics/*
+
 .. _git-sec:
 
 .. toctree::

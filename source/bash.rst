@@ -5,7 +5,7 @@ Bash
 .. include:: vars.rst
 
 Bash Tips
---------------------------
+-----------
 
 Close terminal
 ~~~~~~~~~~~~~~~~~
