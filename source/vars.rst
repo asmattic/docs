@@ -32,3 +32,7 @@
 .. |docs| replace:: documentation
 .. |python| replace:: `Python <pythonSite_>`_
 .. _pythonSite: https://www.python.org/
+
+.. Roles for colors
+.. role:: red
+.. role:: green
