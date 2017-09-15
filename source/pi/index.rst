@@ -44,7 +44,7 @@ Edit `/etc/hosts`
 .. _sec_etc_hostname:
 
 Edit `/etc/hostname`
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
     
@@ -53,7 +53,7 @@ Edit `/etc/hostname`
 .. _sec_etc_machine_info:
 
 Edit `/etc/machine_info`
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. TODO figure out best way to replicate github commit style
 
 :red:`-     PRETTY_HOSTNAME=oldhostname`

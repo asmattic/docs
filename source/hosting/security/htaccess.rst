@@ -21,13 +21,18 @@ Password Protect Website Sections
 	# Only allow a specific user
 	Require exampleUser
 
+
 The ``.htpasswd`` file is just a colon separated list of usernames and passwords with one user per line. The passwords are encrypted with the MD5 hash algorithm.
 
 .. code-block:: bash
+
 	# User test with password test
 	test:$apr1$2FJ7tQH4$NSyHPKo3C0KNtr8kHLMYW0
 
+
 .. note::
+
 	Make sure to keep the ``.htpasswd`` file outside any directories available to the outside world.
+
 
 .. _htaccessPasswordProtect: http://www.javascriptkit.com/howto/htaccess3.shtml

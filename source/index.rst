@@ -131,7 +131,6 @@ Information about development is also available
 	:caption: Cabanalytics
 
 	cabanalytics/index
-	cabanalytics/*
 
 .. _git-sec:
 
