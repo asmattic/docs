@@ -165,3 +165,14 @@ Filename: `git-ssh.sh`
 Example using `git-ssh.sh` to use pull and push functions.
 
 .. literalinclude:: git-shell-example.sh
+
+Ignoring already tracked files and directories
+------------------------------------------------
+
+First add the file or folder to the `.gitignore` file.
+
+After that is done they can be removed from the git index by adding the `--cached` flag to `git rm`. 
+.. code-block:: bash
+	
+	# Add -r for recursive removal
+	$ git rm -r --cached <path-to-folder-or-file>
