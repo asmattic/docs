@@ -202,6 +202,10 @@ Check the version of distro
 
 ``lsb_release -a``
 
+For `Ubuntu 17.04` the mouse speed doesn't respond to the normal settings interface `but here is the best fix <mouse_speed_ubuntu_>`_
+
+.. _mouse_speed_ubuntu: https://askubuntu.com/questions/205676/how-to-change-mouse-speed-sensitivity
+
 Install Wireshark
 ~~~~~~~~~~~~~~~~~~~
 
@@ -270,8 +274,9 @@ Run commands regardless of previous commands success or failure
 	command2
 	command3
 
+
 Loops
-~~~~~~~~
+-------
 
 .. code-block:: bash
 
