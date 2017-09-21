@@ -6,21 +6,21 @@
 
 Information about development is also available
 
-* :ref:`dev-docs-sec`
-* :ref:`bash-sec`
-* :ref:`pi-sec`
-* :ref:`nodejs-sec`
-* :ref:`editors-sec`
-* :ref:`hardware-sec`
-* :ref:`hosting-sec`
-* :ref:`python-sec`
-* :ref:`android-sec`
-* :ref:`api-sec`
+* :ref:`dev_docs_sec`
+* :ref:`bash_sec`
+* :ref:`pi_sec`
+* :ref:`nodejs_sec`
+* :ref:`editors_sec`
+* :ref:`hardware_sec`
+* :ref:`hosting_sec`
+* :ref:`python_sec`
+* :ref:`android_sec`
+* :ref:`api_sec`
 
 .. note::
 	Things between carets ``<>`` are meant to be replaced by the user. For example, ``sudo ifdown <interface>`` could be ``sudo ifdown wlan0`` depending on the specific system and device interface.
 
-.. _dev-docs-sec:
+.. _dev_docs_sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -29,7 +29,7 @@ Information about development is also available
 	dev-docs
 	README.rst
 
-.. _bash-sec:
+.. _bash_sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -37,7 +37,7 @@ Information about development is also available
 
 	bash
 
-.. _pi-sec:
+.. _pi_sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -46,7 +46,7 @@ Information about development is also available
 	pi/index
 	pi/networks
 
-.. _nodejs-sec:
+.. _nodejs_sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -54,7 +54,7 @@ Information about development is also available
 
 	nodejs/index
 
-.. _editors-sec:
+.. _editors_sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -65,7 +65,7 @@ Information about development is also available
 	editors/atom
 	editors/vim
 
-.. _hardware-sec:
+.. _hardware_sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -73,7 +73,7 @@ Information about development is also available
 
 	hardware/laptop
 
-.. _hosting-sec:
+.. _hosting_sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -84,7 +84,7 @@ Information about development is also available
 	hosting/security/*
 	hosting/optimization/*
 
-.. _python-sec:
+.. _python_sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -93,7 +93,7 @@ Information about development is also available
 
 	python/*
 
-.. _android-sec:
+.. _android_sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -102,7 +102,7 @@ Information about development is also available
 
 	android/*
 
-.. _api-sec:
+.. _api_sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -113,7 +113,7 @@ Information about development is also available
 ..	api/create/*
 ..	api/list/*
 
-.. _dke-sec:
+.. _dke_sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -123,7 +123,7 @@ Information about development is also available
 	dke/index
 ..	dke/*
 
-.. _cabanalytics-sec:
+.. _cabanalytics_sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -132,7 +132,7 @@ Information about development is also available
 
 	cabanalytics/index
 
-.. _git-sec:
+.. _git_sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -141,7 +141,7 @@ Information about development is also available
 
 	git/index
 
-.. _reactjs-sec:
+.. _reactjs_sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -150,7 +150,7 @@ Information about development is also available
 
 	reactjs/index
 
-.. _wordpress-sec:
+.. _wordpress_sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -159,7 +159,7 @@ Information about development is also available
 
 	wordpress/index
 
-.. _web-design-sec:
+.. _web_design_sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -168,7 +168,16 @@ Information about development is also available
 
 	web-design/index
 
-.. _writing-docs-sec:
+.. _dev_tools_sec:
+
+.. toctree::
+	:maxdepth: 2
+	:glob:
+	:caption: Dev Tools
+
+	dev-tools/chrome
+
+.. _writing_docs_sec:
 
 .. toctree::
 	:maxdepth: 2
