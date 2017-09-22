@@ -4,6 +4,15 @@ Writing Sphinx |rst| |docs|
 .. Variables
 .. include:: ../vars.rst
 
+Installing necessary packages to build Sphinx
+-----------------------------------------------
+
+.. code-block:: bash
+	
+	sudo apt-get update \
+	&& sudo apt-get -y install texlive-latex-base latexmk \
+	&& sudo apt-get update
+
 Basic Structure
 -----------------
 

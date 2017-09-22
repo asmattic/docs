@@ -24,3 +24,7 @@
 .. Roles for colors
 .. role:: red
 .. role:: green
+
+.. HowChoo link
+.. |HowChoo| replace:: HowChoo
+.. _HowChoo: https://howchoo.com/

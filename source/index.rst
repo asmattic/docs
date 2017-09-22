@@ -62,6 +62,7 @@ Information about development is also available
 	:caption: Editors / IDE's
 
 	editors/index
+	editors/sublime
 	editors/atom
 	editors/vim
 
@@ -176,6 +177,24 @@ Information about development is also available
 	:caption: Dev Tools
 
 	dev-tools/chrome
+
+.. _electron_sec:
+
+.. toctree::
+	:maxdepth: 2
+	:glob:
+	:caption: Electron
+
+	electron/*
+
+.. _docker_sec:
+
+.. toctree::
+	:maxdepth: 2
+	:glob:
+	:caption: Docker
+
+	docker/*
 
 .. _writing_docs_sec:
 
