@@ -46,6 +46,9 @@ Many of the deployment tips and code snippets below are taken from the following
 
 Before going into more detail on the differences on each distro, here is a summary of some of the most obvious things to account for in each.
 
+Icons
+~~~~~~
+
 .. csv-table::
 	:header: "Item", "Linux (Ubuntu)", "Windows", "Mac OS"
 
@@ -61,6 +64,36 @@ To create the ``.ico`` and ``.icns`` files from the original ``.png`` (use 1024 
 
 		``png2icns icon.icns icon.png``
 
+Automatically select proper icon for the target distro.
+
+.. note::
+	Make sure to change the version, app name, etc
+
+.. code-block:: bash
+
+	$ electron-packager . MyApp --icon=img/icon --platform=all --arch=all --version=0.36.0 --out=../dist/ --asar
+
+Startup Background Color
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Set background color so that it doesn't seem like a browser on startup even though it is.
+
+.. code-block:: javascript
+
+	mainWindow = new BrowserWindow({
+		title: 'ElectronApp',
+		backgroundColor: '#002b36'
+	};
+
+Hide Application Until Page Loaded
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: javascript
+
+	var mainWindow = new BrowserWindow({
+		title: 'ElectronApp',
+		show: false,
+	};
 
 Linux (Ubuntu)
 ~~~~~~~~~~~~~~~~
@@ -81,3 +114,7 @@ Mac
 Copy and paste is not turned on by default
 
 .. literalinclude:: ./mac-copy-paste.js
+
+.. _electron_react_boilerplate_sec:
+
+Electron React Boilerplate

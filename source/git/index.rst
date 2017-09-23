@@ -128,8 +128,14 @@ Resetting Branch to previous commit
 	# Then to prove it (it won't print any diff)
 	$ git diff master ..origin/master
 
+.. _git_forking_sec:
 
-.. _git-tips-tricks-sec:
+Forking
+--------
+
+Only ``fork`` if you intend on contributing to the code base.
+
+.. _git_tips_tricks_sec:
 
 Git tips and tricks
 ---------------------

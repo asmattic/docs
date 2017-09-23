@@ -20,37 +20,37 @@ Rename hostname
 
 All files to edit:
 
-    * `/etc/hosts <sec_etc_hosts_>`_
-    * `/etc/hostname`
-    * `/etc/init.d/hostname.sh`
-    * `/etc/hostapd/hostapd.conf`
-    * `/etc/machine-info <sec_etc_machine_info_>`_
-    * `/boot/hostnames`
-    * `/etc/machine-info`
+	* `/etc/hosts <etc_hosts_sec_>`_
+	* `/etc/hostname`
+	* `/etc/init.d/hostname.sh`
+	* `/etc/hostapd/hostapd.conf`
+	* `/etc/machine-info <etc_machine_info_sec_>`_
+	* `/boot/hostnames`
+	* `/etc/machine-info`
 
-.. _sec_etc_hosts:
+.. _etc_hosts_sec:
 
 Edit `/etc/hosts`
 ~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
     
-    # Change this line
-    127.0.1.1 raspberrypi
+	# Change this line
+	127.0.1.1 raspberrypi
 
-    # To this line
-    127.0.1.1 <newhostname>
+	# To this line
+	127.0.1.1 <newhostname>
 
-.. _sec_etc_hostname:
+.. _etc_hostname_sec:
 
 Edit `/etc/hostname`
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
     
-    # Just change the name
+	# Just change the name
 
-.. _sec_etc_machine_info:
+.. _etc_machine_info_sec:
 
 Edit `/etc/machine_info`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -62,5 +62,5 @@ Edit `/etc/machine_info`
 
 .. code-block:: bash
     
-    :red:`- PRETTY_HOSTNAME=oldhostname`
-    :green:`+ PRETTY_HOSTNAME=newhostname`
+	:red:`- PRETTY_HOSTNAME=oldhostname`
+	:green:`+ PRETTY_HOSTNAME=newhostname`
