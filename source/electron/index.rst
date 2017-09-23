@@ -22,9 +22,11 @@ Deploying
 
 Many of the deployment tips and code snippets below are taken from the following list of articles.
 
-* `Tips for building cross platrofm electron apps <distro_tips_>`_
+* `Tips for building cross platrofm Electron apps <distro_tips_>`_
+* `Publish a release of an Electron app <publish_electron_release_>`_
 
 .. _distro_tips: https://blog.avocode.com/blog/4-must-know-tips-for-building-cross-platform-electron-apps
+.. _publish_electron_release: https://ourcodeworld.com/articles/read/262/how-to-build-publish-a-release-distribution-of-an-electron-application-with-the-cli
 
 Before going into more detail on the differences on each distro, here is a summary of some of the most obvious things to account for in each.
 
