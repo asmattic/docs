@@ -10,4 +10,4 @@ Here are a few links that might be useful in getting these docs to be able to co
 
 	* `Recommonmark Docker project on Github <https://github.com/chezou/docker-sphinx-recommonmark_>`_
 	* `Main Docker Sphinx package <https://hub.docker.com/r/plaindocs/docker-sphinx/_>`_
-	* All the |HowChoo|_ `Articles on Docker <https://howchoo.com/search?q=docker_>`_
+	* All the |howchoo|_ `Articles on Docker <https://howchoo.com/search?q=docker_>`_

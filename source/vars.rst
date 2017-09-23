@@ -26,5 +26,16 @@
 .. role:: green
 
 .. HowChoo link
-.. |HowChoo| replace:: HowChoo
-.. _HowChoo: https://howchoo.com/
+.. |howchoo| replace:: HowChoo
+.. _howchoo: https://howchoo.com/
+
+.. create-react-app
+.. |cra| replace:: create-react-app
+.. _cra: https://github.com/facebookincubator/create-react-app/
+
+.. Electron Github Project
+.. |electron| replace:: Electron
+.. _electron: https://electron.atom.io/
+
+.. |electronDocs| replace:: Electron Docs
+.. _electronDocs: https://electron.atom.io/docs/

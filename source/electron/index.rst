@@ -4,6 +4,22 @@ Electron
 .. Variables
 .. include:: ../vars.rst
 
+Essential Electron
+--------------------
+
+	* `Essential Electron <http://jlord.us/essential-electron/_>`_
+	* `Electron with React Router v4 <https://github.com/mrpatiwi/electron-react-desktop-template_>`_
+	* |electronDocs|_
+	* `Electron React boilerplate with Flow Webpack React Transform Redux <https://www.npmjs.com/package/electron-react-boilerplate_>`_
+
+
+Using with create-react-app
+-----------------------------
+
+Some pull requests on the main |cra|_ GitHub repo for integration with |electron|_.
+
+
+
 Basic App Usage
 -----------------
 
