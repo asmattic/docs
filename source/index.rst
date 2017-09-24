@@ -6,7 +6,7 @@
 
 Information about development is also available
 
-* :ref:`dev_docs-sec`
+* :ref:`dev-docs-sec`
 * :ref:`bash-sec`
 * :ref:`pi-sec`
 * :ref:`nodejs-sec`
@@ -20,7 +20,7 @@ Information about development is also available
 .. note::
 	Things between carets ``<>`` are meant to be replaced by the user. For example, ``sudo ifdown <interface>`` could be ``sudo ifdown wlan0`` depending on the specific system and device interface.
 
-.. _dev_docs-sec:
+.. _dev-docs-sec:
 
 .. toctree::
 	:maxdepth: 2
@@ -196,8 +196,6 @@ Information about development is also available
 
 	docker/*
 
-.. _writing_docs-sec:
-
 .. _visualization-sec:
 
 .. toctree::
@@ -207,7 +205,7 @@ Information about development is also available
 
 	visualization/*
 
-.. _writing_docs-sec:
+.. _writing-docs-sec:
 
 .. toctree::
 	:maxdepth: 2

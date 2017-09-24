@@ -3,6 +3,7 @@ Visualization
 
 .. Variables
 .. include:: ../vars.rst
+
 Network Visualization
 -----------------------------------
 
@@ -22,3 +23,12 @@ Once in a local Github repository folder just run
 
 .. _gourse: http://gource.io/
 .. _gourse-multiple-repos: https://github.com/acaudwell/Gource/wiki/Visualizing-Multiple-Repositories
+
+.. _visualization-visme-sec:
+
+Online Manual Input Graphs ( `Visme <visme_>`_ )
+-------------------------------------------------
+
+`Visme <visme_>`_ is a paid for tool that lets you type in or import a ``.csv`` to a spreadsheet interface and outputs a graph from various templates like funnels, bar, col, etc. and has a more infographic feel to it with optional animations. This type of implementation would be useful to model a few **React Components** after for custom data like internal company data.
+
+.. _visme: https://www.visme.co/graph-maker

@@ -17,16 +17,25 @@ Some resources.
 .. _nodejsSite: https://nodejs.org/en/
 .. _nvm: https://github.com/creationix/nvm/blob/master/README.md
 
-.. _nvm-section:
+.. _nvm_sec:
 
 Node Version Manager
 ---------------------
+
+Listing
+~~~~~~~~~
 
 .. code-block:: bash
 
 	# List installed node versions
 	$ nvm ls
 
+If you want to see what versions are available to install:
+
+.. code-block:: bash
+
+	# List installed node versions
+	$ nvm ls-remote
 
 .. _npm-section:
 
