@@ -24,6 +24,7 @@ Information about development is also available
 
 .. toctree::
 	:maxdepth: 2
+	:glob:
 	:caption: Developer
 
 	dev-docs
@@ -33,14 +34,17 @@ Information about development is also available
 
 .. toctree::
 	:maxdepth: 2
+	:glob:
 	:caption: Bash
 
-	bash
+	bash/index
+	bash/*
 
 .. _pi-sec:
 
 .. toctree::
 	:maxdepth: 2
+	:glob:
 	:caption: Pi
 
 	pi/index
@@ -50,6 +54,7 @@ Information about development is also available
 
 .. toctree::
 	:maxdepth: 2
+	:glob:
 	:caption: Node JS
 
 	nodejs/index
@@ -70,6 +75,7 @@ Information about development is also available
 
 .. toctree::
 	:maxdepth: 2
+	:glob:
 	:caption: Hardware
 
 	hardware/laptop

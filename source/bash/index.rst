@@ -46,7 +46,7 @@ File/Folder Permissions
 Permissions for files and folders are grouped in three different sections; `user`, `group` and `other`. To set permissions for each, use the ``chmod`` or \"change mode\" command.
 
 .. code-block:: bash
-	
+
 	# add -R to modify recursively
 	$ sudo chmod u=rwx,g=rx,o=r <myfile>
 
@@ -78,8 +78,8 @@ Tar `(Tape Archiver)`
 	"``-C``", "Specify directory to extract to"
 
 .. code-block:: bash
-	
-	# zip 
+
+	# zip
 	$ tar -czvf <archive-to-create.tar.gz> <folder-to-compress> --exclude="*.pdf"
 
 	# unzip
@@ -99,7 +99,7 @@ To count various things in a file or output you can use ``wc``.
 	"``-w``", "words"
 
 .. code-block:: bash
-	
+
 	# count lines of output
 	$ <command-with-output> | wc -l
 
@@ -111,14 +111,14 @@ Storage
 To list memory used by various drives and folders
 
 .. code-block:: bash
-	
+
 	# list storage
 	$ du -h
 
 Clean up filesystem
 
 .. code-block:: bash
-	
+
 	$ sudo apt-get clean
 
 .. _bash-network-sec:
@@ -135,7 +135,7 @@ Setting up network ``ssid`` and ``psk`` can be done in the ``/etc/wpa_supplicant
 You can also use ``sudo ifquery <interface>`` to find where the interface is getting it's configuration. Here is an example response.
 
 .. code-block:: bash
-	
+
 	wpa-conf: /etc/wpa_supplicant/wpa_supplicant.conf
 
 
@@ -239,7 +239,7 @@ Use the backtick ` \` ` character to output to a variable rather than the consol
 Installing an array of packages
 
 .. code-block:: bash
-	
+
 	package_list=(
 		package1
 		packageN
@@ -251,7 +251,7 @@ Installing an array of packages
 Commands that depend on previous commands completing successfully
 
 .. code-block:: bash
-	
+
 	# In terminal
 	command1 && command2 && command3
 
@@ -297,5 +297,5 @@ Users
 Return user
 
 .. code-block:: bash
-	
+
 	$ echo $(whoami)
