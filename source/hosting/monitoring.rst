@@ -2,7 +2,7 @@ Monitoring, Logging & Debugging
 ================================
 
 .. Variables
-.. include:: ../vars
+.. include:: ../vars.rst
 
 
 Sentry

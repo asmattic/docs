@@ -44,6 +44,15 @@ Many of the deployment tips and code snippets below are taken from the following
 .. _distro_tips: https://blog.avocode.com/blog/4-must-know-tips-for-building-cross-platform-electron-apps
 .. _publish_electron_release: https://ourcodeworld.com/articles/read/262/how-to-build-publish-a-release-distribution-of-an-electron-application-with-the-cli
 
+Code sign your Electron application with electron-builder
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* `Code signing with electron builder <code-signing-electron-builder_>`_
+* `Code signing Egghead.io tutorial <code-signing-egghead_>`_
+
+.. _code-signing-electron-builder: https://www.electron.build/code-signing
+.. _code-signing-egghead: https://egghead.io/lessons/javascript-code-sign-your-electron-application-with-electron-builder
+
 Before going into more detail on the differences on each distro, here is a summary of some of the most obvious things to account for in each.
 
 Icons
