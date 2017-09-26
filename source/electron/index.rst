@@ -9,7 +9,7 @@ Essential Electron
 
 	* `Essential Electron <http://jlord.us/essential-electron/_>`_
 	* `Electron with React Router v4 <https://github.com/mrpatiwi/electron-react-desktop-template_>`_
-	* |electronDocs|_
+	* `Electron Docs <https://electron.atom.io/docs>`__
 	* `Electron React boilerplate with Flow Webpack React Transform Redux <https://www.npmjs.com/package/electron-react-boilerplate_>`_
 
 

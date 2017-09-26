@@ -37,9 +37,10 @@
 .. |electron| replace:: Electron
 .. _electron: https://electron.atom.io/
 
-.. |electronDocs| replace:: Electron Docs
-.. _electronDocs: https://electron.atom.io/docs/
-
 .. General Links
 .. |egghead| replace:: Egghead.io
 .. _egghead: https://egghead.io
+
+.. Reactjs
+.. |react| replace:: Reactjs
+.. _react: https://facebook.github.io/react/

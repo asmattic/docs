@@ -2,7 +2,7 @@ Bash
 ==================
 
 .. Variables
-.. include:: vars.rst
+.. include:: ../vars.rst
 
 Bash Tips
 -----------
