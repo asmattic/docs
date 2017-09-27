@@ -2,7 +2,7 @@ Docker
 ========
 
 .. Variables
-.. include:: ../vars.rst
+.. include:: ../../vars.rst
 
 So this will start as a reliable way to build Sphinx docs across devices with well formatted LaTeX and epub formats and as it grows, a way to containerize most projects.
 

@@ -18,6 +18,7 @@
 .. Common vars
 .. |rst| replace:: reStructured Text
 .. |docs| replace:: documentation
+
 .. |python| replace:: `Python <pythonSite_>`_
 .. _pythonSite: https://www.python.org/
 

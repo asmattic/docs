@@ -183,6 +183,7 @@ Information about development is also available
 	:caption: Dev Tools
 
 	dev-tools/chrome
+	dev-tools/docker/*
 
 .. _electron-sec:
 
@@ -191,16 +192,8 @@ Information about development is also available
 	:glob:
 	:caption: Electron
 
-	electron/*
-
-.. _docker-sec:
-
-.. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Docker
-
-	docker/*
+	electronjs/index
+..	electronjs/*
 
 .. _visualization-sec:
 
