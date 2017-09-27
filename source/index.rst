@@ -7,7 +7,7 @@
 Information about development is also available
 
 * :ref:`dev-docs-sec`
-* :ref:`bash-sec`
+* :ref:`linux-sec`
 * :ref:`pi-sec`
 * :ref:`nodejs-sec`
 * :ref:`editors-sec`
@@ -30,15 +30,17 @@ Information about development is also available
 	dev-docs
 	README.rst
 
-.. _bash-sec:
+.. _linux-sec:
 
 .. toctree::
-	:maxdepth: 2
+	:maxdepth: 3
 	:glob:
-	:caption: Bash
+	:caption: Linux
 
-	bash/index
-	bash/*
+	linux/index
+	linux/*
+	linux/bash/index
+..	linux/bash/*
 
 .. _pi-sec:
 

@@ -45,3 +45,7 @@
 .. Reactjs
 .. |react| replace:: Reactjs
 .. _react: https://facebook.github.io/react/
+
+.. CLI
+.. |cli| replace:: CLI
+.. _cli: https://en.wikipedia.org/wiki/Command-line_interface
