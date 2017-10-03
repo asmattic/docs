@@ -22,6 +22,12 @@ Some resources.
 Node Version Manager
 ---------------------
 
+Reset permissions to current user rather than sudo
+
+.. code-block:: bash
+
+	sudo chown -R $(whoami) ~/.npm
+
 Listing
 ~~~~~~~~~
 
@@ -41,6 +47,16 @@ If you want to see what versions are available to install:
 
 Node Package Manager (``npm``)
 -------------------------------
+
+Reset permissions to current user rather than sudo
+
+.. code-block:: bash
+
+	npm config get prefix
+
+	# if not just in /usr
+	sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+
 
 Update ``npm``
 
@@ -70,7 +86,7 @@ Removing a package
 
 .. code-block:: bash
 
-    $ npm remove [-g] <package>   
+    $ npm remove [-g] <package>
 
 .. _socket-io-section:
 
