@@ -20,15 +20,15 @@ Rename hostname
 
 All files to edit:
 
-	* `/etc/hosts <etc_hosts_sec_>`_
-	* `/etc/hostname`
+	* `/etc/hosts <etc-hosts-sec_>`_
+	* `/etc/hostname <etc-hostname-sec_>`_
 	* `/etc/init.d/hostname.sh`
 	* `/etc/hostapd/hostapd.conf`
-	* `/etc/machine-info <etc_machine_info_sec_>`_
+	* `/etc/machine-info <etc-machine-info-sec_>`_
 	* `/boot/hostnames`
 	* `/etc/machine-info`
 
-.. _etc_hosts_sec:
+.. _etc-hosts-sec:
 
 Edit `/etc/hosts`
 ~~~~~~~~~~~~~~~~~~~
@@ -41,7 +41,7 @@ Edit `/etc/hosts`
 	# To this line
 	127.0.1.1 <newhostname>
 
-.. _etc_hostname_sec:
+.. _etc-hostname-sec:
 
 Edit `/etc/hostname`
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -50,7 +50,7 @@ Edit `/etc/hostname`
     
 	# Just change the name
 
-.. _etc_machine_info_sec:
+.. _etc-machine-info-sec:
 
 Edit `/etc/machine_info`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
