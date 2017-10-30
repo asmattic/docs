@@ -5,7 +5,15 @@ Python
 .. include:: ../vars.rst
 
 * `Python Tips Sphinx styled book <http://book.pythontips.com/en/latest/>`_
+* `Python ActiveState recipies <https://github.com/ActiveState/code/tree/master/recipes/Python>`_
+* `Real Python site and course <https://realpython.com/blog/python/inner-functions-what-are-they-good-for/>`_
+State Management
+-----------------
 
+Redux-like state management is done with a Finite State Machine (FSM) in which
+
+* `Python Table Driven State Machine <https://python-3-patterns-idioms-test.readthedocs.io/en/latest/StateMachine.html>`_
+*
 \*args and \*\*kwargs
 -----------------------
 
