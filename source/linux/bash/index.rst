@@ -4,13 +4,36 @@ Bash
 .. Variables
 .. include:: ../../vars.rst
 
-Bash Tips
------------
+
+Terminal
+---------
+
+General tips and ``~/.bashrc`` functions and settings to make the Linux experience better.
+
+Name terminal tabs
+~~~~~~~~~~~~~~~~~~~
+
+I found this workaround in `this Stack Exchange answer <https://unix.stackexchange.com/a/186167/166226>`_.
+
+Insert the below function into ``~/.bashrc``. Open a new terminal tab with ``Ctrl`` + ``Shift`` + ``t`` and type ``set-title <some terminal title>``.
+
+.. code-block:: bash
+
+	function set-title() {
+		if [[ -z "$ORIG" ]]; then
+			ORIG=$PS1
+		fi
+		TITLE="\[\e]2;$*\a\]"
+		PS1=${ORIG}${TITLE}
+	}
 
 Close terminal
 ~~~~~~~~~~~~~~~~~
 
 ``Ctrl`` + ``Shift`` + ``w``
+
+Bash Tips
+-----------
 
 Some bash commands.
 

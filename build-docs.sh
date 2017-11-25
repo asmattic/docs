@@ -11,8 +11,8 @@ cd ../../
 
 if [ -f "${pdf_file}" ];
 then
-    rm "${pdf_file}"
+   rm "${pdf_file}"
 fi
 
-# Copy file to main dir    
+# Copy file to main dir
 cp "build/latex/${pdf_file}" ./
