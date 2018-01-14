@@ -313,6 +313,17 @@ Loops
 		echo $i
 	done
 
+Put Multiline Output into Variable
+------------------------------------
+.. _variable_output_bash: https://stackoverflow.com/questions/4651437/how-to-set-a-variable-to-the-output-from-a-command-in-bash
+
+`Variable output in bash <variable_output_bash_>`_
+
+.. code-block:: bash
+
+	#!/bin/sh
+
+	SOME_VAR="$(ls -a)"
 
 Users
 -------
