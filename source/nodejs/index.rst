@@ -28,6 +28,11 @@ Reset permissions to current user rather than sudo
 
 	sudo chown -R $(whoami) ~/.npm
 
+.. code-block:: bash
+
+	find . -name "node_modules" -exec rm -rf '{}' +
+
+
 Listing
 ~~~~~~~~~
 
