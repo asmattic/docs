@@ -260,3 +260,12 @@ Sphinx
 
    # Install sphinx_rtd_theme
    $ sudo pip install sphinx_rtd_theme
+
+Gatsby Static Site Generator
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+`React based static site generator <https://www.gatsbyjs.org/docs/>`_ with a robust plugin system and a GraphQL data layer.
+
+.. code-block:: bash
+
+   $ npm install --global gatsby-cli
