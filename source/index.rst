@@ -186,7 +186,6 @@ Information about development is also available
 
 	dev-tools/chrome
 	dev-tools/docker/*
-	dev-tools/*
 
 .. _electron-sec:
 

@@ -7,7 +7,7 @@ Python
 * `Python Tips Sphinx styled book <http://book.pythontips.com/en/latest/>`_
 * `Python ActiveState recipies <https://github.com/ActiveState/code/tree/master/recipes/Python>`_
 * `Real Python site and course <https://realpython.com/blog/python/inner-functions-what-are-they-good-for/>`_
-*
+
 State Management
 -----------------
 
