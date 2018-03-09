@@ -269,3 +269,14 @@ Gatsby Static Site Generator
 .. code-block:: bash
 
    $ npm install --global gatsby-cli
+
+Ubuntu Software Center Installs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   1. `VLC <https://www.videolan.org/vlc/download-ubuntu.html>`_
+   2. `Slack <https://slack.com/downloads/linux>`_
+
+Kerbal Space Program (KSP)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Using the Steam gaming platform download KSP which works on Ubuntu 16.04.4
