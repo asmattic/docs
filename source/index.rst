@@ -70,6 +70,7 @@ Information about development is also available
 
 	editors/index
 	editors/sublime
+	editors/visual-studio-code
 	editors/atom
 	editors/vim
 
