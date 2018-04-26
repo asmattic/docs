@@ -7,5 +7,7 @@ JavaScript Concepts
 Closures, Scoping
 --------------------
 
+From `http://javascriptissexy.com/understand-javascript-closures-with-ease/ <http://javascriptissexy.com/understand-javascript-closures-with-ease/>`_
+
 .. note::
-   `setTimeout` creates a closure so if it's in a loop and isn't passed the value to be used.
+   A closure is an inner function that has access to the outer (enclosing) function's variables—scope chain. The closure has three scope chains: it has access to its own scope (variables defined between its curly brackets), it has access to the outer function's variables, and it has access to the global variables.

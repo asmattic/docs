@@ -19,13 +19,13 @@ Insert the below function into ``~/.bashrc``. Open a new terminal tab with ``Ctr
 
 .. code-block:: bash
 
-	function set-title() {
-		if [[ -z "$ORIG" ]]; then
-			ORIG=$PS1
-		fi
-		TITLE="\[\e]2;$*\a\]"
-		PS1=${ORIG}${TITLE}
-	}
+   function set-title() {
+      if [[ -z "$ORIG" ]]; then
+         ORIG=$PS1
+      fi
+      TITLE="\[\e]2;$*\a\]"
+      PS1=${ORIG}${TITLE}
+   }
 
 Close terminal
 ~~~~~~~~~~~~~~~~~
@@ -39,29 +39,29 @@ Some bash commands.
 
 .. code-block:: bash
 
-	# Printing out computer hardware to .html file
-	$ sudo lshw -html
+   # Printing out computer hardware to .html file
+   $ sudo lshw -html
 
-	# Print PCI hardware
-	$ lspci -nn
+   # Print PCI hardware
+   $ lspci -nn
 
-	# USB hardware
-	$ lsusb
+   # USB hardware
+   $ lsusb
 
-	# Turn off wifi Power management
-	$ sudo iwconfig <interface name (e.g. wlan0)> power off
+   # Turn off wifi Power management
+   $ sudo iwconfig <interface name (e.g. wlan0)> power off
 
-	# List modules
-	$ lsmod
+   # List modules
+   $ lsmod
 
-	# Kill radio signals ( check on this)
-	$ rfkill
+   # Kill radio signals ( check on this)
+   $ rfkill
 
-	# List channels available for device
-	$ iwlist chan
+   # List channels available for device
+   $ iwlist chan
 
-	# Scan channels
-	$ iwlist scan
+   # Scan channels
+   $ iwlist scan
 
 File/Folder Permissions
 -------------------------------
@@ -70,16 +70,16 @@ Permissions for files and folders are grouped in three different sections; `user
 
 .. code-block:: bash
 
-	# add -R to modify recursively
-	$ sudo chmod u=rwx,g=rx,o=r <myfile>
+   # add -R to modify recursively
+   $ sudo chmod u=rwx,g=rx,o=r <myfile>
 
 .. csv-table:: Chmod digits
-	:header: "Digit", "Permission"
+   :header: "Digit", "Permission"
 
-	4, "read"
-	2, "write"
-	1, "execute"
-	0, "no permission"
+   4, "read"
+   2, "write"
+   1, "execute"
+   0, "no permission"
 
 .. _bash-compression-sec:
 
@@ -90,23 +90,23 @@ Tar `(Tape Archiver)`
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. csv-table:: Compression Options
-	:header: "Option", "Description"
+   :header: "Option", "Description"
 
-	"``-c``", "Create archive"
-	"``-z``", "Gzip archive"
-	"``-v``", "Display progress (verbose)"
-	"``-f``", "Specify filename"
-	"``--exclude``", "Specify files, folders or patterns to not extract"
-	"``-x``", "Extract archive"
-	"``-C``", "Specify directory to extract to"
+   "``-c``", "Create archive"
+   "``-z``", "Gzip archive"
+   "``-v``", "Display progress (verbose)"
+   "``-f``", "Specify filename"
+   "``--exclude``", "Specify files, folders or patterns to not extract"
+   "``-x``", "Extract archive"
+   "``-C``", "Specify directory to extract to"
 
 .. code-block:: bash
 
-	# zip
-	$ tar -czvf <archive-to-create.tar.gz> <folder-to-compress> --exclude="*.pdf"
+   # zip
+   $ tar -czvf <archive-to-create.tar.gz> <folder-to-compress> --exclude="*.pdf"
 
-	# unzip
-	$ tar -xzvf <file-to-extract.tar.gz> -C <folder-to-extract-to>
+   # unzip
+   $ tar -xzvf <file-to-extract.tar.gz> -C <folder-to-extract-to>
 
 Count Output
 --------------
@@ -114,17 +114,17 @@ Count Output
 To count various things in a file or output you can use ``wc``.
 
 .. csv-table:: Compression Options
-	:header: "Option", "Thing to count"
+   :header: "Option", "Thing to count"
 
-	"``-c``", "bytes"
-	"``-m``", "chars"
-	"``-l``", "lines"
-	"``-w``", "words"
+   "``-c``", "bytes"
+   "``-m``", "chars"
+   "``-l``", "lines"
+   "``-w``", "words"
 
 .. code-block:: bash
 
-	# count lines of output
-	$ <command-with-output> | wc -l
+   # count lines of output
+   $ <command-with-output> | wc -l
 
 .. _bash-storage-sec:
 
@@ -135,14 +135,14 @@ To list memory used by various drives and folders
 
 .. code-block:: bash
 
-	# list storage
-	$ du -h
+   # list storage
+   $ du -h
 
 Clean up filesystem
 
 .. code-block:: bash
 
-	$ sudo apt-get clean
+   $ sudo apt-get clean
 
 .. _bash-network-sec:
 
@@ -159,7 +159,7 @@ You can also use ``sudo ifquery <interface>`` to find where the interface is get
 
 .. code-block:: bash
 
-	wpa-conf: /etc/wpa_supplicant/wpa_supplicant.conf
+   wpa-conf: /etc/wpa_supplicant/wpa_supplicant.conf
 
 
 There are a lot of other options like setting priority of networks and naming that can be found `on the wiki here <wpaSupplicant_>`_.
@@ -168,12 +168,12 @@ There are a lot of other options like setting priority of networks and naming th
 
 .. code-block:: bash
 
-	# Mandatory
-	network={
-		ssid="NETWORK_SSID"
-		psk="PASSWORD"
+   # Mandatory
+   network={
+      ssid="NETWORK_SSID"
+      psk="PASSWORD"
 
-	}
+   }
 
 Predictable Network Names
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -257,45 +257,45 @@ Use the backtick ` \` ` character to output to a variable rather than the consol
 
 .. code-block:: bash
 
-	var_one=`cat ls | grep .txt`
+   var_one=`cat ls | grep .txt`
 
 Installing an array of packages
 
 .. code-block:: bash
 
-	package_list=(
-		package1
-		packageN
-	)
+   package_list=(
+      package1
+      packageN
+   )
 
-	# The @ destructures the array members
-	sudo apt-get -y install ${package_list[@]}
+   # The @ destructures the array members
+   sudo apt-get -y install ${package_list[@]}
 
 Commands that depend on previous commands completing successfully
 
 .. code-block:: bash
 
-	# In terminal
-	command1 && command2 && command3
+   # In terminal
+   command1 && command2 && command3
 
-	# In script
-	# Backslash lets bash know these lines are one command
-	command1 \
-	&& command 2 \
-	&& command 3
+   # In script
+   # Backslash lets bash know these lines are one command
+   command1 \
+   && command 2 \
+   && command 3
 
 Run commands regardless of previous commands success or failure
 
 .. code-block:: bash
 
-	# In terminal
-	command1; command2; command3
+   # In terminal
+   command1; command2; command3
 
-	# In script
-	# Just put each on it's own line
-	command1
-	command2
-	command3
+   # In script
+   # Just put each on it's own line
+   command1
+   command2
+   command3
 
 
 Loops
@@ -303,15 +303,15 @@ Loops
 
 .. code-block:: bash
 
-	some_arr=(
-		"thing1"
-		"thingN"
-	)
+   some_arr=(
+      "thing1"
+      "thingN"
+   )
 
-	for i in "${some_arr[@]}"
-	do
-		echo $i
-	done
+   for i in "${some_arr[@]}"
+   do
+      echo $i
+   done
 
 Put Multiline Output into Variable
 ------------------------------------
@@ -321,9 +321,9 @@ Put Multiline Output into Variable
 
 .. code-block:: bash
 
-	#!/bin/sh
+   #!/bin/sh
 
-	SOME_VAR="$(ls -a)"
+   SOME_VAR="$(ls -a)"
 
 Users
 -------
@@ -332,4 +332,35 @@ Return user
 
 .. code-block:: bash
 
-	$ echo $(whoami)
+   $ echo $(whoami)
+
+Creating a Symbolic Link (Symlink) to a Program
+--------------------------------------------------
+
+It is good practice to create a symlink in a directory all users can visit like ``/usr/local/bin``. If the program is user specific, you can place the file to run in that user's ``~/bin`.
+
+To create the symlink, ``ln`` is the link command and ``-s`` makes the link symbolic.
+
+.. code-block:: bash
+
+   sudo ln -s /path/to/file /usr/local/bin/<name_of_new_command>
+
+Make the file executable
+
+.. code-block:: bash
+
+   chmod +x /path/to/file
+
+
+Check if OS is 32 or 64 bit
+------------------------------
+
+.. code-block:: bash
+
+   if [ `getconf LONG_BIT` = "64" ]; then
+      cd /path/to/64bit/file
+      ./forticlientsslvpn
+   else
+      cd /path/to/32bit/file
+      ./forticlientsslvpn
+   fi

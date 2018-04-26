@@ -18,200 +18,208 @@ Information about development is also available
 * :ref:`api-sec`
 
 .. note::
-	Things between carets ``<>`` are meant to be replaced by the user. For example, ``sudo ifdown <interface>`` could be ``sudo ifdown wlan0`` depending on the specific system and device interface.
+   Things between carets ``<>`` are meant to be replaced by the user. For example, ``sudo ifdown <interface>`` could be ``sudo ifdown wlan0`` depending on the specific system and device interface.
 
 .. _dev-docs-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Developer
+   :maxdepth: 2
+   :glob:
+   :caption: Developer
 
-	dev-docs
-	README.rst
+   dev-docs
+   README.rst
 
 .. _linux-sec:
 
 .. toctree::
-	:maxdepth: 3
-	:glob:
-	:caption: Linux
+   :maxdepth: 3
+   :glob:
+   :caption: Linux
 
-	linux/index
-	linux/*
-	linux/bash/index
+   linux/index
+   linux/*
+   linux/bash/index
 ..	linux/bash/*
 
 .. _pi-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Pi
+   :maxdepth: 2
+   :glob:
+   :caption: Pi
 
-	pi/index
-	pi/networks
+   pi/index
+   pi/networks
 
 .. _nodejs-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Node JS
+   :maxdepth: 2
+   :glob:
+   :caption: Node JS
 
-	nodejs/index
+   nodejs/index
 
 .. _editors-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Editors / IDE's
+   :maxdepth: 2
+   :glob:
+   :caption: Editors / IDE's
 
-	editors/index
-	editors/sublime
-	editors/visual-studio-code
-	editors/atom
-	editors/vim
+   editors/index
+   editors/sublime
+   editors/visual-studio-code
+   editors/atom
+   editors/vim
 
 .. _hardware-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Hardware
+   :maxdepth: 2
+   :glob:
+   :caption: Hardware
 
-	hardware/laptop
+   hardware/laptop
 
 .. _hosting-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Hosting, Deployment and Security
+   :maxdepth: 2
+   :glob:
+   :caption: Hosting, Deployment and Security
 
-	hosting/*
-	hosting/security/*
-	hosting/optimization/*
+   hosting/*
+   hosting/security/*
+   hosting/optimization/*
 
 .. _python-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Python
+   :maxdepth: 2
+   :glob:
+   :caption: Python
 
-	python/*
+   python/*
 
 .. _android-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Android
+   :maxdepth: 2
+   :glob:
+   :caption: Android
 
-	android/*
+   android/*
 
 .. _api-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: APIs
+   :maxdepth: 2
+   :glob:
+   :caption: APIs
 
-	api/index
-..	api/create/*
-..	api/list/*
+   api/index
+.. api/create/*
+.. api/list/*
 
 .. _dke-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: DKE Projects
+   :maxdepth: 2
+   :glob:
+   :caption: DKE Projects
 
-	dke/index
+   dke/index
 ..	dke/*
 
 .. _cabanalytics-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Cabanalytics
+   :maxdepth: 2
+   :glob:
+   :caption: Cabanalytics
 
-	cabanalytics/index
+   cabanalytics/index
 
 .. _git-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Git And Github
+   :maxdepth: 2
+   :glob:
+   :caption: Git And Github
 
-	git/index
+   git/index
 
 .. _reactjs-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: React JS
+   :maxdepth: 2
+   :glob:
+   :caption: React JS
 
-	reactjs/index
+   reactjs/index
 
 .. _wordpress-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Wordpress
+   :maxdepth: 2
+   :glob:
+   :caption: Wordpress
 
-	wordpress/index
+   wordpress/index
 
 .. _web_design-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Web Design
+   :maxdepth: 2
+   :glob:
+   :caption: Web Design
 
-	web-design/index
+   web-design/index
 
 .. _dev_tools-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Dev Tools
+   :maxdepth: 2
+   :glob:
+   :caption: Dev Tools
 
-	dev-tools/chrome
-	dev-tools/docker/*
+   dev-tools/chrome
+   dev-tools/docker/*
+
+.. _javascript-sec:
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+   :caption: Javascript
+
+   javascript/*
 
 .. _electron-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Electron
+   :maxdepth: 2
+   :glob:
+   :caption: Electron
 
-	electronjs/index
-..	electronjs/*
+   electronjs/index
 
 .. _visualization-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Visualization
+   :maxdepth: 2
+   :glob:
+   :caption: Visualization
 
-	visualization/*
+   visualization/*
 
 .. _writing-docs-sec:
 
 .. toctree::
-	:maxdepth: 2
-	:glob:
-	:caption: Writing |docs|
+   :maxdepth: 2
+   :glob:
+   :caption: Writing |docs|
 
-	writing-docs/*
+   writing-docs/*
