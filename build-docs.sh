@@ -24,3 +24,6 @@ make html # \
 #    rm "${pdf_file}"
 # fi
 # cp "build/latex/${pdf_file}" ./
+
+# AUTOMATING THE FTP UPLOAD IN THE FUTURE
+# https://blog.eduonix.com/shell-scripting/how-to-automate-ftp-transfers-in-linux-shell-scripting/
