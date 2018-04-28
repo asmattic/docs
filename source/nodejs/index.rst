@@ -4,7 +4,18 @@ Node JS
 .. Variables
 .. include:: ../vars.rst
 
-.. _nodejs-section:
+.. _nodejs-toc-sec:
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+   :caption: Nodejs TOC
+
+   node-cli
+   node-streams
+
+
+.. _nodejs-resources-sec:
 
 Node JS
 --------
@@ -20,17 +31,17 @@ Some resources.
 .. _nvm_sec:
 
 Node Version Manager
----------------------
+-----------------------
 
 Reset permissions to current user rather than sudo
 
 .. code-block:: bash
 
-	sudo chown -R $(whoami) ~/.npm
+   sudo chown -R $(whoami) ~/.npm
 
 .. code-block:: bash
 
-	find . -name "node_modules" -exec rm -rf '{}' +
+   find . -name "node_modules" -exec rm -rf '{}' +
 
 
 Listing
@@ -38,15 +49,15 @@ Listing
 
 .. code-block:: bash
 
-	# List installed node versions
-	$ nvm ls
+   # List installed node versions
+   $ nvm ls
 
 If you want to see what versions are available to install:
 
 .. code-block:: bash
 
-	# List installed node versions
-	$ nvm ls-remote
+   # List installed node versions
+   $ nvm ls-remote
 
 .. _npm-section:
 
@@ -57,10 +68,10 @@ Reset permissions to current user rather than sudo
 
 .. code-block:: bash
 
-	npm config get prefix
+   npm config get prefix
 
-	# if not just in /usr
-	sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+   # if not just in /usr
+   sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
 
 
 Update ``npm``
@@ -99,7 +110,7 @@ Socket
 ----------
 
 .. note::
-	Make sure you start the socket on the server and not the app itself with express
+   Make sure you start the socket on the server and not the app itself with express
 
 * `Socket IO docs <socketIoDocs_>`_ - Official |docs|
 

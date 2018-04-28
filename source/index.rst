@@ -40,7 +40,7 @@ Information about development is also available
    linux/index
    linux/*
    linux/bash/index
-..	linux/bash/*
+.. linux/bash/*
 
 .. _pi-sec:
 
@@ -57,9 +57,10 @@ Information about development is also available
 .. toctree::
    :maxdepth: 2
    :glob:
-   :caption: Node JS
+   :caption: Nodejs
 
    nodejs/index
+   nodejs/*
 
 .. _editors-sec:
 

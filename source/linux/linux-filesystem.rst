@@ -55,3 +55,19 @@ Permissions are broken up into four groups. The first group is one character and
       - ``1`` (execute)
       - ``2`` (write)
       - ``4`` (read)
+
+
+Open files from terminal
+---------------------------
+
+To open a file in the default browser.
+
+.. code-block:: bash
+
+   $ xdg-open /path/to/index.html
+
+Using /proc
+--------------
+
+.. note::
+   The ``/proc`` directory is actually a pseudo-filesystem. The files in ``/proc`` mirror currently running system and kernel processes and contain information and statistics about them. (`source: fibrevillage.com <http://fibrevillage.com/scripting/604-how-to-use-proc-in-bash>`_)
