@@ -28,7 +28,7 @@ Some tips on how to make the app feel more native.
 To make text not selectable apply css to inputs
 
 .. code-block:: css
-	
+
 	.my-ui-text {
 		-webkit-user-select: none;
 	}
@@ -82,6 +82,61 @@ Automatically select proper icon for the target distro.
 
 	$ electron-packager . MyApp --icon=img/icon --platform=all --arch=all --version=0.36.0 --out=../dist/ --asar
 
+**Icon Sizes**
+
+.. list-table::
+   :header-rows: 1
+
+   *  - Size (px)
+      - Mac OSX
+      - Windows
+      - Linux
+
+   *  - 1024
+      - `y`
+      - `y`
+      - `y`
+
+   *  - 512
+      - `y`
+      - `y`
+      - `y`
+
+   *  - 256
+      - `y`
+      - `y`
+      - `y`
+
+   *  - 128
+      - `y`
+      - `y`
+      - `y`
+
+   *  - 64
+      - `y`
+      - `y`
+      - `y`
+
+   *  - 48
+      - `y`
+      - `y`
+      - `y`
+
+   *  - 32
+      - `y`
+      - `y`
+      - `y`
+
+   *  - 24
+      - `y`
+      - `y`
+      - `y`
+
+   *  - 16
+      - `y`
+      - `y`
+      - `y`
+
 Startup Background Color
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -127,3 +182,4 @@ Copy and paste is not turned on by default
 .. _electron_react_boilerplate_sec:
 
 Electron React Boilerplate
+
