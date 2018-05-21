@@ -71,3 +71,14 @@ Using /proc
 
 .. note::
    The ``/proc`` directory is actually a pseudo-filesystem. The files in ``/proc`` mirror currently running system and kernel processes and contain information and statistics about them. (`source: fibrevillage.com <http://fibrevillage.com/scripting/604-how-to-use-proc-in-bash>`_)
+
+Common Issues
+------------------
+
+The `/boot` folder is out of space. This is usually the cause of a build up of kernal backups. To free up some space, just run `sudo apt autoremove` and the older, no longer necessary files will be removed.
+
+ - `Stack Overflow question used for explanation <https://askubuntu.com/questions/785460/boot-partition-filling-up-is-this-a-bug-in-ubuntu?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa>`_
+
+.. code-block::
+
+   sudo apt autoremove
