@@ -79,6 +79,6 @@ The `/boot` folder is out of space. This is usually the cause of a build up of k
 
  - `Stack Overflow question used for explanation <https://askubuntu.com/questions/785460/boot-partition-filling-up-is-this-a-bug-in-ubuntu?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa>`_
 
-.. code-block::
+.. code-block:: bash
 
    sudo apt autoremove

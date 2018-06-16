@@ -175,6 +175,52 @@ There are a lot of other options like setting priority of networks and naming th
 
    }
 
+Netcat
+~~~~~~~~
+
+From the official Netcat website. `Netcat DigitalOcean tutorial <https://www.digitalocean.com/community/tutorials/how-to-use-netcat-to-establish-and-test-tcp-and-udp-connections-on-a-vps>`_
+
+`Netcat is a featured networking utility which reads and writes data across network connections, using the TCP/IP protocol.`
+
+Features:
+
+   * Outbound and inbound connections, TCP or UDP, to or from any ports.
+   * Featured tunneling mode which allows also special tunneling such as UDP to TCP, with the possibility of specifying all network parameters (source port/interface, listening port/interface, and the remote host allowed to connect to the tunnel (**remote shells**).
+   * Built-in **port-scanning** capabilities, with randomizer.
+   * Advanced usage options, such as buffered send-mode (one line every N seconds), and hexdump (to stderr or to a specified file) of trasmitted and received data.
+
+Scan ports on a domain
+
+.. note::
+   ``netcat`` and ``nc`` can be used interchangeably
+
+Scan ports 1 through 1000 on domain.com
+
+.. code-block:: bash
+
+   $ netcat -z -v domain.com 1-1000
+
+.. note::
+
+   ``nmap`` is probably a better port scanning tool for most uses
+
+Connect linux machine to Windows machine
+
+.. code-block:: bash
+
+   # Listen on port 31337 to connect to windows machine
+   $ sudo nc -lp 31337 -e /bin/bash
+
+   # On Windows
+   C:\ > nc <linux_ip> <port>
+   C:\ > nc <linux_ip> 31337
+
+   C:\ > useradd -g root mMyNewUser
+   C:\ > grep myNewUser /etc/passwd/ # output myNewUser:x:1001:0::/home/myNewUser:/bin/sh
+   C:\ > tail /etc/passwd
+
+
+
 Predictable Network Names
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -337,7 +383,7 @@ Return user
 Creating a Symbolic Link (Symlink) to a Program
 --------------------------------------------------
 
-It is good practice to create a symlink in a directory all users can visit like ``/usr/local/bin``. If the program is user specific, you can place the file to run in that user's ``~/bin`.
+It is good practice to create a symlink in a directory all users can visit like ``/usr/local/bin``. If the program is user specific, you can place the file to run in that user's ``~/bin``.
 
 To create the symlink, ``ln`` is the link command and ``-s`` makes the link symbolic.
 
