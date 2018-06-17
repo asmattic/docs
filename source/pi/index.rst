@@ -34,7 +34,7 @@ Edit `/etc/hosts`
 ~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
-    
+
 	# Change this line
 	127.0.1.1 raspberrypi
 
@@ -47,7 +47,7 @@ Edit `/etc/hostname`
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
-    
+
 	# Just change the name
 
 .. _etc-machine-info-sec:
@@ -61,6 +61,82 @@ Edit `/etc/machine_info`
 :green:`+ PRETTY_HOSTNAME=newhostname`
 
 .. code-block:: bash
-    
+
 	:red:`- PRETTY_HOSTNAME=oldhostname`
 	:green:`+ PRETTY_HOSTNAME=newhostname`
+
+Ubuntu Mate
+---------------
+
+ssh setup
+~~~~~~~~~~~~
+
+Grab OpenSSH for device.
+
+Remote/Pi machine
+
+.. code-block:: bash
+
+   sudo apt-get update
+   sudo apt-get install openssh-server
+   sudo ufw allow 22
+   sudo /etc/init.d/ssh restart
+
+   # Make sure it is enabled
+
+In order to remove the remote computers key stuff
+This below was found
+# Host 192.168.1.13 found: line 10
+/home/asmattic/.ssh/known_hosts updated.
+Original contents retained as /home/asmattic/.ssh/known_hosts.old
+
+
+Get required GPIO modules for python
+
+.. code-block:: bash
+
+   $ sudo apt-get update && sudo apt-get install python-rpi.gpio python3-rpi.gpio
+
+Create ``blink.py``
+
+.. code-block:: python
+
+import RPi.GPIO as GPIO
+import time
+
+LedPin = 11    # pin11
+
+def setup():
+   GPIO.setmode(GPIO.BOARD)       # Numbers GPIOs by physical location
+   GPIO.setup(LedPin, GPIO.OUT)   # Set LedPin's mode is output
+   GPIO.output(LedPin, GPIO.HIGH) # Set LedPin high(+3.3V) to turn on led
+
+def blink():
+   while True:
+      GPIO.output(LedPin, GPIO.HIGH)  # led on
+      time.sleep(1)
+      GPIO.output(LedPin, GPIO.LOW) # led off
+      time.sleep(1)
+
+def destroy():
+   GPIO.output(LedPin, GPIO.LOW)   # led off
+   GPIO.cleanup()                  # Release resource
+
+if __name__ == '__main__':     # Program start from here
+   setup()
+   try:
+      blink()
+   except KeyboardInterrupt:  # When 'Ctrl+C' is pressed, the child program destroy() will be  executed.
+      destroy()
+
+Can't install programs because admin dir is in use
+-------------------------------------------------------
+
+*E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)*
+*E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?*
+
+.. note::
+
+   You can use sudo lsof ``/var/lib/dpkg/lock`` to find the process that owns the lock file (if empty, assume the lock is left over from a previous boot and can be ``sudo rm`` d), then consider doing a ``sudo kill -9 <PID>`` (get <PID> from ``lsof`` output.
+
+`You can also try the general Ubuntu package manager troubleshooting procedure <https://help.ubuntu.com/community/PackageManagerTroubleshootingProcedure>`_
