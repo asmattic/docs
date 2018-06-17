@@ -410,3 +410,10 @@ Check if OS is 32 or 64 bit
       cd /path/to/32bit/file
       ./forticlientsslvpn
    fi
+
+Check if program is installed
+--------------------------------
+
+What command should I use to check to see if a progrem is installed.
+
+`which, hash, type, command <https://unix.stackexchange.com/questions/85249/why-not-use-which-what-to-use-then?noredirect=1&lq=1>`_

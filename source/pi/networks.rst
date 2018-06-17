@@ -24,3 +24,22 @@ GPIO info
 
 ``gpio -v``
 
+If wiringPi isn't working properly
+
+.. code-block::
+
+   # Remove wiringpi
+   $ sudo apt-get purge wiringpi
+   $ hash -r
+
+   # Install git
+   $ sudo apt install git-core && sudo apt update
+
+   # Clone wiringPi git repo and build
+   $ git clone git://git.drogon.net/wiringPi
+   $ cd wiringPi && ./build
+
+   # Test that it's working
+   $ gpio -v
+   $ gpio readall
+
