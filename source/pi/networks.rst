@@ -26,7 +26,7 @@ GPIO info
 
 If wiringPi isn't working properly
 
-.. code-block::
+.. code-block:: bash
 
    # Remove wiringpi
    $ sudo apt-get purge wiringpi

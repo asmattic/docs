@@ -140,3 +140,30 @@ Can't install programs because admin dir is in use
    You can use sudo lsof ``/var/lib/dpkg/lock`` to find the process that owns the lock file (if empty, assume the lock is left over from a previous boot and can be ``sudo rm`` d), then consider doing a ``sudo kill -9 <PID>`` (get <PID> from ``lsof`` output.
 
 `You can also try the general Ubuntu package manager troubleshooting procedure <https://help.ubuntu.com/community/PackageManagerTroubleshootingProcedure>`_
+
+Interfaces
+------------
+
+SPI
+~~~~~~~~~
+
+`Serial Peripheral Interface <https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi>` - *Serial Peripheral Interface (SPI) is an interface bus commonly used to send data between microcontrollers and small peripherals such as shift registers, sensors, and SD cards. It uses separate clock and data lines, along with a select line to choose the device you wish to talk to.*
+
+`Control two external hardware peripherals with Raspberry Pi SPI <http://radiostud.io/understanding-spi-in-raspberry-pi/>`_
+
+I2C
+~~~~~~~~~
+
+`Inter-Integrated Circuit <https://learn.sparkfun.com/tutorials/i2c>`_ -
+*The Inter-integrated Circuit (I2C) Protocol is a protocol intended to allow multiple “slave” digital integrated circuits (“chips”) to communicate with one or more “master” chips. Like the Serial Peripheral Interface (SPI), it is only intended for short distance communications within a single device. Like Asynchronous Serial Interfaces (such as RS-232 or UARTs), it only requires two signal wires to exchange information.*
+
+` Linux I2C Tools <https://i2c.wiki.kernel.org/index.php/I2C_Tools>`_
+
+Differences between SPI and I2C
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+`The below was found on radiostud.io <http://radiostud.io/howto-i2c-communication-rpi/>`_
+
+ - SPI needs 4 pins for the communication, and additional slave select logic for selecting slaves, whereas I2C requires only 2 pins to connect any number of slaves.
+ - SPI is good for high data rate full-duplex (simultaneous sending and receiving of data) connections, supporting clock rates upwards of 10MHz (and thus, 10 million bits per second) for some devices, and the speed scales nicely.
+ - Unlike SPI, I2C supports multi-master hardware connection which is useful for industrial applications where one sensor needs to to be controlled and accessed by multiple master devices.

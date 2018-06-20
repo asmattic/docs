@@ -51,6 +51,7 @@ Information about development is also available
 
    pi/index
    pi/networks
+   pi/piduino
 
 .. _nodejs-sec:
 
