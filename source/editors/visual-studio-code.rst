@@ -24,6 +24,13 @@ The limit can be increased to its maximum by editing ``/etc/sysctl.conf`` and ad
 
 The new value can then be loaded in by running ``sudo sysctl -p``.
 
+.. note::
+   On Ubuntu, if ``alt`` + ``click`` drags the window instead of creating multiple cursors, run the below command in the terminal.
+
+.. code-block:: bash
+   
+   gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier "<Super>"
+
 Recommended Settings
 -----------------------
 
