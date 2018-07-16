@@ -35,33 +35,71 @@ Close terminal
 Bash Tips
 -----------
 
-Some bash commands.
+Get hardware of computer
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ - ``-html`` outputs as html
 
 .. code-block:: bash
 
-   # Printing out computer hardware to .html file
-   $ sudo lshw -html
+   $ sudo lshw -html > computer_hardware.html
 
-   # Print PCI hardware
+Print PCI hardware
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
    $ lspci -nn
 
-   # USB hardware
+List USB Hardware
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
    $ lsusb
 
-   # Turn off wifi Power management
+Turn off wifi Power management
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
    $ sudo iwconfig <interface name (e.g. wlan0)> power off
 
-   # List modules
+List modules
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
    $ lsmod
 
-   # Kill radio signals ( check on this)
+Kill radio signals ( check on this)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
    $ rfkill
 
-   # List channels available for device
+List channels available for device
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
    $ iwlist chan
 
-   # Scan channels
+Scan channels
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
    $ iwlist scan
+
+List out scripts from package.json
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+   $ cat package.json | jq -r ".scripts"
+
 
 File/Folder Permissions
 -------------------------------
