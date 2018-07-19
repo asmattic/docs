@@ -100,6 +100,31 @@ List out scripts from package.json
 
    $ cat package.json | jq -r ".scripts"
 
+Find and print directory
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ - ``-maxdepth`` - level of directories to go from the base directory passed
+ 
+.. list-table::
+   :header-rows: 1
+   
+   * - Argument
+     - Description
+
+   * - ``-maxdepth``
+     - level of directories to go from the base directory passed
+   * - ``-type``
+     - ``d`` for directory, ``f`` for file
+   * - ``-name``
+     - String that can use special characters like ``*`` before and after to use as contains
+   * - ``-print``
+     - Print the directory name
+   * - ``-quit``
+     - Stop after the find case has been found true
+
+.. code-block:: bash
+
+   $ find ~ -maxdepth 5 -type d -name '*electron-cra*' -print -quit
+
 
 File/Folder Permissions
 -------------------------------
