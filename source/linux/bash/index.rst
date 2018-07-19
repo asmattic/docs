@@ -102,8 +102,7 @@ List out scripts from package.json
 
 Find and print directory
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- - ``-maxdepth`` - level of directories to go from the base directory passed
- 
+
 .. list-table::
    :header-rows: 1
    
