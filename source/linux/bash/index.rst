@@ -117,7 +117,7 @@ Find and print directory
    * - ``-print``
      - Print the directory name
    * - ``-quit``
-     - Stop after the find case has been found true (don\'t include ``-quit`` if you want to find all instances and not just stop at the first)
+     - Stop after the find case has been found true (*don\'t include ``-quit`` if you want to find all instances and not just stop at the first*)
 
 .. code-block:: bash
 
