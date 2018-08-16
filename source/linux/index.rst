@@ -284,7 +284,7 @@ Using the Steam gaming platform download KSP which works on Ubuntu 16.04.4
 Application Links Not Opening Properly In Chrome
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-From `this Stack Overflow article <>`_
+From `this Stack Overflow article <https://askubuntu.com/questions/689449/external-links-are-opened-as-blank-tabs-in-new-browser-window-in-chrome>`_
 
 The issue is with ``google-chrome.desktop``, and it is missing the ``%U`` argument .
 
