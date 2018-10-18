@@ -1,0 +1,487 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Vim &mdash; asmattic Docs 0.4.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/mo-favicon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="asmattic Docs 0.4.0 documentation" href="../index.html"/>
+        <link rel="next" title="Hardware specs and documentation" href="../hardware/laptop.html"/>
+        <link rel="prev" title="Atom Editor by Github" href="atom.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> asmattic Docs
+          
+
+          
+            
+            <img src="../_static/mo-favicon.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Developer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev-docs.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../README.html">Welcome to the Asmattic Docs Documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Linux</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linux/linux-filesystem.html">Linux Filesystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linux/bash/index.html">Bash</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linux/bash/index.html#bash-scripting">Bash Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Pi</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pi/index.html">Raspberry Pi Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pi/networks.html">Network Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pi/piduino.html">Raspberry Pi With Arduino Firmata</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Nodejs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../nodejs/index.html">Node JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nodejs/node-cli.html">Node JS CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nodejs/node-streams.html">Node JS Streams</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Editors / IDE's</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Text editors and IDE’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sublime.html">Sublime Text 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visual-studio-code.html">Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="atom.html">Atom Editor by Github</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Vim</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#find-and-replace">Find and replace</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/laptop.html">Hardware specs and documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hosting, Deployment and Security</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/aws.html">Amazon Web Services S3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/deploying.html">Deploying Apps And Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/heroku.html">Deploy Apps to Heroku</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/index.html">Deployment, Hosting and Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/monitoring.html">Monitoring, Logging &amp; Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/seo.html">SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/security/htaccess.html"><code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Python</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../python/flask.html">Flask Microdevelopment Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/python-git.html">Running Git Commands In Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/subprocesses.html">Running Shell Commands In Python Program</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Android</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../android/app-architecture.html">App Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../android/common-issues.html">Common Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../android/fundamentals.html">Fuundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../android/ui-components.html">UI Components</a></li>
+</ul>
+<p class="caption"><span class="caption-text">APIs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">All Things API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">DKE Projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dke/index.html">DKE Labs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Cabanalytics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../cabanalytics/index.html">Cabanalytics</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Git And Github</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../git/index.html">All things Git</a></li>
+</ul>
+<p class="caption"><span class="caption-text">React JS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reactjs/index.html">ReactJS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Wordpress</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../wordpress/index.html">Wordpress</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Web Design</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../web-design/index.html">Web Design</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Dev Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev-tools/chrome.html">Chrome Developer Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev-tools/docker/index.html">Docker</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Javascript</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/concepts.html">JavaScript Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/interview-questions.html">JavaScript Interview Questions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electron</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../electronjs/index.html">Electron</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Visualization</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../visualization/index.html">Visualization</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Writing |docs|</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../writing-docs/basic-structure.html">Main Section</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../writing-docs/index.html">Writing Sphinx reStructured Text documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">asmattic Docs</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Vim</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/editors/vim.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="vim">
+<h1>Vim<a class="headerlink" href="#vim" title="Permalink to this headline">¶</a></h1>
+<p>Here is the GitHub repo for <a class="reference external" href="https://github.com/sickill/vim-monokai_">monokai syntax highlighting</a></p>
+<p>Here is my GitHub <a class="reference external" href="https://github.com/asmattic/configs_">repo for automating this installation</a></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># create the necessary dirs</span>
+mkdir -p <span class="nv">$HOME</span>/.vim/colors
+</pre></div>
+</div>
+<p>Here is the file to place in <code class="docutils literal notranslate"><span class="pre">~/.vim/colors</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot; Vim color file</span>
+<span class="s2">&quot; Converted from Textmate theme Monokai using Coloration v0.3.2 (http://github.com/sickill/coloration)</span>
+
+<span class="nb">set</span> <span class="n">background</span><span class="o">=</span><span class="n">dark</span>
+<span class="n">highlight</span> <span class="n">clear</span>
+
+<span class="k">if</span> <span class="n">exists</span><span class="p">(</span><span class="s2">&quot;syntax_on&quot;</span><span class="p">)</span>
+  <span class="n">syntax</span> <span class="n">reset</span>
+<span class="n">endif</span>
+
+<span class="nb">set</span> <span class="n">t_Co</span><span class="o">=</span><span class="mi">256</span>
+<span class="n">let</span> <span class="n">g</span><span class="p">:</span><span class="n">colors_name</span> <span class="o">=</span> <span class="s2">&quot;monokai&quot;</span>
+
+<span class="n">hi</span> <span class="n">Cursor</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">235</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">231</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#272822 guibg=#f8f8f0 gui=NONE</span>
+<span class="n">hi</span> <span class="n">Visual</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">59</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="c1">#49483e gui=NONE</span>
+<span class="n">hi</span> <span class="n">CursorLine</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">237</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="c1">#3c3d37 gui=NONE</span>
+<span class="n">hi</span> <span class="n">CursorColumn</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">237</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="c1">#3c3d37 gui=NONE</span>
+<span class="n">hi</span> <span class="n">ColorColumn</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">237</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="c1">#3c3d37 gui=NONE</span>
+<span class="n">hi</span> <span class="n">LineNr</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">102</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">237</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#90908a guibg=#3c3d37 gui=NONE</span>
+<span class="n">hi</span> <span class="n">VertSplit</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">241</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">241</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#64645e guibg=#64645e gui=NONE</span>
+<span class="n">hi</span> <span class="n">MatchParen</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">197</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">underline</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f92672 guibg=NONE gui=underline</span>
+<span class="n">hi</span> <span class="n">StatusLine</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">231</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">241</span> <span class="n">cterm</span><span class="o">=</span><span class="n">bold</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f8f8f2 guibg=#64645e gui=bold</span>
+<span class="n">hi</span> <span class="n">StatusLineNC</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">231</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">241</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f8f8f2 guibg=#64645e gui=NONE</span>
+<span class="n">hi</span> <span class="n">Pmenu</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">gui</span><span class="o">=</span><span class="n">NONE</span>
+<span class="n">hi</span> <span class="n">PmenuSel</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">59</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="c1">#49483e gui=NONE</span>
+<span class="n">hi</span> <span class="n">IncSearch</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">235</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">186</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#272822 guibg=#e6db74 gui=NONE</span>
+<span class="n">hi</span> <span class="n">Search</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">underline</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">gui</span><span class="o">=</span><span class="n">underline</span>
+<span class="n">hi</span> <span class="n">Directory</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">141</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#ae81ff guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">Folded</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">242</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">235</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#75715e guibg=#272822 gui=NONE</span>
+<span class="n">hi</span> <span class="n">SignColumn</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">237</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="c1">#3c3d37 gui=NONE</span>
+<span class="n">hi</span> <span class="n">Normal</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">231</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">235</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f8f8f2 guibg=#272822 gui=NONE</span>
+<span class="n">hi</span> <span class="n">Boolean</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">141</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#ae81ff guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">Character</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">141</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#ae81ff guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">Comment</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">242</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#75715e guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">Conditional</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">197</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f92672 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">Constant</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">gui</span><span class="o">=</span><span class="n">NONE</span>
+<span class="n">hi</span> <span class="n">Define</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">197</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f92672 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">DiffAdd</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">231</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">64</span> <span class="n">cterm</span><span class="o">=</span><span class="n">bold</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f8f8f2 guibg=#46830c gui=bold</span>
+<span class="n">hi</span> <span class="n">DiffDelete</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">88</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#8b0807 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">DiffChange</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f8f8f2 guibg=#243955 gui=NONE</span>
+<span class="n">hi</span> <span class="n">DiffText</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">231</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">24</span> <span class="n">cterm</span><span class="o">=</span><span class="n">bold</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f8f8f2 guibg=#204a87 gui=bold</span>
+<span class="n">hi</span> <span class="n">ErrorMsg</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">231</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">197</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f8f8f0 guibg=#f92672 gui=NONE</span>
+<span class="n">hi</span> <span class="n">WarningMsg</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">231</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">197</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f8f8f0 guibg=#f92672 gui=NONE</span>
+<span class="n">hi</span> <span class="n">Float</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">141</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#ae81ff guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">Function</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">148</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#a6e22e guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">Identifier</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">81</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#66d9ef guibg=NONE gui=italic</span>
+<span class="n">hi</span> <span class="n">Keyword</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">197</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f92672 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">Label</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">186</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#e6db74 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">NonText</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">59</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">236</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#49483e guibg=#31322c gui=NONE</span>
+<span class="n">hi</span> <span class="n">Number</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">141</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#ae81ff guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">Operator</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">197</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f92672 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">PreProc</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">197</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f92672 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">Special</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">231</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f8f8f2 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">SpecialComment</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">242</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#75715e guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">SpecialKey</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">59</span> <span class="n">ctermbg</span><span class="o">=</span><span class="mi">237</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#49483e guibg=#3c3d37 gui=NONE</span>
+<span class="n">hi</span> <span class="n">Statement</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">197</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f92672 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">StorageClass</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">81</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#66d9ef guibg=NONE gui=italic</span>
+<span class="n">hi</span> <span class="n">String</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">186</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#e6db74 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">Tag</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">197</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f92672 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">Title</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">231</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">bold</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f8f8f2 guibg=NONE gui=bold</span>
+<span class="n">hi</span> <span class="n">Todo</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">95</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">inverse</span><span class="p">,</span><span class="n">bold</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#75715e guibg=NONE gui=inverse,bold</span>
+<span class="n">hi</span> <span class="n">Type</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">197</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f92672 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">Underlined</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">underline</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">gui</span><span class="o">=</span><span class="n">underline</span>
+<span class="n">hi</span> <span class="n">rubyClass</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">197</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f92672 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">rubyFunction</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">148</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#a6e22e guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">rubyInterpolationDelimiter</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">gui</span><span class="o">=</span><span class="n">NONE</span>
+<span class="n">hi</span> <span class="n">rubySymbol</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">141</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#ae81ff guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">rubyConstant</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">81</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#66d9ef guibg=NONE gui=italic</span>
+<span class="n">hi</span> <span class="n">rubyStringDelimiter</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">186</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#e6db74 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">rubyBlockParameter</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">208</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#fd971f guibg=NONE gui=italic</span>
+<span class="n">hi</span> <span class="n">rubyInstanceVariable</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">gui</span><span class="o">=</span><span class="n">NONE</span>
+<span class="n">hi</span> <span class="n">rubyInclude</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">197</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f92672 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">rubyGlobalVariable</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">gui</span><span class="o">=</span><span class="n">NONE</span>
+<span class="n">hi</span> <span class="n">rubyRegexp</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">186</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#e6db74 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">rubyRegexpDelimiter</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">186</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#e6db74 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">rubyEscape</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">141</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#ae81ff guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">rubyControl</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">197</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f92672 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">rubyClassVariable</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">gui</span><span class="o">=</span><span class="n">NONE</span>
+<span class="n">hi</span> <span class="n">rubyOperator</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">197</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f92672 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">rubyException</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">197</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f92672 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">rubyPseudoVariable</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">gui</span><span class="o">=</span><span class="n">NONE</span>
+<span class="n">hi</span> <span class="n">rubyRailsUserClass</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">81</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#66d9ef guibg=NONE gui=italic</span>
+<span class="n">hi</span> <span class="n">rubyRailsARAssociationMethod</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">81</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#66d9ef guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">rubyRailsARMethod</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">81</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#66d9ef guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">rubyRailsRenderMethod</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">81</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#66d9ef guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">rubyRailsMethod</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">81</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#66d9ef guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">erubyDelimiter</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">gui</span><span class="o">=</span><span class="n">NONE</span>
+<span class="n">hi</span> <span class="n">erubyComment</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">95</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#75715e guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">erubyRailsMethod</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">81</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#66d9ef guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">htmlTag</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">148</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#a6e22e guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">htmlEndTag</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">148</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#a6e22e guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">htmlTagName</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">gui</span><span class="o">=</span><span class="n">NONE</span>
+<span class="n">hi</span> <span class="n">htmlArg</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">gui</span><span class="o">=</span><span class="n">NONE</span>
+<span class="n">hi</span> <span class="n">htmlSpecialChar</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">141</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#ae81ff guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">javaScriptFunction</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">81</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#66d9ef guibg=NONE gui=italic</span>
+<span class="n">hi</span> <span class="n">javaScriptRailsFunction</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">81</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#66d9ef guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">javaScriptBraces</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">gui</span><span class="o">=</span><span class="n">NONE</span>
+<span class="n">hi</span> <span class="n">yamlKey</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">197</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#f92672 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">yamlAnchor</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">gui</span><span class="o">=</span><span class="n">NONE</span>
+<span class="n">hi</span> <span class="n">yamlAlias</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">gui</span><span class="o">=</span><span class="n">NONE</span>
+<span class="n">hi</span> <span class="n">yamlDocumentHeader</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">186</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#e6db74 guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">cssURL</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">208</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#fd971f guibg=NONE gui=italic</span>
+<span class="n">hi</span> <span class="n">cssFunctionName</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">81</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#66d9ef guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">cssColor</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">141</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#ae81ff guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">cssPseudoClassId</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">148</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#a6e22e guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">cssClassName</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">148</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#a6e22e guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">cssValueLength</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">141</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#ae81ff guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">cssCommonAttr</span> <span class="n">ctermfg</span><span class="o">=</span><span class="mi">81</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="c1">#66d9ef guibg=NONE gui=NONE</span>
+<span class="n">hi</span> <span class="n">cssBraces</span> <span class="n">ctermfg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">ctermbg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">cterm</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guifg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">guibg</span><span class="o">=</span><span class="n">NONE</span> <span class="n">gui</span><span class="o">=</span><span class="n">NONE</span>
+</pre></div>
+</div>
+<div class="section" id="find-and-replace">
+<h2>Find and replace<a class="headerlink" href="#find-and-replace" title="Permalink to this headline">¶</a></h2>
+<p>To find and replace <code class="docutils literal notranslate"><span class="pre">item1</span></code> with <code class="docutils literal notranslate"><span class="pre">item2</span></code> and have it ask for each item.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Esc key to go to command mode</span>
+:%s/item1/item2/gc
+</pre></div>
+</div>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">%s</span></code> for find and replace</li>
+<li><code class="docutils literal notranslate"><span class="pre">g</span></code> alone wouldn’t ask, it would just replace</li>
+<li><code class="docutils literal notranslate"><span class="pre">gc</span></code> asks for each case</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../hardware/laptop.html" class="btn btn-neutral float-right" title="Hardware specs and documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="atom.html" class="btn btn-neutral" title="Atom Editor by Github" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Matt Oldfield.
+      Last updated on Oct 17, 2018.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.4.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

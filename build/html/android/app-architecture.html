@@ -1,0 +1,354 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>App Architecture &mdash; asmattic Docs 0.4.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/mo-favicon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="asmattic Docs 0.4.0 documentation" href="../index.html"/>
+        <link rel="next" title="Common Issues" href="common-issues.html"/>
+        <link rel="prev" title="Running Shell Commands In Python Program" href="../python/subprocesses.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> asmattic Docs
+          
+
+          
+            
+            <img src="../_static/mo-favicon.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Developer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev-docs.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../README.html">Welcome to the Asmattic Docs Documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Linux</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linux/linux-filesystem.html">Linux Filesystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linux/bash/index.html">Bash</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linux/bash/index.html#bash-scripting">Bash Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Pi</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pi/index.html">Raspberry Pi Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pi/networks.html">Network Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pi/piduino.html">Raspberry Pi With Arduino Firmata</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Nodejs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../nodejs/index.html">Node JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nodejs/node-cli.html">Node JS CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nodejs/node-streams.html">Node JS Streams</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Editors / IDE's</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Text editors and IDE’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/sublime.html">Sublime Text 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/visual-studio-code.html">Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/atom.html">Atom Editor by Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/vim.html">Vim</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/laptop.html">Hardware specs and documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hosting, Deployment and Security</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/aws.html">Amazon Web Services S3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/deploying.html">Deploying Apps And Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/heroku.html">Deploy Apps to Heroku</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/index.html">Deployment, Hosting and Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/monitoring.html">Monitoring, Logging &amp; Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/seo.html">SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/security/htaccess.html"><code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Python</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../python/flask.html">Flask Microdevelopment Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/python-git.html">Running Git Commands In Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/subprocesses.html">Running Shell Commands In Python Program</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Android</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">App Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common-issues.html">Common Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fundamentals.html">Fuundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ui-components.html">UI Components</a></li>
+</ul>
+<p class="caption"><span class="caption-text">APIs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">All Things API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">DKE Projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dke/index.html">DKE Labs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Cabanalytics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../cabanalytics/index.html">Cabanalytics</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Git And Github</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../git/index.html">All things Git</a></li>
+</ul>
+<p class="caption"><span class="caption-text">React JS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reactjs/index.html">ReactJS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Wordpress</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../wordpress/index.html">Wordpress</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Web Design</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../web-design/index.html">Web Design</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Dev Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev-tools/chrome.html">Chrome Developer Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev-tools/docker/index.html">Docker</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Javascript</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/concepts.html">JavaScript Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/interview-questions.html">JavaScript Interview Questions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electron</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../electronjs/index.html">Electron</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Visualization</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../visualization/index.html">Visualization</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Writing |docs|</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../writing-docs/basic-structure.html">Main Section</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../writing-docs/index.html">Writing Sphinx reStructured Text documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">asmattic Docs</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>App Architecture</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/android/app-architecture.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="app-architecture">
+<h1>App Architecture<a class="headerlink" href="#app-architecture" title="Permalink to this headline">¶</a></h1>
+<p>The best practices way to build production quality Android apps.</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="common-issues.html" class="btn btn-neutral float-right" title="Common Issues" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../python/subprocesses.html" class="btn btn-neutral" title="Running Shell Commands In Python Program" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Matt Oldfield.
+      Last updated on Oct 17, 2018.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.4.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

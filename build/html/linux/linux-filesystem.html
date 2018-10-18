@@ -1,0 +1,442 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Linux Filesystem &mdash; asmattic Docs 0.4.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/mo-favicon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="asmattic Docs 0.4.0 documentation" href="../index.html"/>
+        <link rel="next" title="Bash" href="bash/index.html"/>
+        <link rel="prev" title="Linux" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> asmattic Docs
+          
+
+          
+            
+            <img src="../_static/mo-favicon.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Developer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev-docs.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../README.html">Welcome to the Asmattic Docs Documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Linux</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Linux</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux Filesystem</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#etc">/etc</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#etc-passwd">/etc/passwd</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#reading-permissions">Reading Permissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#open-files-from-terminal">Open files from terminal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-proc">Using /proc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#common-issues">Common Issues</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bash/index.html">Bash</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bash/index.html#bash-scripting">Bash Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Pi</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pi/index.html">Raspberry Pi Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pi/networks.html">Network Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pi/piduino.html">Raspberry Pi With Arduino Firmata</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Nodejs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../nodejs/index.html">Node JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nodejs/node-cli.html">Node JS CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nodejs/node-streams.html">Node JS Streams</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Editors / IDE's</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Text editors and IDE’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/sublime.html">Sublime Text 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/visual-studio-code.html">Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/atom.html">Atom Editor by Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/vim.html">Vim</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/laptop.html">Hardware specs and documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hosting, Deployment and Security</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/aws.html">Amazon Web Services S3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/deploying.html">Deploying Apps And Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/heroku.html">Deploy Apps to Heroku</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/index.html">Deployment, Hosting and Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/monitoring.html">Monitoring, Logging &amp; Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/seo.html">SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/security/htaccess.html"><code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Python</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../python/flask.html">Flask Microdevelopment Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/python-git.html">Running Git Commands In Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/subprocesses.html">Running Shell Commands In Python Program</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Android</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../android/app-architecture.html">App Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../android/common-issues.html">Common Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../android/fundamentals.html">Fuundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../android/ui-components.html">UI Components</a></li>
+</ul>
+<p class="caption"><span class="caption-text">APIs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">All Things API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">DKE Projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dke/index.html">DKE Labs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Cabanalytics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../cabanalytics/index.html">Cabanalytics</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Git And Github</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../git/index.html">All things Git</a></li>
+</ul>
+<p class="caption"><span class="caption-text">React JS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reactjs/index.html">ReactJS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Wordpress</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../wordpress/index.html">Wordpress</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Web Design</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../web-design/index.html">Web Design</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Dev Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev-tools/chrome.html">Chrome Developer Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev-tools/docker/index.html">Docker</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Javascript</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/concepts.html">JavaScript Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/interview-questions.html">JavaScript Interview Questions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electron</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../electronjs/index.html">Electron</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Visualization</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../visualization/index.html">Visualization</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Writing |docs|</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../writing-docs/basic-structure.html">Main Section</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../writing-docs/index.html">Writing Sphinx reStructured Text documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">asmattic Docs</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Linux Filesystem</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/linux/linux-filesystem.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="linux-filesystem">
+<h1>Linux Filesystem<a class="headerlink" href="#linux-filesystem" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="etc">
+<h2>/etc<a class="headerlink" href="#etc" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="etc-passwd">
+<h3>/etc/passwd<a class="headerlink" href="#etc-passwd" title="Permalink to this headline">¶</a></h3>
+<p>File that lists all users with all information that pertains to them. Here is an example line.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>asmattic:x:1000:1000:asmattic,,,:/home/asmattic:/bin/bash
+</pre></div>
+</div>
+<p>Pull out just the users from the file. This could be put into an array to find the non-sudo user inside of a bash script.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ awk -F<span class="s1">&#39;:&#39;</span> <span class="s1">&#39;{ print $1}&#39;</span> /etc/passwd
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="reading-permissions">
+<h2>Reading Permissions<a class="headerlink" href="#reading-permissions" title="Permalink to this headline">¶</a></h2>
+<p>Permissions are broken up into four groups. The first group is one character and the other three groups are each comprised of three characters. A dash (<code class="docutils literal notranslate"><span class="pre">-</span></code>) in any place other than the first (<cite>type</cite>) character means that the permission usually at that location is not in effect.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Item Type</td>
+<td><code class="docutils literal notranslate"><span class="pre">-</span></code> (file)</td>
+<td><code class="docutils literal notranslate"><span class="pre">d</span></code> (directory)</td>
+<td><code class="docutils literal notranslate"><span class="pre">l</span></code> (link)</td>
+</tr>
+<tr class="row-even"><td>Owner Permissions</td>
+<td><code class="docutils literal notranslate"><span class="pre">r</span></code> (read)</td>
+<td><code class="docutils literal notranslate"><span class="pre">w</span></code> (write)</td>
+<td><code class="docutils literal notranslate"><span class="pre">x</span></code> (executable)</td>
+</tr>
+<tr class="row-odd"><td>Group Permissions</td>
+<td><code class="docutils literal notranslate"><span class="pre">r</span></code> (read)</td>
+<td><code class="docutils literal notranslate"><span class="pre">w</span></code> (write)</td>
+<td><code class="docutils literal notranslate"><span class="pre">x</span></code> (executable)</td>
+</tr>
+<tr class="row-even"><td>Any User Permissions</td>
+<td><code class="docutils literal notranslate"><span class="pre">r</span></code> (read)</td>
+<td><code class="docutils literal notranslate"><span class="pre">w</span></code> (write)</td>
+<td><code class="docutils literal notranslate"><span class="pre">x</span></code> (executable)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">0</span></code> (none)</td>
+<td><code class="docutils literal notranslate"><span class="pre">1</span></code> (execute)</td>
+<td><code class="docutils literal notranslate"><span class="pre">2</span></code> (write)</td>
+<td><code class="docutils literal notranslate"><span class="pre">4</span></code> (read)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="open-files-from-terminal">
+<h2>Open files from terminal<a class="headerlink" href="#open-files-from-terminal" title="Permalink to this headline">¶</a></h2>
+<p>To open a file in the default browser.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ xdg-open /path/to/index.html
+</pre></div>
+</div>
+</div>
+<div class="section" id="using-proc">
+<h2>Using /proc<a class="headerlink" href="#using-proc" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <code class="docutils literal notranslate"><span class="pre">/proc</span></code> directory is actually a pseudo-filesystem. The files in <code class="docutils literal notranslate"><span class="pre">/proc</span></code> mirror currently running system and kernel processes and contain information and statistics about them. (<a class="reference external" href="http://fibrevillage.com/scripting/604-how-to-use-proc-in-bash">source: fibrevillage.com</a>)</p>
+</div>
+</div>
+<div class="section" id="common-issues">
+<h2>Common Issues<a class="headerlink" href="#common-issues" title="Permalink to this headline">¶</a></h2>
+<p>The <cite>/boot</cite> folder is out of space. This is usually the cause of a build up of kernal backups. To free up some space, just run <cite>sudo apt autoremove</cite> and the older, no longer necessary files will be removed.</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="https://askubuntu.com/questions/785460/boot-partition-filling-up-is-this-a-bug-in-ubuntu?utm_medium=organic&amp;utm_source=google_rich_qa&amp;utm_campaign=google_rich_qa">Stack Overflow question used for explanation</a></li>
+</ul>
+</div></blockquote>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt autoremove
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bash/index.html" class="btn btn-neutral float-right" title="Bash" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Linux" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Matt Oldfield.
+      Last updated on Oct 17, 2018.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.4.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,852 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Bash &mdash; asmattic Docs 0.4.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/mo-favicon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="asmattic Docs 0.4.0 documentation" href="../../index.html"/>
+        <link rel="next" title="Raspberry Pi Resources" href="../../pi/index.html"/>
+        <link rel="prev" title="Linux Filesystem" href="../linux-filesystem.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> asmattic Docs
+          
+
+          
+            
+            <img src="../../_static/mo-favicon.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Developer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dev-docs.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../README.html">Welcome to the Asmattic Docs Documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Linux</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linux-filesystem.html">Linux Filesystem</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Bash</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#terminal">Terminal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#name-terminal-tabs">Name terminal tabs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#close-terminal">Close terminal</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#bash-tips">Bash Tips</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#get-hardware-of-computer">Get hardware of computer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#print-pci-hardware">Print PCI hardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#list-usb-hardware">List USB Hardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#turn-off-wifi-power-management">Turn off wifi Power management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#list-modules">List modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kill-radio-signals-check-on-this">Kill radio signals ( check on this)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#list-channels-available-for-device">List channels available for device</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scan-channels">Scan channels</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#list-out-scripts-from-package-json">List out scripts from package.json</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#find-and-print-directory">Find and print directory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#file-folder-permissions">File/Folder Permissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#compression">Compression</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tar-tape-archiver">Tar <cite>(Tape Archiver)</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#count-output">Count Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#storage">Storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#network">Network</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#netcat">Netcat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#predictable-network-names">Predictable Network Names</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#change-mac-address">Change Mac Address</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#restart-network">Restart Network</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ubuntu-and-other-distros">Ubuntu <cite>(and other distros)</cite></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-wireshark">Install Wireshark</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#bash-scripting">Bash Scripting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#loops">Loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#put-multiline-output-into-variable">Put Multiline Output into Variable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#users">Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-symbolic-link-symlink-to-a-program">Creating a Symbolic Link (Symlink) to a Program</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-if-os-is-32-or-64-bit">Check if OS is 32 or 64 bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-if-program-is-installed">Check if program is installed</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Pi</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../pi/index.html">Raspberry Pi Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pi/networks.html">Network Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pi/piduino.html">Raspberry Pi With Arduino Firmata</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Nodejs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/node-cli.html">Node JS CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodejs/node-streams.html">Node JS Streams</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Editors / IDE's</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Text editors and IDE’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/sublime.html">Sublime Text 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/visual-studio-code.html">Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/atom.html">Atom Editor by Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/vim.html">Vim</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/laptop.html">Hardware specs and documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hosting, Deployment and Security</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hosting/aws.html">Amazon Web Services S3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hosting/deploying.html">Deploying Apps And Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hosting/heroku.html">Deploy Apps to Heroku</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hosting/index.html">Deployment, Hosting and Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hosting/monitoring.html">Monitoring, Logging &amp; Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hosting/seo.html">SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hosting/security/htaccess.html"><code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Python</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../python/flask.html">Flask Microdevelopment Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/python-git.html">Running Git Commands In Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/subprocesses.html">Running Shell Commands In Python Program</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Android</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../android/app-architecture.html">App Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/common-issues.html">Common Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/fundamentals.html">Fuundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../android/ui-components.html">UI Components</a></li>
+</ul>
+<p class="caption"><span class="caption-text">APIs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">All Things API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">DKE Projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dke/index.html">DKE Labs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Cabanalytics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../cabanalytics/index.html">Cabanalytics</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Git And Github</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../git/index.html">All things Git</a></li>
+</ul>
+<p class="caption"><span class="caption-text">React JS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../reactjs/index.html">ReactJS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Wordpress</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../wordpress/index.html">Wordpress</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Web Design</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../web-design/index.html">Web Design</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Dev Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dev-tools/chrome.html">Chrome Developer Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev-tools/docker/index.html">Docker</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Javascript</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/concepts.html">JavaScript Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/interview-questions.html">JavaScript Interview Questions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electron</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../electronjs/index.html">Electron</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Visualization</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../visualization/index.html">Visualization</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Writing |docs|</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../writing-docs/basic-structure.html">Main Section</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../writing-docs/index.html">Writing Sphinx reStructured Text documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">asmattic Docs</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Bash</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/linux/bash/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="bash">
+<h1>Bash<a class="headerlink" href="#bash" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="terminal">
+<h2>Terminal<a class="headerlink" href="#terminal" title="Permalink to this headline">¶</a></h2>
+<p>General tips and <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> functions and settings to make the Linux experience better.</p>
+<div class="section" id="name-terminal-tabs">
+<h3>Name terminal tabs<a class="headerlink" href="#name-terminal-tabs" title="Permalink to this headline">¶</a></h3>
+<p>I found this workaround in <a class="reference external" href="https://unix.stackexchange.com/a/186167/166226">this Stack Exchange answer</a>.</p>
+<p>Insert the below function into <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>. Open a new terminal tab with <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">Shift</span></code> + <code class="docutils literal notranslate"><span class="pre">t</span></code> and type <code class="docutils literal notranslate"><span class="pre">set-title</span> <span class="pre">&lt;some</span> <span class="pre">terminal</span> <span class="pre">title&gt;</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> set-title<span class="o">()</span> <span class="o">{</span>
+   <span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$ORIG</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+      <span class="nv">ORIG</span><span class="o">=</span><span class="nv">$PS1</span>
+   <span class="k">fi</span>
+   <span class="nv">TITLE</span><span class="o">=</span><span class="s2">&quot;\[\e]2;</span><span class="nv">$*</span><span class="s2">\a\]&quot;</span>
+   <span class="nv">PS1</span><span class="o">=</span><span class="si">${</span><span class="nv">ORIG</span><span class="si">}${</span><span class="nv">TITLE</span><span class="si">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="close-terminal">
+<h3>Close terminal<a class="headerlink" href="#close-terminal" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">Shift</span></code> + <code class="docutils literal notranslate"><span class="pre">w</span></code></p>
+</div>
+</div>
+<div class="section" id="bash-tips">
+<h2>Bash Tips<a class="headerlink" href="#bash-tips" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-hardware-of-computer">
+<h3>Get hardware of computer<a class="headerlink" href="#get-hardware-of-computer" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">-html</span></code> outputs as html</li>
+</ul>
+</div></blockquote>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo lshw -html &gt; computer_hardware.html
+</pre></div>
+</div>
+</div>
+<div class="section" id="print-pci-hardware">
+<h3>Print PCI hardware<a class="headerlink" href="#print-pci-hardware" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ lspci -nn
+</pre></div>
+</div>
+</div>
+<div class="section" id="list-usb-hardware">
+<h3>List USB Hardware<a class="headerlink" href="#list-usb-hardware" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ lsusb
+</pre></div>
+</div>
+</div>
+<div class="section" id="turn-off-wifi-power-management">
+<h3>Turn off wifi Power management<a class="headerlink" href="#turn-off-wifi-power-management" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo iwconfig &lt;interface name <span class="o">(</span>e.g. wlan0<span class="o">)</span>&gt; power off
+</pre></div>
+</div>
+</div>
+<div class="section" id="list-modules">
+<h3>List modules<a class="headerlink" href="#list-modules" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ lsmod
+</pre></div>
+</div>
+</div>
+<div class="section" id="kill-radio-signals-check-on-this">
+<h3>Kill radio signals ( check on this)<a class="headerlink" href="#kill-radio-signals-check-on-this" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ rfkill
+</pre></div>
+</div>
+</div>
+<div class="section" id="list-channels-available-for-device">
+<h3>List channels available for device<a class="headerlink" href="#list-channels-available-for-device" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ iwlist chan
+</pre></div>
+</div>
+</div>
+<div class="section" id="scan-channels">
+<h3>Scan channels<a class="headerlink" href="#scan-channels" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ iwlist scan
+</pre></div>
+</div>
+</div>
+<div class="section" id="list-out-scripts-from-package-json">
+<h3>List out scripts from package.json<a class="headerlink" href="#list-out-scripts-from-package-json" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cat package.json <span class="p">|</span> jq -r <span class="s2">&quot;.scripts&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="find-and-print-directory">
+<h3>Find and print directory<a class="headerlink" href="#find-and-print-directory" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Argument</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-maxdepth</span></code></td>
+<td>level of directories to go from the base directory passed</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">-type</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">d</span></code> for directory, <code class="docutils literal notranslate"><span class="pre">f</span></code> for file</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-name</span></code></td>
+<td>String that can use special characters like <code class="docutils literal notranslate"><span class="pre">*</span></code> before and after to use as contains</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">-print</span></code></td>
+<td>Print the directory name</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-quit</span></code></td>
+<td>Stop after the find case has been found true (<em>don’t include ``-quit`` if you want to find all instances and not just stop at the first</em>)</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ find ~ -maxdepth <span class="m">5</span> -type d -name <span class="s1">&#39;*electron-cra*&#39;</span> -print -quit
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="file-folder-permissions">
+<h2>File/Folder Permissions<a class="headerlink" href="#file-folder-permissions" title="Permalink to this headline">¶</a></h2>
+<p>Permissions for files and folders are grouped in three different sections; <cite>user</cite>, <cite>group</cite> and <cite>other</cite>. To set permissions for each, use the <code class="docutils literal notranslate"><span class="pre">chmod</span></code> or “change mode” command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># add -R to modify recursively</span>
+$ sudo chmod <span class="nv">u</span><span class="o">=</span>rwx,g<span class="o">=</span>rx,o<span class="o">=</span>r &lt;myfile&gt;
+</pre></div>
+</div>
+<table border="1" class="docutils" id="id1">
+<caption><span class="caption-text">Chmod digits</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Digit</th>
+<th class="head">Permission</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>4</td>
+<td>read</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>write</td>
+</tr>
+<tr class="row-even"><td>1</td>
+<td>execute</td>
+</tr>
+<tr class="row-odd"><td>0</td>
+<td>no permission</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="compression">
+<span id="bash-compression-sec"></span><h2>Compression<a class="headerlink" href="#compression" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="tar-tape-archiver">
+<h3>Tar <cite>(Tape Archiver)</cite><a class="headerlink" href="#tar-tape-archiver" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils" id="id2">
+<caption><span class="caption-text">Compression Options</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Option</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-c</span></code></td>
+<td>Create archive</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">-z</span></code></td>
+<td>Gzip archive</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-v</span></code></td>
+<td>Display progress (verbose)</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">-f</span></code></td>
+<td>Specify filename</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">--exclude</span></code></td>
+<td>Specify files, folders or patterns to not extract</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">-x</span></code></td>
+<td>Extract archive</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-C</span></code></td>
+<td>Specify directory to extract to</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># zip</span>
+$ tar -czvf &lt;archive-to-create.tar.gz&gt; &lt;folder-to-compress&gt; --exclude<span class="o">=</span><span class="s2">&quot;*.pdf&quot;</span>
+
+<span class="c1"># unzip</span>
+$ tar -xzvf &lt;file-to-extract.tar.gz&gt; -C &lt;folder-to-extract-to&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="count-output">
+<h2>Count Output<a class="headerlink" href="#count-output" title="Permalink to this headline">¶</a></h2>
+<p>To count various things in a file or output you can use <code class="docutils literal notranslate"><span class="pre">wc</span></code>.</p>
+<table border="1" class="docutils" id="id3">
+<caption><span class="caption-text">Compression Options</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Option</th>
+<th class="head">Thing to count</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-c</span></code></td>
+<td>bytes</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">-m</span></code></td>
+<td>chars</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-l</span></code></td>
+<td>lines</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">-w</span></code></td>
+<td>words</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># count lines of output</span>
+$ &lt;command-with-output&gt; <span class="p">|</span> wc -l
+</pre></div>
+</div>
+</div>
+<div class="section" id="storage">
+<span id="bash-storage-sec"></span><h2>Storage<a class="headerlink" href="#storage" title="Permalink to this headline">¶</a></h2>
+<p>To list memory used by various drives and folders</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># list storage</span>
+$ du -h
+</pre></div>
+</div>
+<p>Clean up filesystem</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get clean
+</pre></div>
+</div>
+</div>
+<div class="section" id="network">
+<span id="bash-network-sec"></span><h2>Network<a class="headerlink" href="#network" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://highon.coffee/blog/nmap-cheat-sheet/">nmap cheat sheet</a></p>
+<p>Setting up network <code class="docutils literal notranslate"><span class="pre">ssid</span></code> and <code class="docutils literal notranslate"><span class="pre">psk</span></code> can be done in the <code class="docutils literal notranslate"><span class="pre">/etc/wpa_supplicant/wpa_supplicant.conf</span></code> file.</p>
+<p>You can also use <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">ifquery</span> <span class="pre">&lt;interface&gt;</span></code> to find where the interface is getting it’s configuration. Here is an example response.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wpa-conf: /etc/wpa_supplicant/wpa_supplicant.conf
+</pre></div>
+</div>
+<p>There are a lot of other options like setting priority of networks and naming that can be found <a class="reference external" href="https://wiki.archlinux.org/index.php/WPA_supplicant">on the wiki here</a>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mandatory</span>
+<span class="nv">network</span><span class="o">={</span>
+   <span class="nv">ssid</span><span class="o">=</span><span class="s2">&quot;NETWORK_SSID&quot;</span>
+   <span class="nv">psk</span><span class="o">=</span><span class="s2">&quot;PASSWORD&quot;</span>
+
+<span class="o">}</span>
+</pre></div>
+</div>
+<div class="section" id="netcat">
+<h3>Netcat<a class="headerlink" href="#netcat" title="Permalink to this headline">¶</a></h3>
+<p>From the official Netcat website. <a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-use-netcat-to-establish-and-test-tcp-and-udp-connections-on-a-vps">Netcat DigitalOcean tutorial</a></p>
+<p><cite>Netcat is a featured networking utility which reads and writes data across network connections, using the TCP/IP protocol.</cite></p>
+<p>Features:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Outbound and inbound connections, TCP or UDP, to or from any ports.</li>
+<li>Featured tunneling mode which allows also special tunneling such as UDP to TCP, with the possibility of specifying all network parameters (source port/interface, listening port/interface, and the remote host allowed to connect to the tunnel (<strong>remote shells</strong>).</li>
+<li>Built-in <strong>port-scanning</strong> capabilities, with randomizer.</li>
+<li>Advanced usage options, such as buffered send-mode (one line every N seconds), and hexdump (to stderr or to a specified file) of trasmitted and received data.</li>
+</ul>
+</div></blockquote>
+<p>Scan ports on a domain</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">netcat</span></code> and <code class="docutils literal notranslate"><span class="pre">nc</span></code> can be used interchangeably</p>
+</div>
+<p>Scan ports 1 through 1000 on domain.com</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ netcat -z -v domain.com <span class="m">1</span>-1000
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">nmap</span></code> is probably a better port scanning tool for most uses</p>
+</div>
+<p>Connect linux machine to Windows machine</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Listen on port 31337 to connect to windows machine</span>
+$ sudo nc -lp <span class="m">31337</span> -e /bin/bash
+
+<span class="c1"># On Windows</span>
+C:<span class="se">\ </span>&gt; nc &lt;linux_ip&gt; &lt;port&gt;
+C:<span class="se">\ </span>&gt; nc &lt;linux_ip&gt; <span class="m">31337</span>
+
+C:<span class="se">\ </span>&gt; useradd -g root mMyNewUser
+C:<span class="se">\ </span>&gt; grep myNewUser /etc/passwd/ <span class="c1"># output myNewUser:x:1001:0::/home/myNewUser:/bin/sh</span>
+C:<span class="se">\ </span>&gt; tail /etc/passwd
+</pre></div>
+</div>
+</div>
+<div class="section" id="predictable-network-names">
+<h3>Predictable Network Names<a class="headerlink" href="#predictable-network-names" title="Permalink to this headline">¶</a></h3>
+<p>This is the naming system used when you see more complex names for interface devices than <code class="docutils literal notranslate"><span class="pre">wlan0</span></code></p>
+<p>List <code class="docutils literal notranslate"><span class="pre">PCI</span></code> interfaces</p>
+<p><code class="docutils literal notranslate"><span class="pre">lspci</span></code></p>
+</div>
+<div class="section" id="change-mac-address">
+<h3>Change Mac Address<a class="headerlink" href="#change-mac-address" title="Permalink to this headline">¶</a></h3>
+<p>Bring card down</p>
+<p><code class="docutils literal notranslate"><span class="pre">ifconfig</span> <span class="pre">&lt;interface&gt;</span> <span class="pre">down</span></code></p>
+<p>Change the address to any octet</p>
+<p><code class="docutils literal notranslate"><span class="pre">ifconfig</span> <span class="pre">&lt;interface&gt;</span> <span class="pre">hw</span> <span class="pre">ether</span> <span class="pre">dd:dd:dd:dd:dd</span></code></p>
+<p>Bring it back up</p>
+<p><code class="docutils literal notranslate"><span class="pre">ifconfig</span> <span class="pre">&lt;interface&gt;</span> <span class="pre">up</span></code></p>
+</div>
+<div class="section" id="restart-network">
+<h3>Restart Network<a class="headerlink" href="#restart-network" title="Permalink to this headline">¶</a></h3>
+<p>Using wlan0 as an example.</p>
+<p>Turn off</p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">ifdown</span> <span class="pre">wlan0</span></code></p>
+<p>Turn on</p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">ifup</span> <span class="pre">wlan0</span></code></p>
+<p>Restart network manager entirely. Setting an interface to monitor mode will require this to get the wifi back up.</p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">network-manager</span> <span class="pre">restart</span></code></p>
+</div>
+</div>
+<div class="section" id="ubuntu-and-other-distros">
+<span id="bash-ubuntu-sec"></span><h2>Ubuntu <cite>(and other distros)</cite><a class="headerlink" href="#ubuntu-and-other-distros" title="Permalink to this headline">¶</a></h2>
+<p>Check the version of distro</p>
+<p><code class="docutils literal notranslate"><span class="pre">lsb_release</span> <span class="pre">-a</span></code></p>
+<p>For <cite>Ubuntu 17.04</cite> the mouse speed doesn’t respond to the normal settings interface <a class="reference external" href="https://askubuntu.com/questions/205676/how-to-change-mouse-speed-sensitivity">but here is the best fix</a></p>
+<div class="section" id="install-wireshark">
+<h3>Install Wireshark<a class="headerlink" href="#install-wireshark" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Update PPA to latest stable version</li>
+</ol>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">add-apt-repository</span> <span class="pre">ppa:wireshark-dev/stable</span></code></p>
+<ol class="arabic simple">
+<li>Allow superuser to run Wireshark when it asks during installation.</li>
+<li>Integrate new changes</li>
+</ol>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">update</span></code></p>
+<ol class="arabic simple">
+<li>Install</li>
+</ol>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">wireshark</span></code></p>
+<ol class="arabic simple">
+<li>If you selected no initially and want to change it later, run</li>
+</ol>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">dpkg-reconfigure</span> <span class="pre">wireshark-common</span></code></p>
+</div>
+</div>
+</div>
+<div class="section" id="bash-scripting">
+<h1>Bash Scripting<a class="headerlink" href="#bash-scripting" title="Permalink to this headline">¶</a></h1>
+<p>Use the backtick ` ` ` character to output to a variable rather than the console</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">var_one</span><span class="o">=</span><span class="sb">`</span>cat ls <span class="p">|</span> grep .txt<span class="sb">`</span>
+</pre></div>
+</div>
+<p>Installing an array of packages</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">package_list</span><span class="o">=(</span>
+   package1
+   packageN
+<span class="o">)</span>
+
+<span class="c1"># The @ destructures the array members</span>
+sudo apt-get -y install <span class="si">${</span><span class="nv">package_list</span><span class="p">[@]</span><span class="si">}</span>
+</pre></div>
+</div>
+<p>Commands that depend on previous commands completing successfully</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># In terminal</span>
+command1 <span class="o">&amp;&amp;</span> command2 <span class="o">&amp;&amp;</span> command3
+
+<span class="c1"># In script</span>
+<span class="c1"># Backslash lets bash know these lines are one command</span>
+command1 <span class="se">\</span>
+<span class="o">&amp;&amp;</span> <span class="nb">command</span> <span class="m">2</span> <span class="se">\</span>
+<span class="o">&amp;&amp;</span> <span class="nb">command</span> <span class="m">3</span>
+</pre></div>
+</div>
+<p>Run commands regardless of previous commands success or failure</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># In terminal</span>
+command1<span class="p">;</span> command2<span class="p">;</span> command3
+
+<span class="c1"># In script</span>
+<span class="c1"># Just put each on it&#39;s own line</span>
+command1
+command2
+command3
+</pre></div>
+</div>
+<div class="section" id="loops">
+<h2>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">some_arr</span><span class="o">=(</span>
+   <span class="s2">&quot;thing1&quot;</span>
+   <span class="s2">&quot;thingN&quot;</span>
+<span class="o">)</span>
+
+<span class="k">for</span> i in <span class="s2">&quot;</span><span class="si">${</span><span class="nv">some_arr</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">do</span>
+   <span class="nb">echo</span> <span class="nv">$i</span>
+<span class="k">done</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="put-multiline-output-into-variable">
+<h2>Put Multiline Output into Variable<a class="headerlink" href="#put-multiline-output-into-variable" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://stackoverflow.com/questions/4651437/how-to-set-a-variable-to-the-output-from-a-command-in-bash">Variable output in bash</a></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/sh</span>
+
+<span class="nv">SOME_VAR</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>ls -a<span class="k">)</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="users">
+<h2>Users<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h2>
+<p>Return user</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">echo</span> <span class="k">$(</span>whoami<span class="k">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="creating-a-symbolic-link-symlink-to-a-program">
+<h2>Creating a Symbolic Link (Symlink) to a Program<a class="headerlink" href="#creating-a-symbolic-link-symlink-to-a-program" title="Permalink to this headline">¶</a></h2>
+<p>It is good practice to create a symlink in a directory all users can visit like <code class="docutils literal notranslate"><span class="pre">/usr/local/bin</span></code>. If the program is user specific, you can place the file to run in that user’s <code class="docutils literal notranslate"><span class="pre">~/bin</span></code>.</p>
+<p>To create the symlink, <code class="docutils literal notranslate"><span class="pre">ln</span></code> is the link command and <code class="docutils literal notranslate"><span class="pre">-s</span></code> makes the link symbolic.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo ln -s /path/to/file /usr/local/bin/&lt;name_of_new_command&gt;
+</pre></div>
+</div>
+<p>Make the file executable</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod +x /path/to/file
+</pre></div>
+</div>
+</div>
+<div class="section" id="check-if-os-is-32-or-64-bit">
+<h2>Check if OS is 32 or 64 bit<a class="headerlink" href="#check-if-os-is-32-or-64-bit" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">[</span> <span class="sb">`</span>getconf LONG_BIT<span class="sb">`</span> <span class="o">=</span> <span class="s2">&quot;64&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+   <span class="nb">cd</span> /path/to/64bit/file
+   ./forticlientsslvpn
+<span class="k">else</span>
+   <span class="nb">cd</span> /path/to/32bit/file
+   ./forticlientsslvpn
+<span class="k">fi</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="check-if-program-is-installed">
+<h2>Check if program is installed<a class="headerlink" href="#check-if-program-is-installed" title="Permalink to this headline">¶</a></h2>
+<p>What command should I use to check to see if a progrem is installed.</p>
+<p><a class="reference external" href="https://unix.stackexchange.com/questions/85249/why-not-use-which-what-to-use-then?noredirect=1&amp;lq=1">which, hash, type, command</a></p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../pi/index.html" class="btn btn-neutral float-right" title="Raspberry Pi Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../linux-filesystem.html" class="btn btn-neutral" title="Linux Filesystem" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Matt Oldfield.
+      Last updated on Oct 17, 2018.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.4.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

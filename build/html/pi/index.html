@@ -1,0 +1,513 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Raspberry Pi Resources &mdash; asmattic Docs 0.4.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/mo-favicon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="asmattic Docs 0.4.0 documentation" href="../index.html"/>
+        <link rel="next" title="Network Setup" href="networks.html"/>
+        <link rel="prev" title="Bash" href="../linux/bash/index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> asmattic Docs
+          
+
+          
+            
+            <img src="../_static/mo-favicon.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Developer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev-docs.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../README.html">Welcome to the Asmattic Docs Documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Linux</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../linux/index.html">Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linux/linux-filesystem.html">Linux Filesystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linux/bash/index.html">Bash</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linux/bash/index.html#bash-scripting">Bash Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Pi</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Raspberry Pi Resources</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#for-the-raspberry-pi">For the Raspberry Pi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rename-hostname">Rename hostname</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#edit-etc-hosts">Edit <cite>/etc/hosts</cite></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#edit-etc-hostname">Edit <cite>/etc/hostname</cite></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#edit-etc-machine-info">Edit <cite>/etc/machine_info</cite></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ubuntu-mate">Ubuntu Mate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ssh-setup">ssh setup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#can-t-install-programs-because-admin-dir-is-in-use">Can’t install programs because admin dir is in use</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interfaces">Interfaces</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#spi">SPI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i2c">I2C</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#differences-between-spi-and-i2c">Differences between SPI and I2C</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="networks.html">Network Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="piduino.html">Raspberry Pi With Arduino Firmata</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Nodejs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../nodejs/index.html">Node JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nodejs/node-cli.html">Node JS CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nodejs/node-streams.html">Node JS Streams</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Editors / IDE's</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Text editors and IDE’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/sublime.html">Sublime Text 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/visual-studio-code.html">Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/atom.html">Atom Editor by Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/vim.html">Vim</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/laptop.html">Hardware specs and documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Hosting, Deployment and Security</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/aws.html">Amazon Web Services S3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/deploying.html">Deploying Apps And Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/heroku.html">Deploy Apps to Heroku</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/index.html">Deployment, Hosting and Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/monitoring.html">Monitoring, Logging &amp; Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/seo.html">SEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/security/htaccess.html"><code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Python</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../python/flask.html">Flask Microdevelopment Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/python-git.html">Running Git Commands In Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/subprocesses.html">Running Shell Commands In Python Program</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Android</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../android/app-architecture.html">App Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../android/common-issues.html">Common Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../android/fundamentals.html">Fuundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../android/index.html">Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../android/ui-components.html">UI Components</a></li>
+</ul>
+<p class="caption"><span class="caption-text">APIs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">All Things API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">DKE Projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dke/index.html">DKE Labs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Cabanalytics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../cabanalytics/index.html">Cabanalytics</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Git And Github</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../git/index.html">All things Git</a></li>
+</ul>
+<p class="caption"><span class="caption-text">React JS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reactjs/index.html">ReactJS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Wordpress</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../wordpress/index.html">Wordpress</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Web Design</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../web-design/index.html">Web Design</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Dev Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev-tools/chrome.html">Chrome Developer Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev-tools/docker/index.html">Docker</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Javascript</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/concepts.html">JavaScript Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/interview-questions.html">JavaScript Interview Questions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Electron</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../electronjs/index.html">Electron</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Visualization</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../visualization/index.html">Visualization</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Writing |docs|</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../writing-docs/basic-structure.html">Main Section</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../writing-docs/index.html">Writing Sphinx reStructured Text documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">asmattic Docs</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Raspberry Pi Resources</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/pi/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="raspberry-pi-resources">
+<h1>Raspberry Pi Resources<a class="headerlink" href="#raspberry-pi-resources" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="for-the-raspberry-pi">
+<h2>For the Raspberry Pi<a class="headerlink" href="#for-the-raspberry-pi" title="Permalink to this headline">¶</a></h2>
+<p>Some resources.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.raspberrypi.org/">Raspberry Pi</a> - The main website of Raspberry Pi</li>
+</ul>
+<ul class="simple">
+<li><a class="reference external" href="http://kamilslab.com/2016/01/11/how-to-install-aircrack-ng-suite-on-the-raspberry-pi">Aircrack Ng Raspberry Pi</a> - Install <cite>aircrack-ng</cite> suite on the raspberry pi.</li>
+</ul>
+</div>
+<div class="section" id="rename-hostname">
+<h2>Rename hostname<a class="headerlink" href="#rename-hostname" title="Permalink to this headline">¶</a></h2>
+<p>All files to edit:</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#etc-hosts-sec">/etc/hosts</a></li>
+<li><a class="reference internal" href="#etc-hostname-sec">/etc/hostname</a></li>
+<li><cite>/etc/init.d/hostname.sh</cite></li>
+<li><cite>/etc/hostapd/hostapd.conf</cite></li>
+<li><a class="reference internal" href="#etc-machine-info-sec">/etc/machine-info</a></li>
+<li><cite>/boot/hostnames</cite></li>
+<li><cite>/etc/machine-info</cite></li>
+</ul>
+</div></blockquote>
+<div class="section" id="edit-etc-hosts">
+<span id="etc-hosts-sec"></span><h3>Edit <cite>/etc/hosts</cite><a class="headerlink" href="#edit-etc-hosts" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change this line</span>
+<span class="m">127</span>.0.1.1 raspberrypi
+
+<span class="c1"># To this line</span>
+<span class="m">127</span>.0.1.1 &lt;newhostname&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="edit-etc-hostname">
+<span id="etc-hostname-sec"></span><h3>Edit <cite>/etc/hostname</cite><a class="headerlink" href="#edit-etc-hostname" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Just change the name</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="edit-etc-machine-info">
+<span id="etc-machine-info-sec"></span><h3>Edit <cite>/etc/machine_info</cite><a class="headerlink" href="#edit-etc-machine-info" title="Permalink to this headline">¶</a></h3>
+<p><span class="red">-     PRETTY_HOSTNAME=oldhostname</span></p>
+<p><span class="green">+ PRETTY_HOSTNAME=newhostname</span></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>:red:<span class="sb">`</span>- <span class="nv">PRETTY_HOSTNAME</span><span class="o">=</span>oldhostname<span class="sb">`</span>
+:green:<span class="sb">`</span>+ <span class="nv">PRETTY_HOSTNAME</span><span class="o">=</span>newhostname<span class="sb">`</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="ubuntu-mate">
+<h2>Ubuntu Mate<a class="headerlink" href="#ubuntu-mate" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ssh-setup">
+<h3>ssh setup<a class="headerlink" href="#ssh-setup" title="Permalink to this headline">¶</a></h3>
+<p>Grab OpenSSH for device.</p>
+<p>Remote/Pi machine</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get update
+sudo apt-get install openssh-server
+sudo ufw allow <span class="m">22</span>
+sudo /etc/init.d/ssh restart
+
+<span class="c1"># Make sure it is enabled</span>
+</pre></div>
+</div>
+<p>In order to remove the remote computers key stuff
+This below was found
+# Host 192.168.1.13 found: line 10
+/home/asmattic/.ssh/known_hosts updated.
+Original contents retained as /home/asmattic/.ssh/known_hosts.old</p>
+<p>Get required GPIO modules for python</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get update <span class="o">&amp;&amp;</span> sudo apt-get install python-rpi.gpio python3-rpi.gpio
+</pre></div>
+</div>
+<p>Create <code class="docutils literal notranslate"><span class="pre">blink.py</span></code></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">RPi.GPIO</span> <span class="kn">as</span> <span class="nn">GPIO</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="n">LedPin</span> <span class="o">=</span> <span class="mi">11</span>    <span class="c1"># pin11</span>
+
+<span class="k">def</span> <span class="nf">setup</span><span class="p">():</span>
+   <span class="n">GPIO</span><span class="o">.</span><span class="n">setmode</span><span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="n">BOARD</span><span class="p">)</span>       <span class="c1"># Numbers GPIOs by physical location</span>
+   <span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="n">LedPin</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>   <span class="c1"># Set LedPin&#39;s mode is output</span>
+   <span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="n">LedPin</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">HIGH</span><span class="p">)</span> <span class="c1"># Set LedPin high(+3.3V) to turn on led</span>
+
+<span class="k">def</span> <span class="nf">blink</span><span class="p">():</span>
+   <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+      <span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="n">LedPin</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">HIGH</span><span class="p">)</span>  <span class="c1"># led on</span>
+      <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+      <span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="n">LedPin</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">LOW</span><span class="p">)</span> <span class="c1"># led off</span>
+      <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">destroy</span><span class="p">():</span>
+   <span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="n">LedPin</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">LOW</span><span class="p">)</span>   <span class="c1"># led off</span>
+   <span class="n">GPIO</span><span class="o">.</span><span class="n">cleanup</span><span class="p">()</span>                  <span class="c1"># Release resource</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>     <span class="c1"># Program start from here</span>
+   <span class="n">setup</span><span class="p">()</span>
+   <span class="k">try</span><span class="p">:</span>
+      <span class="n">blink</span><span class="p">()</span>
+   <span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>  <span class="c1"># When &#39;Ctrl+C&#39; is pressed, the child program destroy() will be  executed.</span>
+      <span class="n">destroy</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="can-t-install-programs-because-admin-dir-is-in-use">
+<h2>Can’t install programs because admin dir is in use<a class="headerlink" href="#can-t-install-programs-because-admin-dir-is-in-use" title="Permalink to this headline">¶</a></h2>
+<p><em>E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)</em>
+<em>E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?</em></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can use sudo lsof <code class="docutils literal notranslate"><span class="pre">/var/lib/dpkg/lock</span></code> to find the process that owns the lock file (if empty, assume the lock is left over from a previous boot and can be <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">rm</span></code> d), then consider doing a <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">kill</span> <span class="pre">-9</span> <span class="pre">&lt;PID&gt;</span></code> (get &lt;PID&gt; from <code class="docutils literal notranslate"><span class="pre">lsof</span></code> output.</p>
+</div>
+<p><a class="reference external" href="https://help.ubuntu.com/community/PackageManagerTroubleshootingProcedure">You can also try the general Ubuntu package manager troubleshooting procedure</a></p>
+</div>
+<div class="section" id="interfaces">
+<h2>Interfaces<a class="headerlink" href="#interfaces" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="spi">
+<h3>SPI<a class="headerlink" href="#spi" title="Permalink to this headline">¶</a></h3>
+<p><cite>Serial Peripheral Interface &lt;https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi&gt;</cite> - <em>Serial Peripheral Interface (SPI) is an interface bus commonly used to send data between microcontrollers and small peripherals such as shift registers, sensors, and SD cards. It uses separate clock and data lines, along with a select line to choose the device you wish to talk to.</em></p>
+<p><a class="reference external" href="http://radiostud.io/understanding-spi-in-raspberry-pi/">Control two external hardware peripherals with Raspberry Pi SPI</a></p>
+</div>
+<div class="section" id="i2c">
+<h3>I2C<a class="headerlink" href="#i2c" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://learn.sparkfun.com/tutorials/i2c">Inter-Integrated Circuit</a> -
+<em>The Inter-integrated Circuit (I2C) Protocol is a protocol intended to allow multiple “slave” digital integrated circuits (“chips”) to communicate with one or more “master” chips. Like the Serial Peripheral Interface (SPI), it is only intended for short distance communications within a single device. Like Asynchronous Serial Interfaces (such as RS-232 or UARTs), it only requires two signal wires to exchange information.</em></p>
+<p>` Linux I2C Tools &lt;<a class="reference external" href="https://i2c.wiki.kernel.org/index.php/I2C_Tools">https://i2c.wiki.kernel.org/index.php/I2C_Tools</a>&gt;`_</p>
+</div>
+<div class="section" id="differences-between-spi-and-i2c">
+<h3>Differences between SPI and I2C<a class="headerlink" href="#differences-between-spi-and-i2c" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://radiostud.io/howto-i2c-communication-rpi/">The below was found on radiostud.io</a></p>
+<blockquote>
+<div><ul class="simple">
+<li>SPI needs 4 pins for the communication, and additional slave select logic for selecting slaves, whereas I2C requires only 2 pins to connect any number of slaves.</li>
+<li>SPI is good for high data rate full-duplex (simultaneous sending and receiving of data) connections, supporting clock rates upwards of 10MHz (and thus, 10 million bits per second) for some devices, and the speed scales nicely.</li>
+<li>Unlike SPI, I2C supports multi-master hardware connection which is useful for industrial applications where one sensor needs to to be controlled and accessed by multiple master devices.</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="networks.html" class="btn btn-neutral float-right" title="Network Setup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../linux/bash/index.html" class="btn btn-neutral" title="Bash" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Matt Oldfield.
+      Last updated on Oct 17, 2018.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.4.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
