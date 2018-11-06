@@ -106,7 +106,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#close-terminal">Close terminal</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#bash-tips">Bash Tips</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bash-tips">Bash Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shell-check-for-bash-scripting">Shell Check For Bash Scripting</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#utilizing-bash-command-history">Utilizing bash command history</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#viewing-and-using-bash-history">Viewing and using bash history</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#get-hardware-of-computer">Get hardware of computer</a></li>
@@ -156,12 +157,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../pi/index.html">Raspberry Pi Resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../pi/networks.html">Network Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../pi/piduino.html">Raspberry Pi With Arduino Firmata</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Nodejs</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/index.html">Node JS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/node-cli.html">Node JS CLI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../nodejs/node-streams.html">Node JS Streams</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Editors / IDE&#8217;s</span></p>
 <ul>
@@ -234,10 +229,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../../dev-tools/chrome.html">Chrome Developer Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../dev-tools/docker/index.html">Docker</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Javascript</span></p>
+<p class="caption"><span class="caption-text">Javascript | Nodejs</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../javascript/concepts.html">JavaScript Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/data-structures.html">Data Structures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../javascript/interview-questions.html">JavaScript Interview Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/quality-assurance.html">Quality Assurance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/testing-tools.html">Testing Tooling &amp; Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/nodejs/index.html">Node JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/nodejs/node-cli.html">Node JS CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../javascript/nodejs/node-streams.html">Node JS Streams</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Electron</span></p>
 <ul>
@@ -321,6 +322,57 @@
 </div>
 <div class="section" id="bash-tips">
 <h2>Bash Tips<a class="headerlink" href="#bash-tips" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="shell-check-for-bash-scripting">
+<h2>Shell Check For Bash Scripting<a class="headerlink" href="#shell-check-for-bash-scripting" title="Permalink to this headline">¶</a></h2>
+<p>Install on machine.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># Install required dependency</span>
+sudo apt install xz-utils
+
+<span class="c1"># Set version to install</span>
+<span class="nv">scversion</span><span class="o">=</span><span class="s2">&quot;stable&quot;</span> <span class="c1"># or &quot;v0.4.7&quot;, or &quot;latest&quot;</span>
+
+<span class="c1"># Grab the versioned tar archive</span>
+wget <span class="s2">&quot;https://storage.googleapis.com/shellcheck/shellcheck-</span><span class="si">${</span><span class="nv">scversion</span><span class="si">}</span><span class="s2">.linux.x86_64.tar.xz&quot;</span>
+
+<span class="c1"># Unzip</span>
+tar --xz -xvf shellcheck-<span class="s2">&quot;</span><span class="si">${</span><span class="nv">scversion</span><span class="si">}</span><span class="s2">&quot;</span>.linux.x86_64.tar.xz
+
+<span class="c1"># Copy to executable directory</span>
+cp shellcheck-<span class="s2">&quot;</span><span class="si">${</span><span class="nv">scversion</span><span class="si">}</span><span class="s2">&quot;</span>/shellcheck /usr/bin/
+
+<span class="c1"># Remove zip and executable not needed in current directory anymore</span>
+sudo rm -rf shellcheck-<span class="s2">&quot;</span><span class="si">${</span><span class="nv">scversion</span><span class="si">}</span><span class="s2">&quot;</span>.linux.x86_64.tar.xz
+sudo rm -rf shellcheck-<span class="s2">&quot;</span><span class="si">${</span><span class="nv">scversion</span><span class="si">}</span><span class="s2">&quot;</span>
+
+<span class="c1"># List out installed version</span>
+shellcheck --version
+</pre></div>
+</div>
+<p>Using from the terminal.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ shellcheck &lt;yourscript&gt;.sh
+</pre></div>
+</div>
+<p>Using from your editor</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="https://github.com/koalaman/shellcheck#user-content-in-your-editor">Install ShellCheck extension in your editor</a></li>
+</ul>
+</div></blockquote>
+<p>Use live online</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="https://www.shellcheck.net/">ShellCheck live online</a></li>
+</ul>
+</div></blockquote>
+<p>Integrate with build systems, Travis CI, Docker, etc.</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="https://github.com/koalaman/shellcheck/wiki/Integration">Integrating with ShellCheck</a></li>
+</ul>
+</div></blockquote>
 <div class="section" id="utilizing-bash-command-history">
 <h3>Utilizing bash command history<a class="headerlink" href="#utilizing-bash-command-history" title="Permalink to this headline">¶</a></h3>
 <p>This information was pulled from <a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-use-bash-history-commands-and-expansions-on-a-linux-vps">this DigitalOcean tutorial</a> .</p>
@@ -848,7 +900,7 @@ command3
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, Matt Oldfield.
-      Last updated on Nov 05, 2018.
+      Last updated on Nov 06, 2018.
 
     </p>
   </div>

@@ -97,6 +97,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#writing-this-documentation">Writing This Documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#some-useful-git-commands">Some Useful Git Commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#updating-user-role-capabilities">Updating User Role Capabilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sphinx-autobuild">Sphinx Autobuild</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="README.html">Welcome to the Asmattic Docs Documentation</a></li>
@@ -113,12 +114,6 @@
 <li class="toctree-l1"><a class="reference internal" href="pi/index.html">Raspberry Pi Resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pi/networks.html">Network Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pi/piduino.html">Raspberry Pi With Arduino Firmata</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Nodejs</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="nodejs/index.html">Node JS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nodejs/node-cli.html">Node JS CLI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nodejs/node-streams.html">Node JS Streams</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Editors / IDE&#8217;s</span></p>
 <ul>
@@ -191,10 +186,16 @@
 <li class="toctree-l1"><a class="reference internal" href="dev-tools/chrome.html">Chrome Developer Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dev-tools/docker/index.html">Docker</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Javascript</span></p>
+<p class="caption"><span class="caption-text">Javascript | Nodejs</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="javascript/concepts.html">JavaScript Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="javascript/data-structures.html">Data Structures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="javascript/interview-questions.html">JavaScript Interview Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="javascript/quality-assurance.html">Quality Assurance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="javascript/testing-tools.html">Testing Tooling &amp; Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="javascript/nodejs/index.html">Node JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="javascript/nodejs/node-cli.html">Node JS CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="javascript/nodejs/node-streams.html">Node JS Streams</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Electron</span></p>
 <ul>
@@ -297,6 +298,10 @@ $ git fetch --hard origin/<span class="o">[</span>your-branch<span class="o">]</
 <h2>Updating User Role Capabilities<a class="headerlink" href="#updating-user-role-capabilities" title="Permalink to this headline">¶</a></h2>
 <p>In the <code class="docutils literal"><span class="pre">wp_options</span></code> table, edit the <code class="docutils literal"><span class="pre">wp_user_roles</span></code> by removing the role in question. Then deactivate and activate the Asmattic Docs plugin.</p>
 </div>
+<div class="section" id="sphinx-autobuild">
+<h2>Sphinx Autobuild<a class="headerlink" href="#sphinx-autobuild" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/GaretJax/sphinx-autobuild">Rebuilds the docs on any changes</a></p>
+</div>
 </div>
 
 
@@ -319,7 +324,7 @@ $ git fetch --hard origin/<span class="o">[</span>your-branch<span class="o">]</
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, Matt Oldfield.
-      Last updated on Nov 05, 2018.
+      Last updated on Nov 06, 2018.
 
     </p>
   </div>
