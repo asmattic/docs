@@ -68,14 +68,17 @@ All together now. Open ``~/.bashrc``.
 
    shot -s histappend
 
-   export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+   PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
    # Ignore commands that start with a space because they are probably a mistake
    # Also ignore duplicates typed in succession
-   export HISTCONTROL=ignorespace:ignoredups
+   HISTCONTROL=ignorespace:ignoredups
+
+   # Shorthand for ignoring both
+   HISTCONTROL=ignoreboth
 
    # Set a date format to identify when commands were run
-   export HISTTIMEFORMAT=\"%m/%d/%y %T  \"
+   HISTTIMEFORMAT="%m/%d/%y %T  "
 
 Close ``~/.bashrc``.
 

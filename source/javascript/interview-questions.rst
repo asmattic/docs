@@ -23,3 +23,4 @@ JavaScript Interview Questions
        console.log('Index: ' + i + ', element: ' + arr[i]);
      }, 3000);
    }
+

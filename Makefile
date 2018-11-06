@@ -4,6 +4,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
+SPHINX_AUTOBUILD = sphinx-autobuild
 PAPER         =
 BUILDDIR      = build
 
@@ -12,6 +13,10 @@ ifeq ($(shell which $(SPHINXBUILD) >/dev/null 2>&1; echo $$?), 1)
 $(error The '$(SPHINXBUILD)' command was not found. Make sure you have Sphinx installed, then set the SPHINXBUILD environment variable to point to the full path of the '$(SPHINXBUILD)' executable. Alternatively you can add the directory with the executable to your PATH. If you don't have Sphinx installed, grab it from http://sphinx-doc.org/)
 endif
 
+# Check for sphinx-autobuild
+ifeq ($(shell type $(SPHINX_AUTOBUILD) >/dev/null 2>&1; echo $$?), 1)
+$(error The '$(SPHINX_AUTOBUILD)' command was not found. Make sure you have Sphinx installed, then set the SPHINXBUILD environment variable to point to the full path of the '$(SPHINX_AUTOBUILD)' executable. Alternatively you can add the directory with the executable to your PATH. If you don't have Sphinx installed, grab it from http://sphinx-doc.org/)
+endif
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
@@ -214,3 +219,10 @@ pseudoxml:
 	$(SPHINXBUILD) -b pseudoxml $(ALLSPHINXOPTS) $(BUILDDIR)/pseudoxml
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
+# Added by Asmattic (11/05/2018) to
+.PHONY: livehtml
+livehtml:
+	$(SPHINX_AUTOBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	@echo
+	@echo "About to run sphinx-autobuild to continuously watch directory " \
+			"using $(ALLSPHINXOPTS) and the $(BUILDDIR) build directory"

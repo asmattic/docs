@@ -15,8 +15,6 @@
   
     <link rel="shortcut icon" href="../_static/mo-favicon.png"/>
   
-  
-  
 
   
 
@@ -50,7 +48,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -94,10 +91,7 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">Developer</span></p>
+                <p class="caption"><span class="caption-text">Developer</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../dev-docs.html">Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../README.html">Welcome to the Asmattic Docs Documentation</a></li>
@@ -121,9 +115,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../nodejs/node-cli.html">Node JS CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../nodejs/node-streams.html">Node JS Streams</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Editors / IDE's</span></p>
+<p class="caption"><span class="caption-text">Editors / IDE&#8217;s</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="index.html">Text editors and IDE’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Text editors and IDE&#8217;s</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sublime.html">Sublime Text 3</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Visual Studio Code</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#setup">Setup</a></li>
@@ -145,8 +139,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../hosting/index.html">Deployment, Hosting and Security</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../hosting/monitoring.html">Monitoring, Logging &amp; Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../hosting/seo.html">SEO</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../hosting/security/htaccess.html"><code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/security/htaccess.html"><code class="docutils literal"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal"><span class="pre">.htaccess</span></code></a></li>
 </ul>
 <p class="caption"><span class="caption-text">Python</span></p>
 <ul>
@@ -225,10 +219,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">asmattic Docs</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">asmattic Docs</a>
       </nav>
 
 
@@ -237,40 +229,23 @@
         <div class="rst-content">
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>Visual Studio Code</li>
-    
-    
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Visual Studio Code</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../_sources/editors/visual-studio-code.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../_sources/editors/visual-studio-code.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -282,28 +257,28 @@
 <h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">“Visual Studio Code is unable to watch for file changes in this large workspace” (error ENOSPC)</p>
+<p class="last">&#8220;Visual Studio Code is unable to watch for file changes in this large workspace&#8221; (error ENOSPC)</p>
 </div>
 <p>When you see this notification, it indicates that the VS Code file watcher is running out of handles because the workspace is large and contains many files. The current limit can be viewed by running:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat /proc/sys/fs/inotify/max_user_watches
+<div class="highlight-bash"><div class="highlight"><pre><span></span>cat /proc/sys/fs/inotify/max_user_watches
 </pre></div>
 </div>
-<p>The limit can be increased to its maximum by editing <code class="docutils literal notranslate"><span class="pre">/etc/sysctl.conf</span></code> and adding this line to the end of the file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fs.inotify.max_user_watches<span class="o">=</span><span class="m">524288</span>
+<p>The limit can be increased to its maximum by editing <code class="docutils literal"><span class="pre">/etc/sysctl.conf</span></code> and adding this line to the end of the file:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>fs.inotify.max_user_watches<span class="o">=</span>524288
 </pre></div>
 </div>
-<p>The new value can then be loaded in by running <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">sysctl</span> <span class="pre">-p</span></code>.</p>
+<p>The new value can then be loaded in by running <code class="docutils literal"><span class="pre">sudo</span> <span class="pre">sysctl</span> <span class="pre">-p</span></code>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">On Ubuntu, if <code class="docutils literal notranslate"><span class="pre">alt</span></code> + <code class="docutils literal notranslate"><span class="pre">click</span></code> drags the window instead of creating multiple cursors, run the below command in the terminal.</p>
+<p class="last">On Ubuntu, if <code class="docutils literal"><span class="pre">alt</span></code> + <code class="docutils literal"><span class="pre">click</span></code> drags the window instead of creating multiple cursors, run the below command in the terminal.</p>
 </div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gsettings <span class="nb">set</span> org.gnome.desktop.wm.preferences mouse-button-modifier <span class="s2">&quot;&lt;Super&gt;&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>gsettings <span class="nb">set</span> org.gnome.desktop.wm.preferences mouse-button-modifier <span class="s2">&quot;&lt;Super&gt;&quot;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="recommended-settings">
 <h2>Recommended Settings<a class="headerlink" href="#recommended-settings" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
    <span class="nt">&quot;gitlens.advanced.messages&quot;</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">&quot;suppressShowKeyBindingsNotice&quot;</span><span class="p">:</span> <span class="kc">true</span>
    <span class="p">},</span>
@@ -324,18 +299,15 @@
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="atom.html" class="btn btn-neutral float-right" title="Atom Editor by Github" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="atom.html" class="btn btn-neutral float-right" title="Atom Editor by Github" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="sublime.html" class="btn btn-neutral" title="Sublime Text 3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="sublime.html" class="btn btn-neutral" title="Sublime Text 3" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -345,7 +317,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, Matt Oldfield.
-      Last updated on Oct 17, 2018.
+      Last updated on Nov 05, 2018.
 
     </p>
   </div>
@@ -370,14 +342,13 @@
             VERSION:'0.4.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

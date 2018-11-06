@@ -2,7 +2,7 @@ Node JS
 =========
 
 .. Variables
-.. include:: ../vars.rst
+.. include:: ../../vars.rst
 
 .. _nodejs-toc-sec:
 

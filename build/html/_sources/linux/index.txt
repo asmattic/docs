@@ -69,7 +69,7 @@ Nodejs
 Install with `nvm`
 
 .. code-block:: bash
-	
+
 	# Make sure the tools that build packages are installed
 	$ sudo apt-get install build-essential libssl-dev
 
@@ -99,7 +99,7 @@ Filezilla
 ~~~~~~~~~~
 
 .. code-block:: bash
-	
+
 	# Add apt-key to Ubuntu so it trusts the packages about to be added
 	$ wget -q -O - http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
 
@@ -123,13 +123,13 @@ Packages:
    6. DocBlockr
    7. DocBlockr Python
    8. A File Icon
-	
+
 Themes and general Sublime user preferences:
 
 Predawn theme with Monokai `color_scheme`
 
 .. code-block:: json
-	
+
    {
 		"color_scheme": "Packages/Predawn Monokai/Predawn Monokai.tmTheme",
 		"theme": "predawn-DEV.sublime-theme",
@@ -145,7 +145,7 @@ Predawn theme with Monokai `color_scheme`
 
 
 .. code-block:: bash
-	
+
 	# Add apt-key to Ubuntu so it trusts the packages about to be added
 	$ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 
@@ -160,7 +160,7 @@ Google Chrome
 ~~~~~~~~~~~~~~~
 
 .. code-block:: bash
-	
+
 	# Add apt-key to Ubuntu
 	$ curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
 
@@ -174,7 +174,7 @@ Postman
 ~~~~~~~~~
 
 .. code-block:: bash
-	
+
 	# Get the gzipped file
 	$ wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
 
@@ -205,7 +205,7 @@ Signal
 End to end encrypted messaging service
 
 .. code-block:: bash
-	
+
 	# Add apt-key to Ubuntu
 	$ curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
 
@@ -247,10 +247,10 @@ Sphinx
 ~~~~~~~
 
 .. code-block:: bash
-   
+
    # Install from apt
    $ sudo apt-get install python-sphinx
-   
+
    # Install from Pip
    $ sudo pip install -U sphinx
 
@@ -280,3 +280,26 @@ Kerbal Space Program (KSP)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Using the Steam gaming platform download KSP which works on Ubuntu 16.04.4
+
+Application Links Not Opening Properly In Chrome
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+From `this Stack Overflow article <https://askubuntu.com/questions/689449/external-links-are-opened-as-blank-tabs-in-new-browser-window-in-chrome>`_
+
+The issue is with ``google-chrome.desktop``, and it is missing the ``%U`` argument .
+
+Open file: ``$HOME/.local/share/applications/google-chrome.desktop``
+
+Find the line:
+
+.. code-block:: bash
+
+   Exec=/opt/google/chrome/chrome
+
+Add a space and ``%U`` to make it
+
+.. code-block:: bash
+
+   Exec=/opt/google/chrome/chrome %U
+
+Then save the file.

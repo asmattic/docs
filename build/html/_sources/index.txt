@@ -9,7 +9,6 @@ Information about development is also available
 * :ref:`dev-docs-sec`
 * :ref:`linux-sec`
 * :ref:`pi-sec`
-* :ref:`nodejs-sec`
 * :ref:`editors-sec`
 * :ref:`hardware-sec`
 * :ref:`hosting-sec`
@@ -52,16 +51,6 @@ Information about development is also available
    pi/index
    pi/networks
    pi/piduino
-
-.. _nodejs-sec:
-
-.. toctree::
-   :maxdepth: 2
-   :glob:
-   :caption: Nodejs
-
-   nodejs/index
-   nodejs/*
 
 .. _editors-sec:
 
@@ -195,9 +184,10 @@ Information about development is also available
 .. toctree::
    :maxdepth: 2
    :glob:
-   :caption: Javascript
+   :caption: Javascript | Nodejs
 
    javascript/*
+   javascript/nodejs/*
 
 .. _electron-sec:
 

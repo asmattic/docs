@@ -15,8 +15,6 @@
   
     <link rel="shortcut icon" href="../_static/mo-favicon.png"/>
   
-  
-  
 
   
 
@@ -50,7 +48,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -94,10 +91,7 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">Developer</span></p>
+                <p class="caption"><span class="caption-text">Developer</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../dev-docs.html">Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../README.html">Welcome to the Asmattic Docs Documentation</a></li>
@@ -121,9 +115,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../nodejs/node-cli.html">Node JS CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../nodejs/node-streams.html">Node JS Streams</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Editors / IDE's</span></p>
+<p class="caption"><span class="caption-text">Editors / IDE&#8217;s</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Text editors and IDE’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Text editors and IDE&#8217;s</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../editors/sublime.html">Sublime Text 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../editors/visual-studio-code.html">Visual Studio Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../editors/atom.html">Atom Editor by Github</a></li>
@@ -141,8 +135,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../hosting/index.html">Deployment, Hosting and Security</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../hosting/monitoring.html">Monitoring, Logging &amp; Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../hosting/seo.html">SEO</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../hosting/security/htaccess.html"><code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/security/htaccess.html"><code class="docutils literal"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal"><span class="pre">.htaccess</span></code></a></li>
 </ul>
 <p class="caption"><span class="caption-text">Python</span></p>
 <ul>
@@ -234,10 +228,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">asmattic Docs</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">asmattic Docs</a>
       </nav>
 
 
@@ -246,40 +238,23 @@
         <div class="rst-content">
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>All things Git</li>
-    
-    
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>All things Git</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="../_sources/git/index.rst.txt" rel="nofollow"> View page source</a>
+          
+            <a href="../_sources/git/index.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -290,7 +265,7 @@
 <div class="section" id="git-basics">
 <span id="git-basics-sec"></span><h2>Git Basics<a class="headerlink" href="#git-basics" title="Permalink to this headline">¶</a></h2>
 <p>Enough to get started with.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check status of project</span>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Check status of project</span>
 $ git status
 
 <span class="c1"># Adds all newly added files and directories</span>
@@ -317,13 +292,13 @@ $ git fetch --hard origin/&lt;your-branch&gt;
 </pre></div>
 </div>
 <p>When you need to combine changes made somewhere else with your current branch.</p>
-<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">other-branch</span></code></p>
+<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">other-branch</span></code></p>
 <p>Git is basically doing this</p>
-<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">fetch</span> <span class="pre">origin</span> <span class="pre">other-branch</span> <span class="pre">&amp;&amp;</span> <span class="pre">git</span> <span class="pre">merge</span> <span class="pre">other-branch</span></code></p>
+<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">fetch</span> <span class="pre">origin</span> <span class="pre">other-branch</span> <span class="pre">&amp;&amp;</span> <span class="pre">git</span> <span class="pre">merge</span> <span class="pre">other-branch</span></code></p>
 </div>
 <div class="section" id="branches">
 <span id="git-branch-sec"></span><h2>Branches<a class="headerlink" href="#branches" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># To list local branches</span>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># To list local branches</span>
 git branch
 
 <span class="c1"># To list remote and local branches</span>
@@ -336,10 +311,10 @@ git branch -a
 <p>Here is the <a class="reference external" href="https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/">main article from the GitHub help pages</a></p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">As a general strategy, it is best to merge the more important branches rather than the other way around so that the merge conflicts can be managed with less of a chance of messing up <code class="docutils literal notranslate"><span class="pre">master</span></code> or other stable branches.</p>
+<p class="last">As a general strategy, it is best to merge the more important branches rather than the other way around so that the merge conflicts can be managed with less of a chance of messing up <code class="docutils literal"><span class="pre">master</span></code> or other stable branches.</p>
 </div>
-<p>The <code class="docutils literal notranslate"><span class="pre">--no-ff</span></code> creates a commit and timestamp of the merge, as well as who did it.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># checkout less important branch</span>
+<p>The <code class="docutils literal"><span class="pre">--no-ff</span></code> creates a commit and timestamp of the merge, as well as who did it.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># checkout less important branch</span>
 $ git checkout &lt;feature branch&gt;
 
 <span class="c1"># merge in the more important branch</span>
@@ -361,11 +336,11 @@ $ git checkout &lt;stable branch&gt;
 $ git branch -d &lt;obsolete branch&gt;
 </pre></div>
 </div>
-<p>If there are conflicts, you will see <code class="docutils literal notranslate"><span class="pre">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD</span></code> or <code class="docutils literal notranslate"><span class="pre">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;branch&gt;</span></code> followed by the code in one branch with <code class="docutils literal notranslate"><span class="pre">==========</span></code> separating the same code with changes in the other branch with <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&lt;other_branch&gt;</span></code> at the end of the changes to look at. Manually edit how you want to merge them, remove the conflict delimiters and commit the completed merge.</p>
+<p>If there are conflicts, you will see <code class="docutils literal"><span class="pre">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD</span></code> or <code class="docutils literal"><span class="pre">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;branch&gt;</span></code> followed by the code in one branch with <code class="docutils literal"><span class="pre">==========</span></code> separating the same code with changes in the other branch with <code class="docutils literal"><span class="pre">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&lt;other_branch&gt;</span></code> at the end of the changes to look at. Manually edit how you want to merge them, remove the conflict delimiters and commit the completed merge.</p>
 </div>
 <div class="section" id="deleting-branches">
 <h3>Deleting Branches<a class="headerlink" href="#deleting-branches" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># delete remote branch</span>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># delete remote branch</span>
 $ git push origin --delete &lt;branch_name&gt;
 
 <span class="c1"># delete local branch</span>
@@ -378,7 +353,7 @@ $ git branch -D &lt;branch_name&gt;
 </div>
 <div class="section" id="resetting-branch-to-previous-commit">
 <h3>Resetting Branch to previous commit<a class="headerlink" href="#resetting-branch-to-previous-commit" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Checkout the branch to revert</span>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Checkout the branch to revert</span>
 $ git checkout master
 
 $ git reset --hard &lt;commit&gt;
@@ -393,13 +368,13 @@ $ git diff master ..origin/master
 </div>
 <div class="section" id="forking">
 <span id="git-forking-sec"></span><h2>Forking<a class="headerlink" href="#forking" title="Permalink to this headline">¶</a></h2>
-<p>Only <code class="docutils literal notranslate"><span class="pre">fork</span></code> if you intend on contributing to the code base.</p>
+<p>Only <code class="docutils literal"><span class="pre">fork</span></code> if you intend on contributing to the code base.</p>
 </div>
 <div class="section" id="git-tips-and-tricks">
 <span id="git-tips-tricks-sec"></span><h2>Git tips and tricks<a class="headerlink" href="#git-tips-and-tricks" title="Permalink to this headline">¶</a></h2>
 <p>To display the current branch in the terminal follow the steps in <a class="reference external" href="https://howchoo.com/g/n2jhnmvjzta/how-to-display-the-current-git-branch-on-the-command-prompt">this Howchoo atricle</a>.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> parse_git_branch <span class="o">()</span> <span class="o">{</span>
-  git branch <span class="m">2</span>&gt; /dev/null <span class="p">|</span> sed -e <span class="s1">&#39;/^[^*]/d&#39;</span> -e <span class="s1">&#39;s/* \(.*\)/ (\1)/&#39;</span>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="k">function</span> parse_git_branch <span class="o">()</span> <span class="o">{</span>
+  git branch 2&gt; /dev/null <span class="p">|</span> sed -e <span class="s1">&#39;/^[^*]/d&#39;</span> -e <span class="s1">&#39;s/* \(.*\)/ (\1)/&#39;</span>
 <span class="o">}</span>
 <span class="nv">YELLOW</span><span class="o">=</span><span class="s2">&quot;\[\033[0;33m\]&quot;</span>
 <span class="nv">GREEN</span><span class="o">=</span><span class="s2">&quot;\[\033[0;32m\]&quot;</span>
@@ -412,12 +387,12 @@ $ git diff master ..origin/master
 <span id="sec-git-ssh-shell"></span><h2>Bash scripting with git<a class="headerlink" href="#bash-scripting-with-git" title="Permalink to this headline">¶</a></h2>
 <p>To have the right <cite>ssh</cite> context in <cite>git</cite> you have to feed it the correct place to look for the necessary keys.</p>
 <p>Filename: <cite>git-ssh.sh</cite></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/sh</span>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="ch">#!/bin/sh</span>
 ssh -i <span class="s2">&quot;</span><span class="nv">$GIT_SSH_KEY</span><span class="s2">&quot;</span> <span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
 <p>Example using <cite>git-ssh.sh</cite> to use pull and push functions.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>#!/bin/bash
+<div class="highlight-default"><div class="highlight"><pre><span></span>#!/bin/bash
 
 # For now, I know user home
 user_home=&quot;/home/pi&quot;
@@ -460,28 +435,25 @@ fi
 <div class="section" id="ignoring-already-tracked-files-and-directories">
 <h2>Ignoring already tracked files and directories<a class="headerlink" href="#ignoring-already-tracked-files-and-directories" title="Permalink to this headline">¶</a></h2>
 <p>First add the file or folder to the <cite>.gitignore</cite> file.</p>
-<p>After that is done they can be removed from the git index by adding the <cite>–cached</cite> flag to <cite>git rm</cite>.
+<p>After that is done they can be removed from the git index by adding the <cite>&#8211;cached</cite> flag to <cite>git rm</cite>.
 .. code-block:: bash</p>
 <blockquote>
 <div># Add -r for recursive removal
-$ git rm -r –cached &lt;path-to-folder-or-file&gt;</div></blockquote>
+$ git rm -r &#8211;cached &lt;path-to-folder-or-file&gt;</div></blockquote>
 </div>
 </div>
 
 
-           </div>
-           <div class="articleComments">
-            
            </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../reactjs/index.html" class="btn btn-neutral float-right" title="ReactJS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../reactjs/index.html" class="btn btn-neutral float-right" title="ReactJS" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../cabanalytics/index.html" class="btn btn-neutral" title="Cabanalytics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../cabanalytics/index.html" class="btn btn-neutral" title="Cabanalytics" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -491,7 +463,7 @@ $ git rm -r –cached &lt;path-to-folder-or-file&gt;</div></blockquote>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, Matt Oldfield.
-      Last updated on Oct 17, 2018.
+      Last updated on Nov 05, 2018.
 
     </p>
   </div>
@@ -516,14 +488,13 @@ $ git rm -r –cached &lt;path-to-folder-or-file&gt;</div></blockquote>
             VERSION:'0.4.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

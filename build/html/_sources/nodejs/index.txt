@@ -117,3 +117,152 @@ Socket
 .. literalinclude:: socket-io.js
 
 .. _socketIoDocs: https://socket.io/docs
+
+Node Useful Packages
+----------------------
+
+ - `Awesome NPM <https://github.com/sindresorhus/awesome-npm>`_  - List of npm resources
+
+Express Server
+~~~~~~~~~~~~~~~~~~~
+
+
+ - `async <https://www.npmjs.com/package/async>`_
+ - `chalk <https://www.npmjs.com/package/chalk>`_ terminal colors
+ - `express <https://www.npmjs.com/package/express>`_
+ - `lodash <https://www.npmjs.com/package/lodash>`_
+ - `socket.io <https://socket.io/docs>`_
+ - `moment <https://www.npmjs.com/package/moment>`_ - date lib
+ - `commander <https://www.npmjs.com/package/commander>`_  - CLI builder and mgmt tool
+ - `cors <https://www.npmjs.com/package/cors>`_  - Node.js CORS middleware
+ - `body-parser <https://www.npmjs.com/package/body-parser>`_  -Node.js body parsing middleware
+ - `jsonwebtoken <https://www.npmjs.com/package/jsonwebtoken>`_  - An implementation of `JSON Web Tokens <https://tools.ietf.org/html/rfc7519>`_.
+ - `passport-jwt <https://www.npmjs.com/package/passport-jwt>`_  - This module lets you authenticate endpoints using a JSON web token. It is intended to be used to secure RESTful endpoints without sessions.
+ - `cookie-parser <https://www.npmjs.com/package/cookie-parser>`_  -
+ - `morgan http request logger <https://www.npmjs.com/package/morgan>`_  -
+ - `serve-favicon <https://www.npmjs.com/package/serve-favicon>`_  - favicon serving middleware with caching
+ - `compression <https://www.npmjs.com/package/compression>`_  -
+ - `nodemailer <https://www.npmjs.com/package/nodemailer>`_
+ - `dotenv <https://www.npmjs.com/package/dotenv>`_  - Loads environment variables from .env file
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+
+Process Manager
+~~~~~~~~~~~~~~~~~
+
+ - `pm2 <https://www.npmjs.com/package/pm2>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+
+
+
+Express Authentication
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+ - `passport <https://www.npmjs.com/package/passport>`_  - Simple, unobtrusive authentication for Node.js.
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+
+Documentation
+~~~~~~~~~~~~~~~~
+
+ - `Docusaurus <https://www.npmjs.com/package/docusaurus>`_  -
+ - `esdoc <https://www.npmjs.com/package/esdoc>`_  - ESDoc is a documentation generator for JavaScript.
+ - ` <>`_  -
+
+Styling Code and Linting
+~~~~~~~~~~~~~~~~~~~~~~~~~
+ - `eslint <https://www.npmjs.com/package/eslint>`_  - An AST-based pattern checker for JavaScript.
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+
+Database
+~~~~~~~~~~~
+ - `Mongoose <https://www.npmjs.com/package/mongoose>`_  - mongoDB lib that has Schemas, etc.
+ - ` <>`_  -
+ - ` <>`_  -
+ - `cheerio <https://www.npmjs.com/package/cheerio>`_  - Tiny, fast, and elegant implementation of core jQuery designed specifically for the server used for web scraping
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+
+Styling
+~~~~~~~~
+
+ - `styled-components <https://www.npmjs.com/package/styled-components>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+
+Testing
+~~~~~~~~
+
+ - `jest <https://www.npmjs.com/package/jest>`_  -
+ - `mocha <>`_  -
+ - `chai <https://www.npmjs.com/package/chai>`_  - BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
+ - `istanbul <https://www.npmjs.com/package/istanbul>`_  - Code coverage
+
+React
+~~~~~~
+
+ - `react <https://www.npmjs.com/package/react>`_  -
+ - `react-router <https://www.npmjs.com/package/react-router>`_  -
+ - `redux <https://www.npmjs.com/package/redux>`_  -
+ - `react-dom <https://www.npmjs.com/package/react-dom>`_  -
+ - `babel-preset-react <https://www.npmjs.com/package/babel-preset-react>`_  -
+ - `redux-thunk <https://www.npmjs.com/package/redux-thunk>`_  - Thunk middleware for Redux.
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
+ - ` <>`_  -
