@@ -52,7 +52,7 @@ Quote Examples
    $ echo '$(whoami)' # => Result:  $(whoami)
 
 
-.. note:: While backticks will execute the command(s) inside them, this is a much older way of performing the same functionality as ``$(<command>)`` known as command substitution but using ``$()`` is the recommended way. For more in depth reasoning, see `this StackExchange answer <https://unix.stackexchange.com/questions/48392/understanding-backtick>`_.
+.. note:: While backticks will execute the command(s) inside them, this is a much older way of performing the same functionality as ``$(<command>)`` known as command substitution but using ``$()`` is the recommended way. For a more in depth explanation, see `this StackExchange answer <https://unix.stackexchange.com/questions/48392/understanding-backtick>`_.
 
 
 Shell Check For Bash Scripting

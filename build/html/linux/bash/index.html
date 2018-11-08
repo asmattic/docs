@@ -106,7 +106,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#close-terminal">Close terminal</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#bash-tips">Bash Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bash-tips">Bash Tips</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#quote-examples">Quote Examples</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#shell-check-for-bash-scripting">Shell Check For Bash Scripting</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#utilizing-bash-command-history">Utilizing bash command history</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#viewing-and-using-bash-history">Viewing and using bash history</a></li>
@@ -322,6 +325,27 @@
 </div>
 <div class="section" id="bash-tips">
 <h2>Bash Tips<a class="headerlink" href="#bash-tips" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Single quotes print out the literal text inside them. Double quotes print the variables and operations in the quotes.</p>
+</div>
+<div class="section" id="quote-examples">
+<h3>Quote Examples<a class="headerlink" href="#quote-examples" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Double quotes</span>
+$ <span class="nb">echo</span> <span class="s2">&quot;</span><span class="k">$(</span>whoami<span class="k">)</span><span class="s2">&quot;</span> <span class="c1"># =&gt; Result:  asmattic</span>
+
+<span class="c1"># Backticks</span>
+$ <span class="nb">echo</span> <span class="sb">`</span>whoami<span class="sb">`</span> <span class="c1"># =&gt; Result:  asmattic</span>
+
+<span class="c1"># Single quotes</span>
+$ <span class="nb">echo</span> <span class="s1">&#39;$(whoami)&#39;</span> <span class="c1"># =&gt; Result:  $(whoami)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">While backticks will execute the command(s) inside them, this is a much older way of performing the same functionality as <code class="docutils literal"><span class="pre">$(&lt;command&gt;)</span></code> known as command substitution but using <code class="docutils literal"><span class="pre">$()</span></code> is the recommended way. For a more in depth explanation, see <a class="reference external" href="https://unix.stackexchange.com/questions/48392/understanding-backtick">this StackExchange answer</a>.</p>
+</div>
+</div>
 </div>
 <div class="section" id="shell-check-for-bash-scripting">
 <h2>Shell Check For Bash Scripting<a class="headerlink" href="#shell-check-for-bash-scripting" title="Permalink to this headline">¶</a></h2>
@@ -900,7 +924,7 @@ command3
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, Matt Oldfield.
-      Last updated on Nov 06, 2018.
+      Last updated on Nov 07, 2018.
 
     </p>
   </div>
