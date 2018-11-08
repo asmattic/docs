@@ -35,6 +35,26 @@ Close terminal
 Bash Tips
 -----------
 
+.. note:: Single quotes print out the literal text inside them. Double quotes print the variables and operations in the quotes.
+
+Quote Examples
+~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+   # Double quotes
+   $ echo "$(whoami)" # => Result:  asmattic
+
+   # Backticks
+   $ echo `whoami` # => Result:  asmattic
+
+   # Single quotes
+   $ echo '$(whoami)' # => Result:  $(whoami)
+
+
+.. note:: While backticks will execute the command(s) inside them, this is a much older way of performing the same functionality as ``$(<command>)`` known as command substitution but using ``$()`` is the recommended way. For more in depth reasoning, see `this StackExchange answer <https://unix.stackexchange.com/questions/48392/understanding-backtick>`_.
+
+
 Shell Check For Bash Scripting
 ---------------------------------
 
