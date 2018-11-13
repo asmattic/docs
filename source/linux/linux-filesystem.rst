@@ -56,6 +56,71 @@ Permissions are broken up into four groups. The first group is one character and
       - ``2`` (write)
       - ``4`` (read)
 
+`Good Bash scripting reference  <https://tiswww.case.edu/php/chet/bash/bashref.html#Shell-Parameters>`_
+
+# Check if program exists
+# $0 is the function name
+# $1 is the first arg
+# 2>/dev/null redirects output to stderr instead of stdout
+# > redirect standard output (implicit 1>)
+# & what comes next is a file descriptor, not a file (only for right hand side of >)
+# 2 stderr file descriptor number
+
+.. list-table::
+   :header-rows: 1
+
+   *  - Special Parameter
+      - Description
+      - Common Use Case
+
+   *  - `$0`
+      - Function name of previously ran function
+      - TBD
+
+   *  - `$1`
+      - First argument
+      - TBD
+
+   *  - `$?`
+      - Expands to the exit status of the most recently executed foreground pipeline
+      - TBD
+
+   *  - `$@`
+      - TBD
+      - TBD
+
+   *  - `$!`
+      - TBD
+      - TBD
+   *  - `2>/dev/null`
+      - Redirects output to stderr instead of stdout
+      - TBD
+
+   *  - `1`
+      - `stdout` file descriptor number
+      - TBD
+
+   *  - `2`
+      - `stderr` file descriptor number
+      - TBD
+
+   *  - `>` (implicit `1>`)
+      - Redirect standard output
+      - TBD
+
+Order of output redirections
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Note that the order of redirections is significant. For example, the command
+
+.. code-block:: bash
+
+   ls > dirlist 2>&1
+
+directs both standard output (file descriptor 1) and standard error (file descriptor 2) to the file dirlist, while the command
+
+ls 2>&1 > dirlist
+directs only the standard output to file dirlist, because the standard error was made a copy of the standard output before the standard output was redirected to dirlist.
 
 Open files from terminal
 ---------------------------
