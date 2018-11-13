@@ -32,9 +32,15 @@ Close terminal
 
 ``Ctrl`` + ``Shift`` + ``w``
 
+Terminal styling
+~~~~~~~~~~~~~~~~~~
+
+`Gogh <https://github.com/Mayccoll/Gogh>`_ is a color scheme/set of themes for the Gnome terminal.
+
 Bash Tips
 -----------
 
+<<<<<<< HEAD
 .. note:: Single quotes print out the literal text inside them. Double quotes print the variables and operations in the quotes.
 
 Quote Examples
@@ -198,6 +204,35 @@ Executing a command from history.
 
    # Example (run previous command as sudo)
    $ sudo !!
+=======
+Shell Check
+-------------
+
+ShellCheck validates bash scripts and gives recommendations for code changes.
+
+`Shell check <https://github.com/koalaman/shellcheck>`_ is a bash linting and recommendation package that also has plugins for various editors including `VS Code <https://github.com/timonwong/vscode-shellcheck>`_ and `Sublime Text 3 <https://github.com/SublimeLinter/SublimeLinter-shellcheck>`_ as well as an `online editor <https://www.shellcheck.net/>`_ with instant feedback.
+
+.. code-block:: bash
+
+   $ sudo apt-get install shellcheck
+
+Using modules in bash programs
+--------------------------------
+
+# Check if program exists
+# $0 is the function name
+# $1 is the first arg
+# 2>/dev/null redirects output to stderr instead of stdout
+# > redirect standard output (implicit 1>)
+# & what comes next is a file descriptor, not a file (only for right hand side of >)
+# 2 stderr file descriptor number
+check_required_program () {
+	hash $1 2>/dev/null || {
+		echo $1 is required but not installed
+		exit 1
+	}
+}
+>>>>>>> feature-bash
 
 Get hardware of computer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -207,6 +242,13 @@ Get hardware of computer
 .. code-block:: bash
 
    $ sudo lshw -html > computer_hardware.html
+
+In your terminal, to quickly check a script, run
+
+.. code-block:: bash
+
+   $ shellcheck yourscript
+
 
 Print PCI hardware
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

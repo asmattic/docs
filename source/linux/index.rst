@@ -254,6 +254,9 @@ Sphinx
    # Install from Pip
    $ sudo pip install -U sphinx
 
+   # Install auto rebuild
+   $ sudo pip install sphinx
+
 `sphinx_rtd_theme` is no longer a hard dependency and must be installed manually
 
 .. code-block:: bash
@@ -303,3 +306,23 @@ Add a space and ``%U`` to make it
    Exec=/opt/google/chrome/chrome %U
 
 Then save the file.
+
+Initial Apache Server Setup Ubuntu 16.04
+-------------------------------------------
+
+`Digital Ocean initial server setup <https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04>`_
+
+`DigitalOcean sudo tutorial <https://www.digitalocean.com/community/tutorials/how-to-edit-the-sudoers-file-on-ubuntu-and-centos>`_
+.. code-block:: bash
+
+
+
+Install LAMP on Ubuntu
+-------------------------
+
+`Install LAMP from how to Ubuntu <https://howtoubuntu.org/how-to-install-lamp-on-ubuntu>`_
+
+`Digital Ocean LAMP stack tutorial <https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04>`_
+
+.. code-block:: bash
+
