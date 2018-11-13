@@ -6,6 +6,8 @@ All things Git
 
 .. _git-basics-sec:
 
+`Atlassian is great place to start to reference common Git senarios <https://www.atlassian.com/git/tutorials/using-branches/git-merge>`_
+
 Git Basics
 -----------
 
