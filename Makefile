@@ -14,7 +14,7 @@ $(error The '$(SPHINXBUILD)' command was not found. Make sure you have Sphinx in
 endif
 
 # Check for sphinx-autobuild
-ifeq ($(shell type $(SPHINX_AUTOBUILD) >/dev/null 2>&1; echo $$?), 1)
+ifeq ($(shell which $(SPHINX_AUTOBUILD) >/dev/null 2>&1; echo $$?), 1)
 $(error The '$(SPHINX_AUTOBUILD)' command was not found. Make sure you have Sphinx installed, then set the SPHINXBUILD environment variable to point to the full path of the '$(SPHINX_AUTOBUILD)' executable. Alternatively you can add the directory with the executable to your PATH. If you don't have Sphinx installed, grab it from http://sphinx-doc.org/)
 endif
 # Internal variables.
@@ -28,6 +28,7 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo "  html       to make standalone HTML files"
+	@echo "  livehtml   to make standalone HTML files, rebuilds on file changes"
 	@echo "  dirhtml    to make HTML files named index.html in directories"
 	@echo "  singlehtml to make a single large HTML file"
 	@echo "  pickle     to make pickle files"

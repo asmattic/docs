@@ -40,7 +40,6 @@ Terminal styling
 Bash Tips
 -----------
 
-<<<<<<< HEAD
 .. note:: Single quotes print out the literal text inside them. Double quotes print the variables and operations in the quotes.
 
 Quote Examples
@@ -204,7 +203,6 @@ Executing a command from history.
 
    # Example (run previous command as sudo)
    $ sudo !!
-=======
 Shell Check
 -------------
 
@@ -232,7 +230,6 @@ check_required_program () {
 		exit 1
 	}
 }
->>>>>>> feature-bash
 
 Get hardware of computer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

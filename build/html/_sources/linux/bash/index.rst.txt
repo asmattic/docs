@@ -32,8 +32,207 @@ Close terminal
 
 ``Ctrl`` + ``Shift`` + ``w``
 
+Terminal styling
+~~~~~~~~~~~~~~~~~~
+
+`Gogh <https://github.com/Mayccoll/Gogh>`_ is a color scheme/set of themes for the Gnome terminal.
+
 Bash Tips
 -----------
+
+<<<<<<< HEAD
+.. note:: Single quotes print out the literal text inside them. Double quotes print the variables and operations in the quotes.
+
+Quote Examples
+~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+   # Double quotes
+   $ echo "$(whoami)" # => Result:  asmattic
+
+   # Backticks
+   $ echo `whoami` # => Result:  asmattic
+
+   # Single quotes
+   $ echo '$(whoami)' # => Result:  $(whoami)
+
+
+.. note:: While backticks will execute the command(s) inside them, this is a much older way of performing the same functionality as ``$(<command>)`` known as command substitution but using ``$()`` is the recommended way. For a more in depth explanation, see `this StackExchange answer <https://unix.stackexchange.com/questions/48392/understanding-backtick>`_.
+
+
+Shell Check For Bash Scripting
+---------------------------------
+
+Install on machine.
+
+.. code-block:: bash
+
+   #!/bin/bash
+
+   # Install required dependency
+   sudo apt install xz-utils
+
+   # Set version to install
+   scversion="stable" # or "v0.4.7", or "latest"
+
+   # Grab the versioned tar archive
+   wget "https://storage.googleapis.com/shellcheck/shellcheck-${scversion}.linux.x86_64.tar.xz"
+
+   # Unzip
+   tar --xz -xvf shellcheck-"${scversion}".linux.x86_64.tar.xz
+
+   # Copy to executable directory
+   cp shellcheck-"${scversion}"/shellcheck /usr/bin/
+
+   # Remove zip and executable not needed in current directory anymore
+   sudo rm -rf shellcheck-"${scversion}".linux.x86_64.tar.xz
+   sudo rm -rf shellcheck-"${scversion}"
+
+   # List out installed version
+   shellcheck --version
+
+Using from the terminal.
+
+.. code-block:: bash
+
+   $ shellcheck <yourscript>.sh
+
+Using from your editor
+
+ - `Install ShellCheck extension in your editor <https://github.com/koalaman/shellcheck#user-content-in-your-editor>`_
+
+Use live online
+
+ - `ShellCheck live online <https://www.shellcheck.net/>`_
+
+Integrate with build systems, Travis CI, Docker, etc.
+
+ - `Integrating with ShellCheck <https://github.com/koalaman/shellcheck/wiki/Integration>`_
+
+
+Utilizing bash command history
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This information was pulled from `this DigitalOcean tutorial <https://www.digitalocean.com/community/tutorials/how-to-use-bash-history-commands-and-expansions-on-a-linux-vps>`_ .
+
+Store extra history by changin a few parameters in ``~/.bashrc`` for the number of lines to be stored in memory and in the actual history file.
+
+.. code-block:: bash
+
+   HISTSIZE=5000        # lines in memory
+   HISTFILESIZE=10000   # lines to disk
+
+Append to history file instead of overwriting it in every new terminal session.
+
+.. code-block:: bash
+
+   shot -s histappend
+
+This following line will allow for each terminal session to have access to all of the commands being used in any other open terminal sessions instead of having to wait for a session to close before having access to it's commands.
+
+.. code-block:: bash
+
+   export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+All together now. Open ``~/.bashrc``.
+
+.. code-block:: bash
+
+   HISTSIZE=5000        # lines in memory
+   HISTFILESIZE=10000   # lines to disk
+
+   shot -s histappend
+
+   PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+   # Ignore commands that start with a space because they are probably a mistake
+   # Also ignore duplicates typed in succession
+   HISTCONTROL=ignorespace:ignoredups
+
+   # Shorthand for ignoring both
+   HISTCONTROL=ignoreboth
+
+   # Set a date format to identify when commands were run
+   HISTTIMEFORMAT="%m/%d/%y %T  "
+
+Close ``~/.bashrc``.
+
+Source ``~/.bashrc`` to make the changes take effect immediately.
+
+.. code-block:: bash
+
+   $ source ~/.bashrc
+
+Viewing and using bash history
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The bash history file is usually stored in ``/home/<user>/.bash_history``. You can check the path on any given machine with ``echo $HISTFILE``.
+
+View commands in history.
+
+.. code-block:: bash
+
+   # View all commands
+   $ history
+
+   # View last 10 commands
+   $ history 10
+
+   # View all cd commands
+   $ history | grep cd
+
+
+Executing a command from history.
+
+.. code-block:: bash
+
+   # Execute command 10 from history
+   $ !<commandNumber>
+
+   # Example
+   $ !10
+
+   # Execute the command ran two executions ago
+   $ !-<timesCalledAgo>
+
+   # Example
+   $ !-2
+
+   # Execute previous command
+   $ !!
+
+   # Example (run previous command as sudo)
+   $ sudo !!
+=======
+Shell Check
+-------------
+
+ShellCheck validates bash scripts and gives recommendations for code changes.
+
+`Shell check <https://github.com/koalaman/shellcheck>`_ is a bash linting and recommendation package that also has plugins for various editors including `VS Code <https://github.com/timonwong/vscode-shellcheck>`_ and `Sublime Text 3 <https://github.com/SublimeLinter/SublimeLinter-shellcheck>`_ as well as an `online editor <https://www.shellcheck.net/>`_ with instant feedback.
+
+.. code-block:: bash
+
+   $ sudo apt-get install shellcheck
+
+Using modules in bash programs
+--------------------------------
+
+# Check if program exists
+# $0 is the function name
+# $1 is the first arg
+# 2>/dev/null redirects output to stderr instead of stdout
+# > redirect standard output (implicit 1>)
+# & what comes next is a file descriptor, not a file (only for right hand side of >)
+# 2 stderr file descriptor number
+check_required_program () {
+	hash $1 2>/dev/null || {
+		echo $1 is required but not installed
+		exit 1
+	}
+}
+>>>>>>> feature-bash
 
 Get hardware of computer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -43,6 +242,13 @@ Get hardware of computer
 .. code-block:: bash
 
    $ sudo lshw -html > computer_hardware.html
+
+In your terminal, to quickly check a script, run
+
+.. code-block:: bash
+
+   $ shellcheck yourscript
+
 
 Print PCI hardware
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -105,7 +311,7 @@ Find and print directory
 
 .. list-table::
    :header-rows: 1
-   
+
    * - Argument
      - Description
    * - ``-maxdepth``

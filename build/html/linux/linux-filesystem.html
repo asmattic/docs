@@ -15,6 +15,8 @@
   
     <link rel="shortcut icon" href="../_static/mo-favicon.png"/>
   
+  
+  
 
   
 
@@ -48,6 +50,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -91,7 +94,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Developer</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Developer</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../dev-docs.html">Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../README.html">Welcome to the Asmattic Docs Documentation</a></li>
@@ -104,7 +110,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#etc-passwd">/etc/passwd</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#reading-permissions">Reading Permissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reading-permissions">Reading Permissions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#order-of-output-redirections">Order of output redirections</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#open-files-from-terminal">Open files from terminal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#using-proc">Using /proc</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#common-issues">Common Issues</a></li>
@@ -119,15 +128,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../pi/networks.html">Network Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pi/piduino.html">Raspberry Pi With Arduino Firmata</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Nodejs</span></p>
+<p class="caption"><span class="caption-text">Editors / IDE's</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../nodejs/index.html">Node JS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nodejs/node-cli.html">Node JS CLI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nodejs/node-streams.html">Node JS Streams</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Editors / IDE&#8217;s</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Text editors and IDE&#8217;s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Text editors and IDE’s</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../editors/sublime.html">Sublime Text 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../editors/visual-studio-code.html">Visual Studio Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../editors/atom.html">Atom Editor by Github</a></li>
@@ -145,8 +148,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../hosting/index.html">Deployment, Hosting and Security</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../hosting/monitoring.html">Monitoring, Logging &amp; Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../hosting/seo.html">SEO</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../hosting/security/htaccess.html"><code class="docutils literal"><span class="pre">.htaccess</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/security/htaccess.html"><code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
 </ul>
 <p class="caption"><span class="caption-text">Python</span></p>
 <ul>
@@ -196,10 +199,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../dev-tools/chrome.html">Chrome Developer Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dev-tools/docker/index.html">Docker</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Javascript</span></p>
+<p class="caption"><span class="caption-text">Javascript | Nodejs</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/concepts.html">JavaScript Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/data-structures.html">Data Structures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/interview-questions.html">JavaScript Interview Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/quality-assurance.html">Quality Assurance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/testing-tools.html">Testing Tooling &amp; Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/nodejs/index.html">Node JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/nodejs/node-cli.html">Node JS CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/nodejs/node-streams.html">Node JS Streams</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Electron</span></p>
 <ul>
@@ -225,8 +234,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../index.html">asmattic Docs</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">asmattic Docs</a>
+        
       </nav>
 
 
@@ -235,23 +246,40 @@
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../index.html">Docs</a> &raquo;</li>
-      
-    <li>Linux Filesystem</li>
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Linux Filesystem</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="../_sources/linux/linux-filesystem.txt" rel="nofollow"> View page source</a>
+            
+            <a href="../_sources/linux/linux-filesystem.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -264,18 +292,18 @@
 <div class="section" id="etc-passwd">
 <h3>/etc/passwd<a class="headerlink" href="#etc-passwd" title="Permalink to this headline">¶</a></h3>
 <p>File that lists all users with all information that pertains to them. Here is an example line.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>asmattic:x:1000:1000:asmattic,,,:/home/asmattic:/bin/bash
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>asmattic:x:1000:1000:asmattic,,,:/home/asmattic:/bin/bash
 </pre></div>
 </div>
 <p>Pull out just the users from the file. This could be put into an array to find the non-sudo user inside of a bash script.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ awk -F<span class="s1">&#39;:&#39;</span> <span class="s1">&#39;{ print $1}&#39;</span> /etc/passwd
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ awk -F<span class="s1">&#39;:&#39;</span> <span class="s1">&#39;{ print $1}&#39;</span> /etc/passwd
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="reading-permissions">
 <h2>Reading Permissions<a class="headerlink" href="#reading-permissions" title="Permalink to this headline">¶</a></h2>
-<p>Permissions are broken up into four groups. The first group is one character and the other three groups are each comprised of three characters. A dash (<code class="docutils literal"><span class="pre">-</span></code>) in any place other than the first (<cite>type</cite>) character means that the permission usually at that location is not in effect.</p>
+<p>Permissions are broken up into four groups. The first group is one character and the other three groups are each comprised of three characters. A dash (<code class="docutils literal notranslate"><span class="pre">-</span></code>) in any place other than the first (<cite>type</cite>) character means that the permission usually at that location is not in effect.</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="25%" />
@@ -285,37 +313,106 @@
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td>Item Type</td>
-<td><code class="docutils literal"><span class="pre">-</span></code> (file)</td>
-<td><code class="docutils literal"><span class="pre">d</span></code> (directory)</td>
-<td><code class="docutils literal"><span class="pre">l</span></code> (link)</td>
+<td><code class="docutils literal notranslate"><span class="pre">-</span></code> (file)</td>
+<td><code class="docutils literal notranslate"><span class="pre">d</span></code> (directory)</td>
+<td><code class="docutils literal notranslate"><span class="pre">l</span></code> (link)</td>
 </tr>
 <tr class="row-even"><td>Owner Permissions</td>
-<td><code class="docutils literal"><span class="pre">r</span></code> (read)</td>
-<td><code class="docutils literal"><span class="pre">w</span></code> (write)</td>
-<td><code class="docutils literal"><span class="pre">x</span></code> (executable)</td>
+<td><code class="docutils literal notranslate"><span class="pre">r</span></code> (read)</td>
+<td><code class="docutils literal notranslate"><span class="pre">w</span></code> (write)</td>
+<td><code class="docutils literal notranslate"><span class="pre">x</span></code> (executable)</td>
 </tr>
 <tr class="row-odd"><td>Group Permissions</td>
-<td><code class="docutils literal"><span class="pre">r</span></code> (read)</td>
-<td><code class="docutils literal"><span class="pre">w</span></code> (write)</td>
-<td><code class="docutils literal"><span class="pre">x</span></code> (executable)</td>
+<td><code class="docutils literal notranslate"><span class="pre">r</span></code> (read)</td>
+<td><code class="docutils literal notranslate"><span class="pre">w</span></code> (write)</td>
+<td><code class="docutils literal notranslate"><span class="pre">x</span></code> (executable)</td>
 </tr>
 <tr class="row-even"><td>Any User Permissions</td>
-<td><code class="docutils literal"><span class="pre">r</span></code> (read)</td>
-<td><code class="docutils literal"><span class="pre">w</span></code> (write)</td>
-<td><code class="docutils literal"><span class="pre">x</span></code> (executable)</td>
+<td><code class="docutils literal notranslate"><span class="pre">r</span></code> (read)</td>
+<td><code class="docutils literal notranslate"><span class="pre">w</span></code> (write)</td>
+<td><code class="docutils literal notranslate"><span class="pre">x</span></code> (executable)</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">0</span></code> (none)</td>
-<td><code class="docutils literal"><span class="pre">1</span></code> (execute)</td>
-<td><code class="docutils literal"><span class="pre">2</span></code> (write)</td>
-<td><code class="docutils literal"><span class="pre">4</span></code> (read)</td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">0</span></code> (none)</td>
+<td><code class="docutils literal notranslate"><span class="pre">1</span></code> (execute)</td>
+<td><code class="docutils literal notranslate"><span class="pre">2</span></code> (write)</td>
+<td><code class="docutils literal notranslate"><span class="pre">4</span></code> (read)</td>
 </tr>
 </tbody>
 </table>
+<p><a class="reference external" href="https://tiswww.case.edu/php/chet/bash/bashref.html#Shell-Parameters">Good Bash scripting reference</a></p>
+<p># Check if program exists
+# $0 is the function name
+# $1 is the first arg
+# 2&gt;/dev/null redirects output to stderr instead of stdout
+# &gt; redirect standard output (implicit 1&gt;)
+# &amp; what comes next is a file descriptor, not a file (only for right hand side of &gt;)
+# 2 stderr file descriptor number</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Special Parameter</th>
+<th class="head">Description</th>
+<th class="head">Common Use Case</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><cite>$0</cite></td>
+<td>Function name of previously ran function</td>
+<td>TBD</td>
+</tr>
+<tr class="row-odd"><td><cite>$1</cite></td>
+<td>First argument</td>
+<td>TBD</td>
+</tr>
+<tr class="row-even"><td><cite>$?</cite></td>
+<td>Expands to the exit status of the most recently executed foreground pipeline</td>
+<td>TBD</td>
+</tr>
+<tr class="row-odd"><td><cite>$&#64;</cite></td>
+<td>TBD</td>
+<td>TBD</td>
+</tr>
+<tr class="row-even"><td><cite>$!</cite></td>
+<td>TBD</td>
+<td>TBD</td>
+</tr>
+<tr class="row-odd"><td><cite>2&gt;/dev/null</cite></td>
+<td>Redirects output to stderr instead of stdout</td>
+<td>TBD</td>
+</tr>
+<tr class="row-even"><td><cite>1</cite></td>
+<td><cite>stdout</cite> file descriptor number</td>
+<td>TBD</td>
+</tr>
+<tr class="row-odd"><td><cite>2</cite></td>
+<td><cite>stderr</cite> file descriptor number</td>
+<td>TBD</td>
+</tr>
+<tr class="row-even"><td><cite>&gt;</cite> (implicit <cite>1&gt;</cite>)</td>
+<td>Redirect standard output</td>
+<td>TBD</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="order-of-output-redirections">
+<h3>Order of output redirections<a class="headerlink" href="#order-of-output-redirections" title="Permalink to this headline">¶</a></h3>
+<p>Note that the order of redirections is significant. For example, the command</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls &gt; dirlist <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+</pre></div>
+</div>
+<p>directs both standard output (file descriptor 1) and standard error (file descriptor 2) to the file dirlist, while the command</p>
+<p>ls 2&gt;&amp;1 &gt; dirlist
+directs only the standard output to file dirlist, because the standard error was made a copy of the standard output before the standard output was redirected to dirlist.</p>
+</div>
 </div>
 <div class="section" id="open-files-from-terminal">
 <h2>Open files from terminal<a class="headerlink" href="#open-files-from-terminal" title="Permalink to this headline">¶</a></h2>
 <p>To open a file in the default browser.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ xdg-open /path/to/index.html
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ xdg-open /path/to/index.html
 </pre></div>
 </div>
 </div>
@@ -323,7 +420,7 @@
 <h2>Using /proc<a class="headerlink" href="#using-proc" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The <code class="docutils literal"><span class="pre">/proc</span></code> directory is actually a pseudo-filesystem. The files in <code class="docutils literal"><span class="pre">/proc</span></code> mirror currently running system and kernel processes and contain information and statistics about them. (<a class="reference external" href="http://fibrevillage.com/scripting/604-how-to-use-proc-in-bash">source: fibrevillage.com</a>)</p>
+<p class="last">The <code class="docutils literal notranslate"><span class="pre">/proc</span></code> directory is actually a pseudo-filesystem. The files in <code class="docutils literal notranslate"><span class="pre">/proc</span></code> mirror currently running system and kernel processes and contain information and statistics about them. (<a class="reference external" href="http://fibrevillage.com/scripting/604-how-to-use-proc-in-bash">source: fibrevillage.com</a>)</p>
 </div>
 </div>
 <div class="section" id="common-issues">
@@ -334,7 +431,7 @@
 <li><a class="reference external" href="https://askubuntu.com/questions/785460/boot-partition-filling-up-is-this-a-bug-in-ubuntu?utm_medium=organic&amp;utm_source=google_rich_qa&amp;utm_campaign=google_rich_qa">Stack Overflow question used for explanation</a></li>
 </ul>
 </div></blockquote>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>sudo apt autoremove
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt autoremove
 </pre></div>
 </div>
 </div>
@@ -342,15 +439,18 @@
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="bash/index.html" class="btn btn-neutral float-right" title="Bash" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="bash/index.html" class="btn btn-neutral float-right" title="Bash" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Linux" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="Linux" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -360,7 +460,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, Matt Oldfield.
-      Last updated on Nov 05, 2018.
+      Last updated on Nov 15, 2018.
 
     </p>
   </div>
@@ -385,13 +485,14 @@
             VERSION:'0.4.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

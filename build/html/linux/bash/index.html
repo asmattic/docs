@@ -15,6 +15,8 @@
   
     <link rel="shortcut icon" href="../../_static/mo-favicon.png"/>
   
+  
+  
 
   
 
@@ -48,6 +50,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -91,7 +94,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Developer</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Developer</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../dev-docs.html">Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../README.html">Welcome to the Asmattic Docs Documentation</a></li>
@@ -104,6 +110,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#terminal">Terminal</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#name-terminal-tabs">Name terminal tabs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#close-terminal">Close terminal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#terminal-styling">Terminal styling</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#bash-tips">Bash Tips</a><ul>
@@ -113,6 +120,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#shell-check-for-bash-scripting">Shell Check For Bash Scripting</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#utilizing-bash-command-history">Utilizing bash command history</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#viewing-and-using-bash-history">Viewing and using bash history</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#using-modules-in-bash-programs">Using modules in bash programs</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#get-hardware-of-computer">Get hardware of computer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#print-pci-hardware">Print PCI hardware</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#list-usb-hardware">List USB Hardware</a></li>
@@ -161,9 +171,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../pi/networks.html">Network Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../pi/piduino.html">Raspberry Pi With Arduino Firmata</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Editors / IDE&#8217;s</span></p>
+<p class="caption"><span class="caption-text">Editors / IDE's</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Text editors and IDE&#8217;s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Text editors and IDE’s</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../editors/sublime.html">Sublime Text 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../editors/visual-studio-code.html">Visual Studio Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../editors/atom.html">Atom Editor by Github</a></li>
@@ -181,8 +191,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../../hosting/index.html">Deployment, Hosting and Security</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../hosting/monitoring.html">Monitoring, Logging &amp; Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../hosting/seo.html">SEO</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../hosting/security/htaccess.html"><code class="docutils literal"><span class="pre">.htaccess</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hosting/security/htaccess.html"><code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
 </ul>
 <p class="caption"><span class="caption-text">Python</span></p>
 <ul>
@@ -267,8 +277,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">asmattic Docs</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">asmattic Docs</a>
+        
       </nav>
 
 
@@ -277,23 +289,40 @@
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
-    <li>Bash</li>
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Bash</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="../../_sources/linux/bash/index.txt" rel="nofollow"> View page source</a>
+            
+            <a href="../../_sources/linux/bash/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -303,12 +332,12 @@
 <h1>Bash<a class="headerlink" href="#bash" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="terminal">
 <h2>Terminal<a class="headerlink" href="#terminal" title="Permalink to this headline">¶</a></h2>
-<p>General tips and <code class="docutils literal"><span class="pre">~/.bashrc</span></code> functions and settings to make the Linux experience better.</p>
+<p>General tips and <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> functions and settings to make the Linux experience better.</p>
 <div class="section" id="name-terminal-tabs">
 <h3>Name terminal tabs<a class="headerlink" href="#name-terminal-tabs" title="Permalink to this headline">¶</a></h3>
 <p>I found this workaround in <a class="reference external" href="https://unix.stackexchange.com/a/186167/166226">this Stack Exchange answer</a>.</p>
-<p>Insert the below function into <code class="docutils literal"><span class="pre">~/.bashrc</span></code>. Open a new terminal tab with <code class="docutils literal"><span class="pre">Ctrl</span></code> + <code class="docutils literal"><span class="pre">Shift</span></code> + <code class="docutils literal"><span class="pre">t</span></code> and type <code class="docutils literal"><span class="pre">set-title</span> <span class="pre">&lt;some</span> <span class="pre">terminal</span> <span class="pre">title&gt;</span></code>.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="k">function</span> set-title<span class="o">()</span> <span class="o">{</span>
+<p>Insert the below function into <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>. Open a new terminal tab with <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">Shift</span></code> + <code class="docutils literal notranslate"><span class="pre">t</span></code> and type <code class="docutils literal notranslate"><span class="pre">set-title</span> <span class="pre">&lt;some</span> <span class="pre">terminal</span> <span class="pre">title&gt;</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> set-title<span class="o">()</span> <span class="o">{</span>
    <span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$ORIG</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
       <span class="nv">ORIG</span><span class="o">=</span><span class="nv">$PS1</span>
    <span class="k">fi</span>
@@ -320,18 +349,20 @@
 </div>
 <div class="section" id="close-terminal">
 <h3>Close terminal<a class="headerlink" href="#close-terminal" title="Permalink to this headline">¶</a></h3>
-<p><code class="docutils literal"><span class="pre">Ctrl</span></code> + <code class="docutils literal"><span class="pre">Shift</span></code> + <code class="docutils literal"><span class="pre">w</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">Shift</span></code> + <code class="docutils literal notranslate"><span class="pre">w</span></code></p>
+</div>
+<div class="section" id="terminal-styling">
+<h3>Terminal styling<a class="headerlink" href="#terminal-styling" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/Mayccoll/Gogh">Gogh</a> is a color scheme/set of themes for the Gnome terminal.</p>
 </div>
 </div>
 <div class="section" id="bash-tips">
 <h2>Bash Tips<a class="headerlink" href="#bash-tips" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Single quotes print out the literal text inside them. Double quotes print the variables and operations in the quotes.</p>
-</div>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+.. note:: Single quotes print out the literal text inside them. Double quotes print the variables and operations in the quotes.</p>
 <div class="section" id="quote-examples">
 <h3>Quote Examples<a class="headerlink" href="#quote-examples" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Double quotes</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Double quotes</span>
 $ <span class="nb">echo</span> <span class="s2">&quot;</span><span class="k">$(</span>whoami<span class="k">)</span><span class="s2">&quot;</span> <span class="c1"># =&gt; Result:  asmattic</span>
 
 <span class="c1"># Backticks</span>
@@ -343,14 +374,14 @@ $ <span class="nb">echo</span> <span class="s1">&#39;$(whoami)&#39;</span> <span
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">While backticks will execute the command(s) inside them, this is a much older way of performing the same functionality as <code class="docutils literal"><span class="pre">$(&lt;command&gt;)</span></code> known as command substitution but using <code class="docutils literal"><span class="pre">$()</span></code> is the recommended way. For a more in depth explanation, see <a class="reference external" href="https://unix.stackexchange.com/questions/48392/understanding-backtick">this StackExchange answer</a>.</p>
+<p class="last">While backticks will execute the command(s) inside them, this is a much older way of performing the same functionality as <code class="docutils literal notranslate"><span class="pre">$(&lt;command&gt;)</span></code> known as command substitution but using <code class="docutils literal notranslate"><span class="pre">$()</span></code> is the recommended way. For a more in depth explanation, see <a class="reference external" href="https://unix.stackexchange.com/questions/48392/understanding-backtick">this StackExchange answer</a>.</p>
 </div>
 </div>
 </div>
 <div class="section" id="shell-check-for-bash-scripting">
 <h2>Shell Check For Bash Scripting<a class="headerlink" href="#shell-check-for-bash-scripting" title="Permalink to this headline">¶</a></h2>
 <p>Install on machine.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
 
 <span class="c1"># Install required dependency</span>
 sudo apt install xz-utils
@@ -376,7 +407,7 @@ shellcheck --version
 </pre></div>
 </div>
 <p>Using from the terminal.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ shellcheck &lt;yourscript&gt;.sh
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ shellcheck &lt;yourscript&gt;.sh
 </pre></div>
 </div>
 <p>Using from your editor</p>
@@ -400,21 +431,21 @@ shellcheck --version
 <div class="section" id="utilizing-bash-command-history">
 <h3>Utilizing bash command history<a class="headerlink" href="#utilizing-bash-command-history" title="Permalink to this headline">¶</a></h3>
 <p>This information was pulled from <a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-use-bash-history-commands-and-expansions-on-a-linux-vps">this DigitalOcean tutorial</a> .</p>
-<p>Store extra history by changin a few parameters in <code class="docutils literal"><span class="pre">~/.bashrc</span></code> for the number of lines to be stored in memory and in the actual history file.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nv">HISTSIZE</span><span class="o">=</span><span class="m">5000</span>        <span class="c1"># lines in memory</span>
+<p>Store extra history by changin a few parameters in <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> for the number of lines to be stored in memory and in the actual history file.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">HISTSIZE</span><span class="o">=</span><span class="m">5000</span>        <span class="c1"># lines in memory</span>
 <span class="nv">HISTFILESIZE</span><span class="o">=</span><span class="m">10000</span>   <span class="c1"># lines to disk</span>
 </pre></div>
 </div>
 <p>Append to history file instead of overwriting it in every new terminal session.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>shot -s histappend
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>shot -s histappend
 </pre></div>
 </div>
-<p>This following line will allow for each terminal session to have access to all of the commands being used in any other open terminal sessions instead of having to wait for a session to close before having access to it&#8217;s commands.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PROMPT_COMMAND</span><span class="o">=</span><span class="s2">&quot;history -a; history -c; history -r; </span><span class="nv">$PROMPT_COMMAND</span><span class="s2">&quot;</span>
+<p>This following line will allow for each terminal session to have access to all of the commands being used in any other open terminal sessions instead of having to wait for a session to close before having access to it’s commands.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PROMPT_COMMAND</span><span class="o">=</span><span class="s2">&quot;history -a; history -c; history -r; </span><span class="nv">$PROMPT_COMMAND</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
-<p>All together now. Open <code class="docutils literal"><span class="pre">~/.bashrc</span></code>.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nv">HISTSIZE</span><span class="o">=</span><span class="m">5000</span>        <span class="c1"># lines in memory</span>
+<p>All together now. Open <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">HISTSIZE</span><span class="o">=</span><span class="m">5000</span>        <span class="c1"># lines in memory</span>
 <span class="nv">HISTFILESIZE</span><span class="o">=</span><span class="m">10000</span>   <span class="c1"># lines to disk</span>
 
 shot -s histappend
@@ -432,28 +463,28 @@ shot -s histappend
 <span class="nv">HISTTIMEFORMAT</span><span class="o">=</span><span class="s2">&quot;%m/%d/%y %T  &quot;</span>
 </pre></div>
 </div>
-<p>Close <code class="docutils literal"><span class="pre">~/.bashrc</span></code>.</p>
-<p>Source <code class="docutils literal"><span class="pre">~/.bashrc</span></code> to make the changes take effect immediately.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">source</span> ~/.bashrc
+<p>Close <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>.</p>
+<p>Source <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> to make the changes take effect immediately.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">source</span> ~/.bashrc
 </pre></div>
 </div>
 </div>
 <div class="section" id="viewing-and-using-bash-history">
 <h3>Viewing and using bash history<a class="headerlink" href="#viewing-and-using-bash-history" title="Permalink to this headline">¶</a></h3>
-<p>The bash history file is usually stored in <code class="docutils literal"><span class="pre">/home/&lt;user&gt;/.bash_history</span></code>. You can check the path on any given machine with <code class="docutils literal"><span class="pre">echo</span> <span class="pre">$HISTFILE</span></code>.</p>
+<p>The bash history file is usually stored in <code class="docutils literal notranslate"><span class="pre">/home/&lt;user&gt;/.bash_history</span></code>. You can check the path on any given machine with <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$HISTFILE</span></code>.</p>
 <p>View commands in history.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># View all commands</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># View all commands</span>
 $ <span class="nb">history</span>
 
 <span class="c1"># View last 10 commands</span>
-$ <span class="nb">history</span> 10
+$ <span class="nb">history</span> <span class="m">10</span>
 
 <span class="c1"># View all cd commands</span>
 $ <span class="nb">history</span> <span class="p">|</span> grep <span class="nb">cd</span>
 </pre></div>
 </div>
 <p>Executing a command from history.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Execute command 10 from history</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Execute command 10 from history</span>
 $ !&lt;commandNumber&gt;
 
 <span class="c1"># Example</span>
@@ -472,63 +503,93 @@ $ !!
 $ sudo !!
 </pre></div>
 </div>
+<p>ShellCheck validates bash scripts and gives recommendations for code changes.</p>
+<p><a class="reference external" href="https://github.com/koalaman/shellcheck">Shell check</a> is a bash linting and recommendation package that also has plugins for various editors including <a class="reference external" href="https://github.com/timonwong/vscode-shellcheck">VS Code</a> and <a class="reference external" href="https://github.com/SublimeLinter/SublimeLinter-shellcheck">Sublime Text 3</a> as well as an <a class="reference external" href="https://www.shellcheck.net/">online editor</a> with instant feedback.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install shellcheck
+</pre></div>
 </div>
+</div>
+</div>
+<div class="section" id="using-modules-in-bash-programs">
+<h2>Using modules in bash programs<a class="headerlink" href="#using-modules-in-bash-programs" title="Permalink to this headline">¶</a></h2>
+<p># Check if program exists
+# $0 is the function name
+# $1 is the first arg
+# 2&gt;/dev/null redirects output to stderr instead of stdout
+# &gt; redirect standard output (implicit 1&gt;)
+# &amp; what comes next is a file descriptor, not a file (only for right hand side of &gt;)
+# 2 stderr file descriptor number
+check_required_program () {</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>hash $1 2&gt;/dev/null || {</dt>
+<dd>echo $1 is required but not installed
+exit 1</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p>}
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature-bash</p>
 <div class="section" id="get-hardware-of-computer">
 <h3>Get hardware of computer<a class="headerlink" href="#get-hardware-of-computer" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">-html</span></code> outputs as html</li>
+<li><code class="docutils literal notranslate"><span class="pre">-html</span></code> outputs as html</li>
 </ul>
 </div></blockquote>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ sudo lshw -html &gt; computer_hardware.html
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo lshw -html &gt; computer_hardware.html
+</pre></div>
+</div>
+<p>In your terminal, to quickly check a script, run</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ shellcheck yourscript
 </pre></div>
 </div>
 </div>
 <div class="section" id="print-pci-hardware">
 <h3>Print PCI hardware<a class="headerlink" href="#print-pci-hardware" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ lspci -nn
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ lspci -nn
 </pre></div>
 </div>
 </div>
 <div class="section" id="list-usb-hardware">
 <h3>List USB Hardware<a class="headerlink" href="#list-usb-hardware" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ lsusb
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ lsusb
 </pre></div>
 </div>
 </div>
 <div class="section" id="turn-off-wifi-power-management">
 <h3>Turn off wifi Power management<a class="headerlink" href="#turn-off-wifi-power-management" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ sudo iwconfig &lt;interface name <span class="o">(</span>e.g. wlan0<span class="o">)</span>&gt; power off
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo iwconfig &lt;interface name <span class="o">(</span>e.g. wlan0<span class="o">)</span>&gt; power off
 </pre></div>
 </div>
 </div>
 <div class="section" id="list-modules">
 <h3>List modules<a class="headerlink" href="#list-modules" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ lsmod
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ lsmod
 </pre></div>
 </div>
 </div>
 <div class="section" id="kill-radio-signals-check-on-this">
 <h3>Kill radio signals ( check on this)<a class="headerlink" href="#kill-radio-signals-check-on-this" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ rfkill
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ rfkill
 </pre></div>
 </div>
 </div>
 <div class="section" id="list-channels-available-for-device">
 <h3>List channels available for device<a class="headerlink" href="#list-channels-available-for-device" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ iwlist chan
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ iwlist chan
 </pre></div>
 </div>
 </div>
 <div class="section" id="scan-channels">
 <h3>Scan channels<a class="headerlink" href="#scan-channels" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ iwlist scan
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ iwlist scan
 </pre></div>
 </div>
 </div>
 <div class="section" id="list-out-scripts-from-package-json">
 <h3>List out scripts from package.json<a class="headerlink" href="#list-out-scripts-from-package-json" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ cat package.json <span class="p">|</span> jq -r <span class="s2">&quot;.scripts&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cat package.json <span class="p">|</span> jq -r <span class="s2">&quot;.scripts&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -545,32 +606,32 @@ $ sudo !!
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">-maxdepth</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-maxdepth</span></code></td>
 <td>level of directories to go from the base directory passed</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">-type</span></code></td>
-<td><code class="docutils literal"><span class="pre">d</span></code> for directory, <code class="docutils literal"><span class="pre">f</span></code> for file</td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">-type</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">d</span></code> for directory, <code class="docutils literal notranslate"><span class="pre">f</span></code> for file</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">-name</span></code></td>
-<td>String that can use special characters like <code class="docutils literal"><span class="pre">*</span></code> before and after to use as contains</td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-name</span></code></td>
+<td>String that can use special characters like <code class="docutils literal notranslate"><span class="pre">*</span></code> before and after to use as contains</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">-print</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">-print</span></code></td>
 <td>Print the directory name</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">-quit</span></code></td>
-<td>Stop after the find case has been found true (<em>don&#8217;t include ``-quit`` if you want to find all instances and not just stop at the first</em>)</td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-quit</span></code></td>
+<td>Stop after the find case has been found true (<em>don’t include ``-quit`` if you want to find all instances and not just stop at the first</em>)</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ find ~ -maxdepth <span class="m">5</span> -type d -name <span class="s1">&#39;*electron-cra*&#39;</span> -print -quit
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ find ~ -maxdepth <span class="m">5</span> -type d -name <span class="s1">&#39;*electron-cra*&#39;</span> -print -quit
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="file-folder-permissions">
 <h2>File/Folder Permissions<a class="headerlink" href="#file-folder-permissions" title="Permalink to this headline">¶</a></h2>
-<p>Permissions for files and folders are grouped in three different sections; <cite>user</cite>, <cite>group</cite> and <cite>other</cite>. To set permissions for each, use the <code class="docutils literal"><span class="pre">chmod</span></code> or &#8220;change mode&#8221; command.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># add -R to modify recursively</span>
+<p>Permissions for files and folders are grouped in three different sections; <cite>user</cite>, <cite>group</cite> and <cite>other</cite>. To set permissions for each, use the <code class="docutils literal notranslate"><span class="pre">chmod</span></code> or “change mode” command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># add -R to modify recursively</span>
 $ sudo chmod <span class="nv">u</span><span class="o">=</span>rwx,g<span class="o">=</span>rx,o<span class="o">=</span>r &lt;myfile&gt;
 </pre></div>
 </div>
@@ -617,30 +678,30 @@ $ sudo chmod <span class="nv">u</span><span class="o">=</span>rwx,g<span class="
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">-c</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-c</span></code></td>
 <td>Create archive</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">-z</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">-z</span></code></td>
 <td>Gzip archive</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">-v</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-v</span></code></td>
 <td>Display progress (verbose)</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">-f</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">-f</span></code></td>
 <td>Specify filename</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">--exclude</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">--exclude</span></code></td>
 <td>Specify files, folders or patterns to not extract</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">-x</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">-x</span></code></td>
 <td>Extract archive</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">-C</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-C</span></code></td>
 <td>Specify directory to extract to</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># zip</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># zip</span>
 $ tar -czvf &lt;archive-to-create.tar.gz&gt; &lt;folder-to-compress&gt; --exclude<span class="o">=</span><span class="s2">&quot;*.pdf&quot;</span>
 
 <span class="c1"># unzip</span>
@@ -651,7 +712,7 @@ $ tar -xzvf &lt;file-to-extract.tar.gz&gt; -C &lt;folder-to-extract-to&gt;
 </div>
 <div class="section" id="count-output">
 <h2>Count Output<a class="headerlink" href="#count-output" title="Permalink to this headline">¶</a></h2>
-<p>To count various things in a file or output you can use <code class="docutils literal"><span class="pre">wc</span></code>.</p>
+<p>To count various things in a file or output you can use <code class="docutils literal notranslate"><span class="pre">wc</span></code>.</p>
 <table border="1" class="docutils" id="id3">
 <caption><span class="caption-text">Compression Options</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
 <colgroup>
@@ -664,21 +725,21 @@ $ tar -xzvf &lt;file-to-extract.tar.gz&gt; -C &lt;folder-to-extract-to&gt;
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">-c</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-c</span></code></td>
 <td>bytes</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">-m</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">-m</span></code></td>
 <td>chars</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">-l</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">-l</span></code></td>
 <td>lines</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">-w</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">-w</span></code></td>
 <td>words</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># count lines of output</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># count lines of output</span>
 $ &lt;command-with-output&gt; <span class="p">|</span> wc -l
 </pre></div>
 </div>
@@ -686,25 +747,25 @@ $ &lt;command-with-output&gt; <span class="p">|</span> wc -l
 <div class="section" id="storage">
 <span id="bash-storage-sec"></span><h2>Storage<a class="headerlink" href="#storage" title="Permalink to this headline">¶</a></h2>
 <p>To list memory used by various drives and folders</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># list storage</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># list storage</span>
 $ du -h
 </pre></div>
 </div>
 <p>Clean up filesystem</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ sudo apt-get clean
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get clean
 </pre></div>
 </div>
 </div>
 <div class="section" id="network">
 <span id="bash-network-sec"></span><h2>Network<a class="headerlink" href="#network" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://highon.coffee/blog/nmap-cheat-sheet/">nmap cheat sheet</a></p>
-<p>Setting up network <code class="docutils literal"><span class="pre">ssid</span></code> and <code class="docutils literal"><span class="pre">psk</span></code> can be done in the <code class="docutils literal"><span class="pre">/etc/wpa_supplicant/wpa_supplicant.conf</span></code> file.</p>
-<p>You can also use <code class="docutils literal"><span class="pre">sudo</span> <span class="pre">ifquery</span> <span class="pre">&lt;interface&gt;</span></code> to find where the interface is getting it&#8217;s configuration. Here is an example response.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>wpa-conf: /etc/wpa_supplicant/wpa_supplicant.conf
+<p>Setting up network <code class="docutils literal notranslate"><span class="pre">ssid</span></code> and <code class="docutils literal notranslate"><span class="pre">psk</span></code> can be done in the <code class="docutils literal notranslate"><span class="pre">/etc/wpa_supplicant/wpa_supplicant.conf</span></code> file.</p>
+<p>You can also use <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">ifquery</span> <span class="pre">&lt;interface&gt;</span></code> to find where the interface is getting it’s configuration. Here is an example response.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wpa-conf: /etc/wpa_supplicant/wpa_supplicant.conf
 </pre></div>
 </div>
 <p>There are a lot of other options like setting priority of networks and naming that can be found <a class="reference external" href="https://wiki.archlinux.org/index.php/WPA_supplicant">on the wiki here</a>.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Mandatory</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mandatory</span>
 <span class="nv">network</span><span class="o">={</span>
    <span class="nv">ssid</span><span class="o">=</span><span class="s2">&quot;NETWORK_SSID&quot;</span>
    <span class="nv">psk</span><span class="o">=</span><span class="s2">&quot;PASSWORD&quot;</span>
@@ -728,23 +789,23 @@ $ du -h
 <p>Scan ports on a domain</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last"><code class="docutils literal"><span class="pre">netcat</span></code> and <code class="docutils literal"><span class="pre">nc</span></code> can be used interchangeably</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">netcat</span></code> and <code class="docutils literal notranslate"><span class="pre">nc</span></code> can be used interchangeably</p>
 </div>
 <p>Scan ports 1 through 1000 on domain.com</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ netcat -z -v domain.com 1-1000
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ netcat -z -v domain.com <span class="m">1</span>-1000
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last"><code class="docutils literal"><span class="pre">nmap</span></code> is probably a better port scanning tool for most uses</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">nmap</span></code> is probably a better port scanning tool for most uses</p>
 </div>
 <p>Connect linux machine to Windows machine</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Listen on port 31337 to connect to windows machine</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Listen on port 31337 to connect to windows machine</span>
 $ sudo nc -lp <span class="m">31337</span> -e /bin/bash
 
 <span class="c1"># On Windows</span>
 C:<span class="se">\ </span>&gt; nc &lt;linux_ip&gt; &lt;port&gt;
-C:<span class="se">\ </span>&gt; nc &lt;linux_ip&gt; 31337
+C:<span class="se">\ </span>&gt; nc &lt;linux_ip&gt; <span class="m">31337</span>
 
 C:<span class="se">\ </span>&gt; useradd -g root mMyNewUser
 C:<span class="se">\ </span>&gt; grep myNewUser /etc/passwd/ <span class="c1"># output myNewUser:x:1001:0::/home/myNewUser:/bin/sh</span>
@@ -754,65 +815,65 @@ C:<span class="se">\ </span>&gt; tail /etc/passwd
 </div>
 <div class="section" id="predictable-network-names">
 <h3>Predictable Network Names<a class="headerlink" href="#predictable-network-names" title="Permalink to this headline">¶</a></h3>
-<p>This is the naming system used when you see more complex names for interface devices than <code class="docutils literal"><span class="pre">wlan0</span></code></p>
-<p>List <code class="docutils literal"><span class="pre">PCI</span></code> interfaces</p>
-<p><code class="docutils literal"><span class="pre">lspci</span></code></p>
+<p>This is the naming system used when you see more complex names for interface devices than <code class="docutils literal notranslate"><span class="pre">wlan0</span></code></p>
+<p>List <code class="docutils literal notranslate"><span class="pre">PCI</span></code> interfaces</p>
+<p><code class="docutils literal notranslate"><span class="pre">lspci</span></code></p>
 </div>
 <div class="section" id="change-mac-address">
 <h3>Change Mac Address<a class="headerlink" href="#change-mac-address" title="Permalink to this headline">¶</a></h3>
 <p>Bring card down</p>
-<p><code class="docutils literal"><span class="pre">ifconfig</span> <span class="pre">&lt;interface&gt;</span> <span class="pre">down</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">ifconfig</span> <span class="pre">&lt;interface&gt;</span> <span class="pre">down</span></code></p>
 <p>Change the address to any octet</p>
-<p><code class="docutils literal"><span class="pre">ifconfig</span> <span class="pre">&lt;interface&gt;</span> <span class="pre">hw</span> <span class="pre">ether</span> <span class="pre">dd:dd:dd:dd:dd</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">ifconfig</span> <span class="pre">&lt;interface&gt;</span> <span class="pre">hw</span> <span class="pre">ether</span> <span class="pre">dd:dd:dd:dd:dd</span></code></p>
 <p>Bring it back up</p>
-<p><code class="docutils literal"><span class="pre">ifconfig</span> <span class="pre">&lt;interface&gt;</span> <span class="pre">up</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">ifconfig</span> <span class="pre">&lt;interface&gt;</span> <span class="pre">up</span></code></p>
 </div>
 <div class="section" id="restart-network">
 <h3>Restart Network<a class="headerlink" href="#restart-network" title="Permalink to this headline">¶</a></h3>
 <p>Using wlan0 as an example.</p>
 <p>Turn off</p>
-<p><code class="docutils literal"><span class="pre">sudo</span> <span class="pre">ifdown</span> <span class="pre">wlan0</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">ifdown</span> <span class="pre">wlan0</span></code></p>
 <p>Turn on</p>
-<p><code class="docutils literal"><span class="pre">sudo</span> <span class="pre">ifup</span> <span class="pre">wlan0</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">ifup</span> <span class="pre">wlan0</span></code></p>
 <p>Restart network manager entirely. Setting an interface to monitor mode will require this to get the wifi back up.</p>
-<p><code class="docutils literal"><span class="pre">sudo</span> <span class="pre">network-manager</span> <span class="pre">restart</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">network-manager</span> <span class="pre">restart</span></code></p>
 </div>
 </div>
 <div class="section" id="ubuntu-and-other-distros">
 <span id="bash-ubuntu-sec"></span><h2>Ubuntu <cite>(and other distros)</cite><a class="headerlink" href="#ubuntu-and-other-distros" title="Permalink to this headline">¶</a></h2>
 <p>Check the version of distro</p>
-<p><code class="docutils literal"><span class="pre">lsb_release</span> <span class="pre">-a</span></code></p>
-<p>For <cite>Ubuntu 17.04</cite> the mouse speed doesn&#8217;t respond to the normal settings interface <a class="reference external" href="https://askubuntu.com/questions/205676/how-to-change-mouse-speed-sensitivity">but here is the best fix</a></p>
+<p><code class="docutils literal notranslate"><span class="pre">lsb_release</span> <span class="pre">-a</span></code></p>
+<p>For <cite>Ubuntu 17.04</cite> the mouse speed doesn’t respond to the normal settings interface <a class="reference external" href="https://askubuntu.com/questions/205676/how-to-change-mouse-speed-sensitivity">but here is the best fix</a></p>
 <div class="section" id="install-wireshark">
 <h3>Install Wireshark<a class="headerlink" href="#install-wireshark" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li>Update PPA to latest stable version</li>
 </ol>
-<p><code class="docutils literal"><span class="pre">sudo</span> <span class="pre">add-apt-repository</span> <span class="pre">ppa:wireshark-dev/stable</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">add-apt-repository</span> <span class="pre">ppa:wireshark-dev/stable</span></code></p>
 <ol class="arabic simple">
 <li>Allow superuser to run Wireshark when it asks during installation.</li>
 <li>Integrate new changes</li>
 </ol>
-<p><code class="docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">update</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">update</span></code></p>
 <ol class="arabic simple">
 <li>Install</li>
 </ol>
-<p><code class="docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">wireshark</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">wireshark</span></code></p>
 <ol class="arabic simple">
 <li>If you selected no initially and want to change it later, run</li>
 </ol>
-<p><code class="docutils literal"><span class="pre">sudo</span> <span class="pre">dpkg-reconfigure</span> <span class="pre">wireshark-common</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">dpkg-reconfigure</span> <span class="pre">wireshark-common</span></code></p>
 </div>
 </div>
 </div>
 <div class="section" id="bash-scripting">
 <h1>Bash Scripting<a class="headerlink" href="#bash-scripting" title="Permalink to this headline">¶</a></h1>
 <p>Use the backtick ` ` ` character to output to a variable rather than the console</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nv">var_one</span><span class="o">=</span><span class="sb">`</span>cat ls <span class="p">|</span> grep .txt<span class="sb">`</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">var_one</span><span class="o">=</span><span class="sb">`</span>cat ls <span class="p">|</span> grep .txt<span class="sb">`</span>
 </pre></div>
 </div>
 <p>Installing an array of packages</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nv">package_list</span><span class="o">=(</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">package_list</span><span class="o">=(</span>
    package1
    packageN
 <span class="o">)</span>
@@ -822,18 +883,18 @@ sudo apt-get -y install <span class="si">${</span><span class="nv">package_list<
 </pre></div>
 </div>
 <p>Commands that depend on previous commands completing successfully</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># In terminal</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># In terminal</span>
 command1 <span class="o">&amp;&amp;</span> command2 <span class="o">&amp;&amp;</span> command3
 
 <span class="c1"># In script</span>
 <span class="c1"># Backslash lets bash know these lines are one command</span>
 command1 <span class="se">\</span>
 <span class="o">&amp;&amp;</span> <span class="nb">command</span> <span class="m">2</span> <span class="se">\</span>
-<span class="o">&amp;&amp;</span> <span class="nb">command</span> 3
+<span class="o">&amp;&amp;</span> <span class="nb">command</span> <span class="m">3</span>
 </pre></div>
 </div>
 <p>Run commands regardless of previous commands success or failure</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># In terminal</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># In terminal</span>
 command1<span class="p">;</span> command2<span class="p">;</span> command3
 
 <span class="c1"># In script</span>
@@ -845,7 +906,7 @@ command3
 </div>
 <div class="section" id="loops">
 <h2>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nv">some_arr</span><span class="o">=(</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">some_arr</span><span class="o">=(</span>
    <span class="s2">&quot;thing1&quot;</span>
    <span class="s2">&quot;thingN&quot;</span>
 <span class="o">)</span>
@@ -860,7 +921,7 @@ command3
 <div class="section" id="put-multiline-output-into-variable">
 <h2>Put Multiline Output into Variable<a class="headerlink" href="#put-multiline-output-into-variable" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://stackoverflow.com/questions/4651437/how-to-set-a-variable-to-the-output-from-a-command-in-bash">Variable output in bash</a></p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="ch">#!/bin/sh</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/sh</span>
 
 <span class="nv">SOME_VAR</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>ls -a<span class="k">)</span><span class="s2">&quot;</span>
 </pre></div>
@@ -869,25 +930,25 @@ command3
 <div class="section" id="users">
 <h2>Users<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h2>
 <p>Return user</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">echo</span> <span class="k">$(</span>whoami<span class="k">)</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">echo</span> <span class="k">$(</span>whoami<span class="k">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="creating-a-symbolic-link-symlink-to-a-program">
 <h2>Creating a Symbolic Link (Symlink) to a Program<a class="headerlink" href="#creating-a-symbolic-link-symlink-to-a-program" title="Permalink to this headline">¶</a></h2>
-<p>It is good practice to create a symlink in a directory all users can visit like <code class="docutils literal"><span class="pre">/usr/local/bin</span></code>. If the program is user specific, you can place the file to run in that user&#8217;s <code class="docutils literal"><span class="pre">~/bin</span></code>.</p>
-<p>To create the symlink, <code class="docutils literal"><span class="pre">ln</span></code> is the link command and <code class="docutils literal"><span class="pre">-s</span></code> makes the link symbolic.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>sudo ln -s /path/to/file /usr/local/bin/&lt;name_of_new_command&gt;
+<p>It is good practice to create a symlink in a directory all users can visit like <code class="docutils literal notranslate"><span class="pre">/usr/local/bin</span></code>. If the program is user specific, you can place the file to run in that user’s <code class="docutils literal notranslate"><span class="pre">~/bin</span></code>.</p>
+<p>To create the symlink, <code class="docutils literal notranslate"><span class="pre">ln</span></code> is the link command and <code class="docutils literal notranslate"><span class="pre">-s</span></code> makes the link symbolic.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo ln -s /path/to/file /usr/local/bin/&lt;name_of_new_command&gt;
 </pre></div>
 </div>
 <p>Make the file executable</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>chmod +x /path/to/file
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod +x /path/to/file
 </pre></div>
 </div>
 </div>
 <div class="section" id="check-if-os-is-32-or-64-bit">
 <h2>Check if OS is 32 or 64 bit<a class="headerlink" href="#check-if-os-is-32-or-64-bit" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">[</span> <span class="sb">`</span>getconf LONG_BIT<span class="sb">`</span> <span class="o">=</span> <span class="s2">&quot;64&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">[</span> <span class="sb">`</span>getconf LONG_BIT<span class="sb">`</span> <span class="o">=</span> <span class="s2">&quot;64&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
    <span class="nb">cd</span> /path/to/64bit/file
    ./forticlientsslvpn
 <span class="k">else</span>
@@ -906,15 +967,18 @@ command3
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../pi/index.html" class="btn btn-neutral float-right" title="Raspberry Pi Resources" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../../pi/index.html" class="btn btn-neutral float-right" title="Raspberry Pi Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../linux-filesystem.html" class="btn btn-neutral" title="Linux Filesystem" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../linux-filesystem.html" class="btn btn-neutral" title="Linux Filesystem" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -924,7 +988,7 @@ command3
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, Matt Oldfield.
-      Last updated on Nov 07, 2018.
+      Last updated on Nov 15, 2018.
 
     </p>
   </div>
@@ -949,13 +1013,14 @@ command3
             VERSION:'0.4.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

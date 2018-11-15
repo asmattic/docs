@@ -15,6 +15,8 @@
   
     <link rel="shortcut icon" href="../_static/mo-favicon.png"/>
   
+  
+  
 
   
 
@@ -39,7 +41,7 @@
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="asmattic Docs 0.4.0 documentation" href="../index.html"/>
         <link rel="next" title="Visualization" href="../visualization/index.html"/>
-        <link rel="prev" title="JavaScript Interview Questions" href="../javascript/interview-questions.html"/> 
+        <link rel="prev" title="Node JS Streams" href="../javascript/nodejs/node-streams.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -48,6 +50,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -91,7 +94,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Developer</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Developer</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../dev-docs.html">Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../README.html">Welcome to the Asmattic Docs Documentation</a></li>
@@ -109,15 +115,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../pi/networks.html">Network Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pi/piduino.html">Raspberry Pi With Arduino Firmata</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Nodejs</span></p>
+<p class="caption"><span class="caption-text">Editors / IDE's</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../nodejs/index.html">Node JS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nodejs/node-cli.html">Node JS CLI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nodejs/node-streams.html">Node JS Streams</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Editors / IDE&#8217;s</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Text editors and IDE&#8217;s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Text editors and IDE’s</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../editors/sublime.html">Sublime Text 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../editors/visual-studio-code.html">Visual Studio Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../editors/atom.html">Atom Editor by Github</a></li>
@@ -135,8 +135,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../hosting/index.html">Deployment, Hosting and Security</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../hosting/monitoring.html">Monitoring, Logging &amp; Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../hosting/seo.html">SEO</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../hosting/security/htaccess.html"><code class="docutils literal"><span class="pre">.htaccess</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/security/htaccess.html"><code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
 </ul>
 <p class="caption"><span class="caption-text">Python</span></p>
 <ul>
@@ -186,10 +186,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../dev-tools/chrome.html">Chrome Developer Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dev-tools/docker/index.html">Docker</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Javascript</span></p>
+<p class="caption"><span class="caption-text">Javascript | Nodejs</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/concepts.html">JavaScript Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/data-structures.html">Data Structures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/interview-questions.html">JavaScript Interview Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/quality-assurance.html">Quality Assurance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/testing-tools.html">Testing Tooling &amp; Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/nodejs/index.html">Node JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/nodejs/node-cli.html">Node JS CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/nodejs/node-streams.html">Node JS Streams</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Electron</span></p>
 <ul class="current">
@@ -230,8 +236,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../index.html">asmattic Docs</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">asmattic Docs</a>
+        
       </nav>
 
 
@@ -240,23 +248,40 @@
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../index.html">Docs</a> &raquo;</li>
-      
-    <li>Electron</li>
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Electron</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="../_sources/electronjs/index.txt" rel="nofollow"> View page source</a>
+            
+            <a href="../_sources/electronjs/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -283,8 +308,8 @@
 <h2>Basic App Usage<a class="headerlink" href="#basic-app-usage" title="Permalink to this headline">¶</a></h2>
 <p>Some tips on how to make the app feel more native.</p>
 <p>To make text not selectable apply css to inputs</p>
-<div class="highlight-css"><div class="highlight"><pre><span></span><span class="nc">.my-ui-text</span> <span class="p">{</span>
-        <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">select</span><span class="o">:</span> <span class="nb">none</span><span class="p">;</span>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">my-ui-text</span> <span class="p">{</span>
+        <span class="kp">-webkit-</span><span class="k">user-select</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -322,23 +347,23 @@
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>Icon Type</td>
-<td><code class="docutils literal"><span class="pre">.png</span></code></td>
-<td><code class="docutils literal"><span class="pre">.ico</span></code></td>
-<td><code class="docutils literal"><span class="pre">.icns</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">.png</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">.ico</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">.icns</span></code></td>
 </tr>
 </tbody>
 </table>
-<p>To create the <code class="docutils literal"><span class="pre">.ico</span></code> and <code class="docutils literal"><span class="pre">.icns</span></code> files from the original <code class="docutils literal"><span class="pre">.png</span></code> (use 1024 x 1024px) there are a few commands.</p>
+<p>To create the <code class="docutils literal notranslate"><span class="pre">.ico</span></code> and <code class="docutils literal notranslate"><span class="pre">.icns</span></code> files from the original <code class="docutils literal notranslate"><span class="pre">.png</span></code> (use 1024 x 1024px) there are a few commands.</p>
 <blockquote>
 <div><ol class="arabic">
-<li><p class="first">For Windows, run it through <code class="docutils literal"><span class="pre">icotools</span></code> to get an <code class="docutils literal"><span class="pre">.ico</span></code>:</p>
+<li><p class="first">For Windows, run it through <code class="docutils literal notranslate"><span class="pre">icotools</span></code> to get an <code class="docutils literal notranslate"><span class="pre">.ico</span></code>:</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">icontool</span> <span class="pre">-c</span> <span class="pre">icon.png</span> <span class="pre">&gt;</span> <span class="pre">icon.ico</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">icontool</span> <span class="pre">-c</span> <span class="pre">icon.png</span> <span class="pre">&gt;</span> <span class="pre">icon.ico</span></code></p>
 </div></blockquote>
 </li>
-<li><p class="first">For macOS, run it through <code class="docutils literal"><span class="pre">png2icns</span></code> to get an <code class="docutils literal"><span class="pre">.icns</span></code>:</p>
+<li><p class="first">For macOS, run it through <code class="docutils literal notranslate"><span class="pre">png2icns</span></code> to get an <code class="docutils literal notranslate"><span class="pre">.icns</span></code>:</p>
 <blockquote>
-<div><p><code class="docutils literal"><span class="pre">png2icns</span> <span class="pre">icon.icns</span> <span class="pre">icon.png</span></code></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">png2icns</span> <span class="pre">icon.icns</span> <span class="pre">icon.png</span></code></p>
 </div></blockquote>
 </li>
 </ol>
@@ -348,7 +373,7 @@
 <p class="first admonition-title">Note</p>
 <p class="last">Make sure to change the version, app name, etc</p>
 </div>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ electron-packager . MyApp --icon<span class="o">=</span>img/icon --platform<span class="o">=</span>all --arch<span class="o">=</span>all --version<span class="o">=</span>0.36.0 --out<span class="o">=</span>../dist/ --asar
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ electron-packager . MyApp --icon<span class="o">=</span>img/icon --platform<span class="o">=</span>all --arch<span class="o">=</span>all --version<span class="o">=</span><span class="m">0</span>.36.0 --out<span class="o">=</span>../dist/ --asar
 </pre></div>
 </div>
 <p><strong>Icon Sizes</strong></p>
@@ -417,8 +442,8 @@
 </div>
 <div class="section" id="startup-background-color">
 <h3>Startup Background Color<a class="headerlink" href="#startup-background-color" title="Permalink to this headline">¶</a></h3>
-<p>Set background color so that it doesn&#8217;t seem like a browser on startup even though it is.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">mainWindow</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">BrowserWindow</span><span class="p">({</span>
+<p>Set background color so that it doesn’t seem like a browser on startup even though it is.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">mainWindow</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">BrowserWindow</span><span class="p">({</span>
         <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;ElectronApp&#39;</span><span class="p">,</span>
         <span class="nx">backgroundColor</span><span class="o">:</span> <span class="s1">&#39;#002b36&#39;</span>
 <span class="p">};</span>
@@ -427,7 +452,7 @@
 </div>
 <div class="section" id="hide-application-until-page-loaded">
 <h3>Hide Application Until Page Loaded<a class="headerlink" href="#hide-application-until-page-loaded" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">mainWindow</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">BrowserWindow</span><span class="p">({</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">mainWindow</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">BrowserWindow</span><span class="p">({</span>
         <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;ElectronApp&#39;</span><span class="p">,</span>
         <span class="nx">show</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
 <span class="p">};</span>
@@ -436,7 +461,7 @@
 </div>
 <div class="section" id="linux-ubuntu">
 <h3>Linux (Ubuntu)<a class="headerlink" href="#linux-ubuntu" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">mainWindow</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">BrowserWindow</span><span class="p">({</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">mainWindow</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">BrowserWindow</span><span class="p">({</span>
         <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;ElectronApp&#39;</span><span class="p">,</span>
         <span class="nx">icon</span><span class="o">:</span> <span class="nx">__dirname</span> <span class="o">+</span> <span class="s1">&#39;/app/assets/img/icon.png&#39;</span><span class="p">,</span>
 <span class="p">};</span>
@@ -449,7 +474,7 @@
 <div class="section" id="mac">
 <h3>Mac<a class="headerlink" href="#mac" title="Permalink to this headline">¶</a></h3>
 <p>Copy and paste is not turned on by default</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">process</span><span class="o">.</span><span class="n">platform</span> <span class="o">===</span> <span class="s1">&#39;darwin&#39;</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">process</span><span class="o">.</span><span class="n">platform</span> <span class="o">===</span> <span class="s1">&#39;darwin&#39;</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">var</span> <span class="n">template</span> <span class="o">=</span> <span class="p">[{</span>
       <span class="n">label</span><span class="p">:</span> <span class="s1">&#39;FromScratch&#39;</span><span class="p">,</span>
       <span class="n">submenu</span><span class="p">:</span> <span class="p">[{</span>
@@ -499,15 +524,18 @@
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../visualization/index.html" class="btn btn-neutral float-right" title="Visualization" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../visualization/index.html" class="btn btn-neutral float-right" title="Visualization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../javascript/interview-questions.html" class="btn btn-neutral" title="JavaScript Interview Questions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../javascript/nodejs/node-streams.html" class="btn btn-neutral" title="Node JS Streams" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -517,7 +545,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, Matt Oldfield.
-      Last updated on Nov 05, 2018.
+      Last updated on Nov 15, 2018.
 
     </p>
   </div>
@@ -542,13 +570,14 @@
             VERSION:'0.4.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

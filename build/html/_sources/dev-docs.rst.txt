@@ -59,3 +59,8 @@ Updating User Role Capabilities
 -------------------------------
 
 In the ``wp_options`` table, edit the ``wp_user_roles`` by removing the role in question. Then deactivate and activate the |AppName| plugin.
+
+Sphinx Autobuild
+-------------------
+
+`Rebuilds the docs on any changes <https://github.com/GaretJax/sphinx-autobuild>`_

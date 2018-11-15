@@ -15,6 +15,8 @@
   
     <link rel="shortcut icon" href="../_static/mo-favicon.png"/>
   
+  
+  
 
   
 
@@ -48,6 +50,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -91,7 +94,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Developer</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Developer</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../dev-docs.html">Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../README.html">Welcome to the Asmattic Docs Documentation</a></li>
@@ -99,7 +105,7 @@
 <p class="caption"><span class="caption-text">Linux</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Linux</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#installing-deb-files">Installing <code class="docutils literal"><span class="pre">.deb</span></code> files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-deb-files">Installing <code class="docutils literal notranslate"><span class="pre">.deb</span></code> files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#fresh-ubuntu-install">Fresh Ubuntu Install</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#github">Github</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#gitkraken">GitKraken</a></li>
@@ -117,6 +123,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#application-links-not-opening-properly-in-chrome">Application Links Not Opening Properly In Chrome</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#initial-apache-server-setup-ubuntu-16-04">Initial Apache Server Setup Ubuntu 16.04</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-lamp-on-ubuntu">Install LAMP on Ubuntu</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="linux-filesystem.html">Linux Filesystem</a></li>
@@ -129,15 +137,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../pi/networks.html">Network Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pi/piduino.html">Raspberry Pi With Arduino Firmata</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Nodejs</span></p>
+<p class="caption"><span class="caption-text">Editors / IDE's</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../nodejs/index.html">Node JS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nodejs/node-cli.html">Node JS CLI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../nodejs/node-streams.html">Node JS Streams</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Editors / IDE&#8217;s</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Text editors and IDE&#8217;s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Text editors and IDE’s</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../editors/sublime.html">Sublime Text 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../editors/visual-studio-code.html">Visual Studio Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../editors/atom.html">Atom Editor by Github</a></li>
@@ -155,8 +157,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../hosting/index.html">Deployment, Hosting and Security</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../hosting/monitoring.html">Monitoring, Logging &amp; Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../hosting/seo.html">SEO</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../hosting/security/htaccess.html"><code class="docutils literal"><span class="pre">.htaccess</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/security/htaccess.html"><code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hosting/optimization/htaccess.html">Optimization with <code class="docutils literal notranslate"><span class="pre">.htaccess</span></code></a></li>
 </ul>
 <p class="caption"><span class="caption-text">Python</span></p>
 <ul>
@@ -206,10 +208,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../dev-tools/chrome.html">Chrome Developer Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dev-tools/docker/index.html">Docker</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Javascript</span></p>
+<p class="caption"><span class="caption-text">Javascript | Nodejs</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/concepts.html">JavaScript Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/data-structures.html">Data Structures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../javascript/interview-questions.html">JavaScript Interview Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/quality-assurance.html">Quality Assurance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/testing-tools.html">Testing Tooling &amp; Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/nodejs/index.html">Node JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/nodejs/node-cli.html">Node JS CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/nodejs/node-streams.html">Node JS Streams</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Electron</span></p>
 <ul>
@@ -235,8 +243,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../index.html">asmattic Docs</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">asmattic Docs</a>
+        
       </nav>
 
 
@@ -245,23 +255,40 @@
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../index.html">Docs</a> &raquo;</li>
-      
-    <li>Linux</li>
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Linux</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="../_sources/linux/index.txt" rel="nofollow"> View page source</a>
+            
+            <a href="../_sources/linux/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -270,26 +297,26 @@
   <div class="section" id="linux">
 <h1>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="installing-deb-files">
-<span id="linux-installing-deb-packages-sec"></span><h2>Installing <code class="docutils literal"><span class="pre">.deb</span></code> files<a class="headerlink" href="#installing-deb-files" title="Permalink to this headline">¶</a></h2>
+<span id="linux-installing-deb-packages-sec"></span><h2>Installing <code class="docutils literal notranslate"><span class="pre">.deb</span></code> files<a class="headerlink" href="#installing-deb-files" title="Permalink to this headline">¶</a></h2>
 <p>There is a <a class="reference external" href="https://en.wikipedia.org/wiki/Command-line_interface">CLI</a> called <a class="reference external" href="https://itsfoss.com/gdebi-default-ubuntu-software-center/">GDebi</a> that is much more light weight than the traditional Ubuntu Software Center.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ sudo apt-get install gdebi
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install gdebi
 </pre></div>
 </div>
-<p>After installing just right click on a <code class="docutils literal"><span class="pre">.deb</span></code> file and go to properties to make <a class="reference external" href="https://itsfoss.com/gdebi-default-ubuntu-software-center/">GDebi</a> the default installer.</p>
+<p>After installing just right click on a <code class="docutils literal notranslate"><span class="pre">.deb</span></code> file and go to properties to make <a class="reference external" href="https://itsfoss.com/gdebi-default-ubuntu-software-center/">GDebi</a> the default installer.</p>
 </div>
 <div class="section" id="fresh-ubuntu-install">
 <h2>Fresh Ubuntu Install<a class="headerlink" href="#fresh-ubuntu-install" title="Permalink to this headline">¶</a></h2>
 <p>Increase the number of files that can be watched at any given time. This most often happens with nodejs.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ <span class="nb">echo</span> fs.inotify.max_user_watches<span class="o">=</span><span class="m">524288</span> <span class="p">|</span> sudo tee -a /etc/sysctl.conf <span class="o">&amp;&amp;</span> sudo sysctl -p
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">echo</span> fs.inotify.max_user_watches<span class="o">=</span><span class="m">524288</span> <span class="p">|</span> sudo tee -a /etc/sysctl.conf <span class="o">&amp;&amp;</span> sudo sysctl -p
 </pre></div>
 </div>
 <div class="section" id="github">
 <h3>Github<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ sudo apt-get install git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install git
 </pre></div>
 </div>
 <p><a class="reference external" href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">Generate</a> and <a class="reference external" href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">install SSH key</a></p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&quot;your_email@example.com&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&quot;your_email@example.com&quot;</span>
 
 <span class="c1"># Start SSH in the background</span>
 $ <span class="nb">eval</span> <span class="s2">&quot;</span><span class="k">$(</span>ssh-agent -s<span class="k">)</span><span class="s2">&quot;</span>
@@ -304,7 +331,7 @@ $ cat ~/.ssh/id_rsa.pub
 </div>
 <div class="section" id="gitkraken">
 <h3>GitKraken<a class="headerlink" href="#gitkraken" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Download .deb file</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Download .deb file</span>
 $ wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
 
 <span class="c1"># Install</span>
@@ -315,7 +342,7 @@ $ sudo dpkg -i gitkraken-amd64.deb
 <div class="section" id="nodejs">
 <h3>Nodejs<a class="headerlink" href="#nodejs" title="Permalink to this headline">¶</a></h3>
 <p>Install with <cite>nvm</cite></p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Make sure the tools that build packages are installed</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Make sure the tools that build packages are installed</span>
 $ sudo apt-get install build-essential libssl-dev
 
 <span class="c1"># Download the install script</span>
@@ -343,7 +370,7 @@ $ node -v
 </div>
 <div class="section" id="filezilla">
 <h3>Filezilla<a class="headerlink" href="#filezilla" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Add apt-key to Ubuntu so it trusts the packages about to be added</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add apt-key to Ubuntu so it trusts the packages about to be added</span>
 $ wget -q -O - http://archive.getdeb.net/getdeb-archive.key <span class="p">|</span> sudo apt-key add -
 
 <span class="c1"># Add the GetDeb repository which builds FileZilla for Ubuntu 16.04</span>
@@ -371,7 +398,7 @@ $ sudo apt update <span class="o">&amp;&amp;</span> sudo apt install filezilla
 </div></blockquote>
 <p>Themes and general Sublime user preferences:</p>
 <p>Predawn theme with Monokai <cite>color_scheme</cite></p>
-<div class="highlight-json"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
              <span class="nt">&quot;color_scheme&quot;</span><span class="p">:</span> <span class="s2">&quot;Packages/Predawn Monokai/Predawn Monokai.tmTheme&quot;</span><span class="p">,</span>
              <span class="nt">&quot;theme&quot;</span><span class="p">:</span> <span class="s2">&quot;predawn-DEV.sublime-theme&quot;</span><span class="p">,</span>
              <span class="nt">&quot;predawn_tabs_active_underline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
@@ -385,7 +412,7 @@ $ sudo apt update <span class="o">&amp;&amp;</span> sudo apt install filezilla
      <span class="p">}</span>
 </pre></div>
 </div>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Add apt-key to Ubuntu so it trusts the packages about to be added</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add apt-key to Ubuntu so it trusts the packages about to be added</span>
 $ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg <span class="p">|</span> sudo apt-key add -
 
 <span class="c1"># Add apt sources to sources.list</span>
@@ -398,7 +425,7 @@ $ sudo apt update <span class="o">&amp;&amp;</span> sudo apt install sublime-tex
 </div>
 <div class="section" id="google-chrome">
 <h3>Google Chrome<a class="headerlink" href="#google-chrome" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Add apt-key to Ubuntu</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add apt-key to Ubuntu</span>
 $ curl -s https://updates.signal.org/desktop/apt/keys.asc <span class="p">|</span> sudo apt-key add -
 
 <span class="c1"># Add apt sources to sources.list</span>
@@ -411,7 +438,7 @@ $ sudo apt update <span class="o">&amp;&amp;</span> sudo apt install signal-desk
 </div>
 <div class="section" id="postman">
 <h3>Postman<a class="headerlink" href="#postman" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Get the gzipped file</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the gzipped file</span>
 $ wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
 
 <span class="c1"># Unzip it</span>
@@ -440,7 +467,7 @@ $ cat &gt; ~/.local/share/applications/postman.desktop <span class="s">&lt;&lt;E
 <div class="section" id="signal">
 <h3>Signal<a class="headerlink" href="#signal" title="Permalink to this headline">¶</a></h3>
 <p>End to end encrypted messaging service</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Add apt-key to Ubuntu</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add apt-key to Ubuntu</span>
 $ curl -s https://updates.signal.org/desktop/apt/keys.asc <span class="p">|</span> sudo apt-key add -
 
 <span class="c1"># Add apt sources to sources.list</span>
@@ -453,7 +480,7 @@ $ sudo apt update <span class="o">&amp;&amp;</span> sudo apt install signal-desk
 </div>
 <div class="section" id="install-pip">
 <h3>Install Pip<a class="headerlink" href="#install-pip" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Update and upgrade existing packages</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Update and upgrade existing packages</span>
 $ sudo apt-get update <span class="o">&amp;&amp;</span> sudo apt-get -y upgrade
 
 <span class="c1"># Install pip</span>
@@ -478,15 +505,18 @@ $ pip --help
 </div>
 <div class="section" id="sphinx">
 <h3>Sphinx<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Install from apt</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install from apt</span>
 $ sudo apt-get install python-sphinx
 
 <span class="c1"># Install from Pip</span>
 $ sudo pip install -U sphinx
+
+<span class="c1"># Install auto rebuild</span>
+$ sudo pip install sphinx
 </pre></div>
 </div>
 <p><cite>sphinx_rtd_theme</cite> is no longer a hard dependency and must be installed manually</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Install sphinx_rtd_theme</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install sphinx_rtd_theme</span>
 $ sudo pip install sphinx_rtd_theme
 </pre></div>
 </div>
@@ -494,7 +524,7 @@ $ sudo pip install sphinx_rtd_theme
 <div class="section" id="gatsby-static-site-generator">
 <h3>Gatsby Static Site Generator<a class="headerlink" href="#gatsby-static-site-generator" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://www.gatsbyjs.org/docs/">React based static site generator</a> with a robust plugin system and a GraphQL data layer.</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ npm install --global gatsby-cli
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ npm install --global gatsby-cli
 </pre></div>
 </div>
 </div>
@@ -514,32 +544,49 @@ $ sudo pip install sphinx_rtd_theme
 <div class="section" id="application-links-not-opening-properly-in-chrome">
 <h3>Application Links Not Opening Properly In Chrome<a class="headerlink" href="#application-links-not-opening-properly-in-chrome" title="Permalink to this headline">¶</a></h3>
 <p>From <a class="reference external" href="https://askubuntu.com/questions/689449/external-links-are-opened-as-blank-tabs-in-new-browser-window-in-chrome">this Stack Overflow article</a></p>
-<p>The issue is with <code class="docutils literal"><span class="pre">google-chrome.desktop</span></code>, and it is missing the <code class="docutils literal"><span class="pre">%U</span></code> argument .</p>
-<p>Open file: <code class="docutils literal"><span class="pre">$HOME/.local/share/applications/google-chrome.desktop</span></code></p>
+<p>The issue is with <code class="docutils literal notranslate"><span class="pre">google-chrome.desktop</span></code>, and it is missing the <code class="docutils literal notranslate"><span class="pre">%U</span></code> argument .</p>
+<p>Open file: <code class="docutils literal notranslate"><span class="pre">$HOME/.local/share/applications/google-chrome.desktop</span></code></p>
 <p>Find the line:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nv">Exec</span><span class="o">=</span>/opt/google/chrome/chrome
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">Exec</span><span class="o">=</span>/opt/google/chrome/chrome
 </pre></div>
 </div>
-<p>Add a space and <code class="docutils literal"><span class="pre">%U</span></code> to make it</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nv">Exec</span><span class="o">=</span>/opt/google/chrome/chrome %U
+<p>Add a space and <code class="docutils literal notranslate"><span class="pre">%U</span></code> to make it</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">Exec</span><span class="o">=</span>/opt/google/chrome/chrome %U
 </pre></div>
 </div>
 <p>Then save the file.</p>
+</div>
+</div>
+<div class="section" id="initial-apache-server-setup-ubuntu-16-04">
+<h2>Initial Apache Server Setup Ubuntu 16.04<a class="headerlink" href="#initial-apache-server-setup-ubuntu-16-04" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04">Digital Ocean initial server setup</a></p>
+<p><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-edit-the-sudoers-file-on-ubuntu-and-centos">DigitalOcean sudo tutorial</a>
+.. code-block:: bash</p>
+</div>
+<div class="section" id="install-lamp-on-ubuntu">
+<h2>Install LAMP on Ubuntu<a class="headerlink" href="#install-lamp-on-ubuntu" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://howtoubuntu.org/how-to-install-lamp-on-ubuntu">Install LAMP from how to Ubuntu</a></p>
+<p><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04">Digital Ocean LAMP stack tutorial</a></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
 </div>
 </div>
 </div>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="linux-filesystem.html" class="btn btn-neutral float-right" title="Linux Filesystem" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="linux-filesystem.html" class="btn btn-neutral float-right" title="Linux Filesystem" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../README.html" class="btn btn-neutral" title="Welcome to the Asmattic Docs Documentation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../README.html" class="btn btn-neutral" title="Welcome to the Asmattic Docs Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -549,7 +596,7 @@ $ sudo pip install sphinx_rtd_theme
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, Matt Oldfield.
-      Last updated on Nov 05, 2018.
+      Last updated on Nov 15, 2018.
 
     </p>
   </div>
@@ -574,13 +621,14 @@ $ sudo pip install sphinx_rtd_theme
             VERSION:'0.4.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

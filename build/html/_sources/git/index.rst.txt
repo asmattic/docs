@@ -6,6 +6,8 @@ All things Git
 
 .. _git-basics-sec:
 
+`Atlassian is great place to start to reference common Git senarios <https://www.atlassian.com/git/tutorials/using-branches/git-merge>`_
+
 Git Basics
 -----------
 
@@ -52,7 +54,7 @@ Branches
 ------------------
 
 .. code-block:: bash
-	
+
 	# To list local branches
 	git branch
 
@@ -72,7 +74,7 @@ Here is the `main article from the GitHub help pages <gitBranchMergeConflicts_>`
 The ``--no-ff`` creates a commit and timestamp of the merge, as well as who did it.
 
 .. code-block:: bash
-	
+
 	# checkout less important branch
 	$ git checkout <feature branch>
 
@@ -94,7 +96,7 @@ The ``--no-ff`` creates a commit and timestamp of the merge, as well as who did 
 	# delete obsolete branch
 	$ git branch -d <obsolete branch>
 
-If there are conflicts, you will see ``<<<<<<<<<HEAD`` or ``<<<<<<<<<<<<branch>`` followed by the code in one branch with ``==========`` separating the same code with changes in the other branch with ``>>>>>>>>><other_branch>`` at the end of the changes to look at. Manually edit how you want to merge them, remove the conflict delimiters and commit the completed merge. 
+If there are conflicts, you will see ``<<<<<<<<<HEAD`` or ``<<<<<<<<<<<<branch>`` followed by the code in one branch with ``==========`` separating the same code with changes in the other branch with ``>>>>>>>>><other_branch>`` at the end of the changes to look at. Manually edit how you want to merge them, remove the conflict delimiters and commit the completed merge.
 
 .. _gitBranchMergeConflicts: https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/
 .. _gitBranchMerge: https://www.atlassian.com/git/tutorials/git-merge
@@ -117,7 +119,7 @@ Resetting Branch to previous commit
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
-	
+
 	# Checkout the branch to revert
 	$ git checkout master
 
@@ -177,8 +179,30 @@ Ignoring already tracked files and directories
 
 First add the file or folder to the `.gitignore` file.
 
-After that is done they can be removed from the git index by adding the `--cached` flag to `git rm`. 
+After that is done they can be removed from the git index by adding the `--cached` flag to `git rm`.
 .. code-block:: bash
-	
+
 	# Add -r for recursive removal
 	$ git rm -r --cached <path-to-folder-or-file>
+
+Git 2.0 Default Behavior with Pushing, Pulling and Merging
+--------------------------------------------------------------
+
+To squelch this message and adopt the new behavior now, use:
+
+.. code-block:: bash
+
+   $ git config --global push.default simple
+
+.. note::
+   When push.default is set to ``matching``, git will push local branches
+   to the remote branches that already exist with the same name.
+
+   Since Git 2.0, Git defaults to the more conservative 'simple'
+   behavior, which only pushes the current branch to the corresponding
+   remote branch that 'git pull' uses to update the current branch.
+
+   See 'git help config' and search for 'push.default' for further information.
+   (the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+   'current' instead of 'simple' if you sometimes use older versions of Git)
+
