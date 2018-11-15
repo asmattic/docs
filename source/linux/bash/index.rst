@@ -203,6 +203,7 @@ Executing a command from history.
 
    # Example (run previous command as sudo)
    $ sudo !!
+
 Shell Check
 -------------
 
@@ -224,12 +225,15 @@ Using modules in bash programs
 # > redirect standard output (implicit 1>)
 # & what comes next is a file descriptor, not a file (only for right hand side of >)
 # 2 stderr file descriptor number
-check_required_program () {
-	hash $1 2>/dev/null || {
-		echo $1 is required but not installed
-		exit 1
-	}
-}
+
+.. code-block:: bash
+
+   check_required_program () {
+      hash $1 2>/dev/null || {
+         echo $1 is required but not installed
+         exit 1
+      }
+   }
 
 Get hardware of computer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
