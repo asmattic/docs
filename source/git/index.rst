@@ -137,6 +137,42 @@ Forking
 
 Only ``fork`` if you intend on contributing to the code base.
 
+Change Git Remotes
+---------------------
+
+There are a few reasons for needing to change remotes of a git repo. When referring to multiple ``remotes``, I mean ``fetch`` and ``push``
+
+To list the current remotes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+   $ git remote -v
+
+   # Example output
+
+   origin   git@github.com:asmattic/faqusoft-kb.git (fetch)
+   origin   git@github.com:asmattic/faqusoft-kb.git (push)
+
+**Changing the remotes between SSL and HTTPS or to changing the remotes completely require the same steps.**
+
+You may want to have multiple sets of remotes if you are goth storing in Github and also are using git to deploy to a production environment like Heroku for example.
+
+.. code-block:: bash
+
+   # There can be multiple remotes
+   $ git remote set-url <remote name> <new url to set remotes to>
+
+   # The remote name is most commonly origin
+   $ git remote set-url origin <new url to set remotes to>
+
+   # SSL Example
+   $ git remote set-url origin git@github.com:<userName>/<repoName>
+
+   # HTTPS Example
+   $ git remote set-url origin https://github.com/<userName>/<repoName>
+
+
 .. _git_tips_tricks_sec:
 
 Git tips and tricks
